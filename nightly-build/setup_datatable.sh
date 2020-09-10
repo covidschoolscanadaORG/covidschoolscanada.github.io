@@ -1,21 +1,33 @@
 #!/bin/bash
 
+# download and parse KML file
+outDir=$1
+mid=$2 # ID for midfile
+outName=$3
 
-midFile=1blA_H3Hv5S9Ii_vyudgDk-j6SfJQil9S
-midFile=https://www.google.com/maps/d/u/0/kml?mid=1blA_H3Hv5S9Ii_vyudgDk-j6SfJQil9S&forcekml=1
-outDir=`pwd`
+echo $outDir
+echo $mid
+echo $outName
 
-fetchUrl="https://www.google.com/maps/d/u/0/kml?mid=${midFile}&forcekml=1"
-dt=`date +%Y%m%d`
+fetchUrl="https://www.google.com/maps/d/u/0/kml?mid=${mid}&forcekml=1"
+wget "$fetchUrl"
+wait
 
-# 
-dirName="export-${dt}"
-mkdir -p $dirName
-cd $dirName
+dummy="kml?mid=${mid}&forcekml=1"
+mv $dummy ${outDir}/${outName}.kml
+# strip the CDATA tags that prevent some names from registering
+# in the parser
+perl -pe 's/<\!\[CDATA\[(.*)\]\]>/$1/' ${outDir}/${outName}.kml > ${outDir}/${outName}_clean.kml
 
-dummy="kml?mid=${midFile}&forcekml=1"
-curl -O ${fetchUrl} 
-echo $fetchUrl
-#mv $dummy export-${dt}.zip
-#unzip export-${dt}
+perl -pe 's/<description>(.*)<\/description>//' ${outDir}/${outName}_clean.kml > ${outDir}/${outName}_clean2.kml
+perl -pe 's/&/&amp;/g' ${outDir}/${outName}_clean2.kml > ${outDir}/${outName}_clean3.kml
+
+# make table
+Rscript kml_parse_extended.R ${outDir}/${outName}_clean3.kml
+
+rm ${outDir}/${outName}_clean.kml
+rm ${outDir}/${outName}_clean2.kml
+rm ${outDir}/${outName}_clean3.kml
+
+exit 0;
 
