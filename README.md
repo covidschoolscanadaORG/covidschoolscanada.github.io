@@ -1,2 +1,2 @@
 # covidschoolscanada.github.io
-This is an empty message.
+Go to <a href="https://covidschoolscanadaorg.github.io/covidschoolscanada.github.io/">Covid Schools Canada GitHub.io page</a>.
