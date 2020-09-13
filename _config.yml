@@ -18,7 +18,7 @@ email: covidschoolscanada@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   This is the web site for Covid Schools Canada, a volunteer organization dedicated to
   tracking outbreaks of COVID-19 in Canada's schools
-baseurl: "/covidschoolscanada.github.io" # the subpath of your site, e.g. /blog
+baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://covidschoolscanada.org" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
