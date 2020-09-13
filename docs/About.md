@@ -1,5 +1,7 @@
+---
 layout: page
 title: "About CovidSchoolsCanada"
-permalink: https://covidschoolscanadaorg.github.io/covidschoolscanada.github.io/About
+permalink: /About/
+---
 
 This is an about page.
