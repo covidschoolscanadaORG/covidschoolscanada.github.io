@@ -1,0 +1,31 @@
+---
+---
+
+@import "{{ site.theme }}";
+body {
+    color: #7a7a7a;
+    font-family: "Roboto", Sans-serif;
+    font-size: 21px;
+    font-weight: 400;
+}
+h1.page-heading {
+    color: #6EC1E4;
+}
+span.indent {
+    margin-left: 60px;
+    font-weight: bold;
+}
+a {
+    color: red;
+}
+a:hover {
+    color: #066399;
+    text-decoration: none;
+}
+.site-title, .site-title:visited { font-size: 20px;
+				   color: red;
+				   font-family: "Helvetica";
+				 }
+.site-nav .page-link { color: red;
+		       font-family: "Helvetica";
+		     }
