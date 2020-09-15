@@ -2,30 +2,58 @@
 ---
 
 @import "{{ site.theme }}";
-body {
-    color: #7a7a7a;
-    font-family: "Roboto", Sans-serif;
-    font-size: 21px;
-    font-weight: 400;
+@import "form-styles.css";
+@import "/fonts/font-awesome-4.7.0/css/font-awesome.css";
+
+/** Wrapper */
+.wrapper { max-width: -webkit-calc(1400px - (30px * 2)); max-width: calc(1400px - (30px * 2)); margin-right: auto; margin-left: auto; padding-right: 30px; padding-left: 30px; }
+@media screen and (max-width: 1400px) { .wrapper { max-width: -webkit-calc(1400px - (30px)); max-width: calc(1400px - (30px)); padding-right: 15px; padding-left: 15px; } }
+
+.column {
+    flex: 25%;
 }
-h1.page-heading {
-    color: #6EC1E4;
+
+.row {
+  display: flex;
 }
-span.indent {
-    margin-left: 60px;
-    font-weight: bold;
-}
+
+
+// body {
+//     color: #7a7a7a;
+//     font-family: "Roboto", Sans-serif;
+//     font-size: 21px;
+//     font-weight: 400;
+// }
+// h1.page-heading {
+//     color: #6EC1E4;
+// }
+// span.indent {
+//     margin-left: 60px;
+//     font-weight: bold;
+// }
 a {
-    color: red;
+     color: red;
 }
 a:hover {
-    color: #066399;
-    text-decoration: none;
+     color: #066399;
+     text-decoration: none;
 }
-.site-title, .site-title:visited { font-size: 20px;
-				   color: red;
-				   font-family: "Helvetica";
-				 }
-.site-nav .page-link { color: red;
-		       font-family: "Helvetica";
-		     }
+
+table.heavyborder {
+    border: 10px solid red;
+    border-collapse: collapse;
+}
+
+td.noborder {
+    valign: top;
+    border: none;
+}
+
+// .site-title, .site-title:visited { font-size: 20px;
+// 				   color: red;
+// 				   font-family: "Helvetica";
+// 				 }
+// .site-nav .page-link { color: red;
+// 		       font-family: "Helvetica";
+// 		     }
+
