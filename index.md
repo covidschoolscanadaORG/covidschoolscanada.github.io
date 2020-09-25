@@ -6,6 +6,7 @@ layout: page
 title: Masks4Canada Outbreak Map
 ---
 
+<!--
 <!-- scripts copied from Shraddha's original -->
 <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
 <script src="vendor/bootstrap/js/popper.js"></script>
@@ -26,6 +27,7 @@ title: Masks4Canada Outbreak Map
 
   gtag('config', 'UA-23581568-13');
 </script>
+-->
 
 <!--
 <script>
@@ -60,6 +62,7 @@ $('.contact1-form').on('submit',function(e){
 </script>
 -->
 <!--===============================================================================================-->
+<!--
 <script src="js/main.js"></script>
 
 <table class="heavyborder">
@@ -74,3 +77,6 @@ $('.contact1-form').on('submit',function(e){
   </tr>
 
 </table>
+-->
+Nothing here yet.
+
