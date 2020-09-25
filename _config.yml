@@ -16,8 +16,8 @@
 title: Covid Schools Canada
 email: covidschoolscanada@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  This is the web site for Covid Schools Canada, a volunteer organization dedicated to
-  tracking outbreaks of COVID-19 in Canada's schools
+  Soon-to-be website for @covidschoolsCA.
+	For now, follow us on Twitter or Facebook. 
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://masks4canada.org/canada-covid-19-school-case-tracker/" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: covidschoolsCA
