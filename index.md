@@ -71,7 +71,6 @@ $('.contact1-form').on('submit',function(e){
 
   <tr>
     <td  class="noborder" valign="top">{% include map.html %}</td>
-    <td class="noborder" valign="top">{% include submission-form.html %}</td>
   </tr>
 
 </table>
