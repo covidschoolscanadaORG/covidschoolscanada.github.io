@@ -3,7 +3,7 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: page
-title: Masks4Canada Outbreak Map
+title: Canada COVID-19 Tracker Map
 ---
 
 <!--
@@ -78,5 +78,6 @@ $('.contact1-form').on('submit',function(e){
 
 </table>
 -->
+
 Nothing here yet.
 
