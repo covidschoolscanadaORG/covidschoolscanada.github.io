@@ -31,6 +31,7 @@
 //     margin-left: 60px;
 //     font-weight: bold;
 // }
+
 a {
      color: red;
 }
@@ -47,6 +48,13 @@ table.heavyborder {
 td.noborder {
     valign: top;
     border: none;
+}
+
+th,td { font-size: 12px; }
+
+
+ul > li {
+    list-style-type: circle;
 }
 
 // .site-title, .site-title:visited { font-size: 20px;
