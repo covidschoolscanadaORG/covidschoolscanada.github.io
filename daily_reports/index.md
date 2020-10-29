@@ -4,6 +4,7 @@ title: School Board Daily Advisory Updates
 ---
 
 Each update below compares the current day to the previous day:
+1. [2020-10-29 (Thursday)](SUMMARY-2020-10-29T1545.html)
 1. [2020-10-28 (Wednesday)](SUMMARY-2020-10-28T1545.html)
 1. [2020-10-27 (Tuesday)](SUMMARY-2020-10-27T1545.html)
 1. [2020-10-26 (Monday)](SUMMARY-2020-10-26T1545.html)
