@@ -146,6 +146,7 @@
     <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
     <script>
 
+
         var transformRequest = (url, resourceType) => {
             var isMapboxRequest =
                 url.slice(8, 22) === "api.mapbox.com" ||
@@ -169,12 +170,14 @@
         map.addControl(
             new MapboxGeocoder({
                 accessToken: mapboxgl.accessToken,
-                // limit results to Australia
+                // limit results to Canada
                 countries: 'ca',
                 type: 'poi',
                 mapboxgl: mapboxgl
             })
         );
+        // listen for an update and change text box
+        //document.querySelector('.mapboxgl-ctrl-geocoder--input').addEventListener('change', titleTest);
 
         // Add zoom and rotation controls to the map.
         map.addControl(new mapboxgl.NavigationControl());
@@ -187,6 +190,10 @@
                 trackUserLocation: true
             })
         );
+        geocoder.on('results', function (results) {
+            console.log(results);
+        })
+
 
         function filterBy(case_min) {
             //var filters = ['>=',, case_min];
