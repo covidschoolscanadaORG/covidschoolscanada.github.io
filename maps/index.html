@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
 
+//useful tutorials:
+//https://docs.mapbox.com/help/demos/how-mapbox-works/how-geocoding-works.html
+
 <head>
     <meta charset='utf-8' />
     <title>Canada COVID-19 School Tracker</title>
@@ -184,11 +187,13 @@
                 trackUserLocation: true
             })
         );
-        geocoder.on('results', function (results) {
-            var f = results.features[0].center;
-            console.log(results);
-            console.log(JSON.stringify(results.features[0]));
-        })
+        geocoder.on('result', function (ev) {
+            var styleSpec = ev.result;
+            var styleSpecBox = document.getElementById('json-response');
+            var styleSpecText = JSON.stringify(styleSpec, null, 2);
+            var syntaxStyleSpecText = syntaxHighlight(styleSpecText);
+            styleSpecBox.innerHTML = syntaxStyleSpecText;
+        });
 
 
         function filterBy(case_min) {
