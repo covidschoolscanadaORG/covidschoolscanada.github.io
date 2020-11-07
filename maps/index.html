@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+
+//useful tutorials:
+//https://docs.mapbox.com/help/demos/how-mapbox-works/how-geocoding-works.html
+
+<head>
+    <meta charset='utf-8' />
+    <title>Canada COVID-19 School Tracker</title>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+    <script src="https://api.mapbox.com/mapbox-gl-js/v1.9.1/mapbox-gl.js"></script>
+    <link href="https://api.mapbox.com/mapbox-gl-js/v1.9.1/mapbox-gl.css" rel="stylesheet" />
+    <script src='https://npmcdn.com/csv2geojson@latest/csv2geojson.js'></script>
+    <script src='https://npmcdn.com/@turf/turf/turf.min.js'></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        #map {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Popup styling */
+
+        .mapboxgl-popup {
+            padding-bottom: 5px;
+        }
+
+        .mapboxgl-popup-close-button {
+            display: none;
+        }
+
+        .mapboxgl-popup-content {
+            font: 400 15px/22px 'Source Sans Pro', 'Helvetica Neue', Sans-serif;
+            padding: 0;
+            width: 250px;
+        }
+
+        .mapboxgl-popup-content-wrapper {
+            padding: 1%;
+        }
+
+        .mapboxgl-popup-content h3 {
+            background: rgb(61, 59, 59);
+            text-align: center;
+            color: #fff;
+            margin: 0;
+            display: block;
+            padding: 15px;
+            font-weight: 700;
+            margin-top: -5px;
+        }
+
+        .mapboxgl-popup-content h4 {
+            margin: 0;
+            display: block;
+            padding: 10px 3px 10px 10px;
+            font-weight: 400;
+        }
+
+        .mapboxgl-container {
+            cursor: pointer;
+        }
+
+        .mapboxgl-popup-anchor-top>.mapboxgl-popup-content {
+            margin-top: 3px;
+        }
+
+        .mapboxgl-popup-anchor-top>.mapboxgl-popup-tip {
+            border-bottom-color: rgb(61, 59, 59);
+        }
+    </style>
+</head>
+
+<body>
+    <style>
+        .map-overlay {
+            font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+            position: absolute;
+            width: 25%;
+            top: 0;
+            left: 0;
+            padding: 10px;
+        }
+
+        .map-overlay .map-overlay-inner {
+            background-color: #fff;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+            border-radius: 3px;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        .map-overlay h2 {
+            line-height: 24px;
+            display: block;
+            margin: 0 0 10px;
+        }
+
+        .map-overlay .legend .bar {
+            height: 10px;
+            width: 100%;
+            background: linear-gradient(to right, #fca107, #7f3121);
+        }
+
+        .map-overlay input {
+            background-color: transparent;
+            display: inline-block;
+            width: 100%;
+            position: relative;
+            margin: 0;
+            cursor: ew-resize;
+        }
+    </style>
+
+    <div id='map'></div>
+
+    <div class="map-overlay top">
+        <div class="map-overlay-inner">
+            <h2>COVID Schools Canada test </h2>
+            <h3>Filter by case count:</h3>
+            <label id="case_min"></label>
+            <input id="slider" type="range" min="0" max="80" step="1" value="0" />
+        </div>
+        <div class="map-overlay-inner">
+            <div id="legend" class="legend">
+                <div class="bar"></div>
+                <div>Case count</div>
+            </div>
+        </div>
+    </div>
+
+
+    <script
+        src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.5.1/mapbox-gl-geocoder.min.js"></script>
+    <link rel="stylesheet"
+        href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.5.1/mapbox-gl-geocoder.css"
+        type="text/css" />
+    <!-- Promise polyfill script required to use Mapbox GL Geocoder in IE 11 -->
+    <script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.auto.min.js"></script>
+
+    <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+    <script>
+
+
+        var transformRequest = (url, resourceType) => {
+            var isMapboxRequest =
+                url.slice(8, 22) === "api.mapbox.com" ||
+                url.slice(10, 26) === "tiles.mapbox.com";
+            return {
+                url: isMapboxRequest
+                    ? url.replace("?", "?pluginName=sheetMapper&")
+                    : url
+            };
+        };
+
+        mapboxgl.accessToken = 'pk.eyJ1IjoiY292aWRzY2hvb2xzY2FuYWRhIiwiYSI6ImNraDJzanp3bTAxbmcycnI3cmJydmxqamYifQ.2fpjHmXWJ9qs5jJe4OrmNQ'; //Mapbox token 
+        var map = new mapboxgl.Map({
+            container: 'map', // container id
+            style: 'mapbox://styles/mapbox/streets-v11', //stylesheet location
+            center: [-98.61328125, 52.05249047600099], // starting position
+            zoom: 5,// starting zoom
+            transformRequest: transformRequest
+        });
+
+        var geocoder = new MapboxGeocoder({
+            accessToken: mapboxgl.accessToken,
+            // limit results to Canada
+            countries: 'ca',
+            type: 'poi',
+            mapboxgl: mapboxgl
+        });
+        map.addControl(geocoder);
+        map.addControl(new mapboxgl.NavigationControl()); // zoom rotate
+        map.addControl(
+            new mapboxgl.GeolocateControl({
+                positionOptions: {
+                    enableHighAccuracy: true
+                },
+                trackUserLocation: true
+            })
+        );
+        geocoder.on('result', function (ev) {
+            // full JSON result
+            var styleSpec = ev.result;
+            console.log(styleSpecText)
+            // lat-long
+            var center = ev.result.geometry.coordinates;
+            var name = ev.result.text;
+            var city = ev.result.context[2].text;
+            var prov = ev.result.context[3].text;
+            //var styleSpecBox = document.getElementById('json-response');
+            var styleSpecText = JSON.stringify(styleSpec, null, 2);
+            console.log(styleSpecText)
+            console.log(JSON.stringify(center))
+            console.log(JSON.stringify(name))
+            console.log(JSON.stringify(city))
+            console.log(JSON.stringify(prov))
+        });
+
+
+        function filterBy(case_min) {
+            //var filters = ['>=',, case_min];
+            //map.setFilter('csvData', filters);
+
+            // Set the label to the month
+            // document.getElementById('month').textContent = months[month];
+        }
+
+        map.on('load', function () {
+            d3.json(
+                'https://covidschoolscanada.org/maps/CanadaMap_QuebecMerge-201106.clean.geojson',
+                function (err, data) {
+
+                    if (err) throw (err);
+
+                    //Add the the layer to the map 
+                    map.addLayer({
+                        'id': 'csvData',
+                        'type': 'circle',
+                        'source': {
+                            'type': 'geojson',
+                            'data': data
+                        },
+                        'paint': {
+                            'circle-radius': 4,
+                            'circle-color': [
+                                "match",
+                                [
+                                    "get",
+                                    "Outbreak_Status"
+                                ],
+                                "Single/unlinked cases",
+                                "yellow",
+                                "Declared outbreak",
+                                "orange",
+                                "Cluster (BC)",
+                                "purple",
+                                "gray"
+                            ]
+                        }
+                    });
+
+
+                    // When a click event occurs on a feature in the csvData layer, open a popup at the
+                    // location of the feature, with description HTML from its properties.
+                    map.on('click', 'csvData', function (e) {
+                        var coordinates = e.features[0].geometry.coordinates.slice();
+
+                        //set popup text 
+                        //You can adjust the values of the popup to match the headers of your CSV. 
+                        // For example: e.features[0].properties.Name is retrieving information from the field Name in the original CSV. 
+                        var description = `<h3>` + e.features[0].properties.institute_name + `<h3>`
+                        description = description + `<h4>` + `<b>` + `# cases: ` + `</b>`
+                        description = description + e.features[0].properties.Total_cases_to_date + `</h4>`;
+
+                        description = description + `<h4>` + `<b>` + `# Outbreaks: ` + `</b>`
+                        description = description + e.features[0].properties.Total_outbreaks_to_date + `</h4>`;
+
+
+                        description = description + `<h4>` + `<b>` + `Report Dates: ` + `</b>`
+                        description = description + e.features[0].properties.Date + `</h4>`;
+
+                        description = description + `<h4>` + `<b>` + `Evidence: ` + `</b>`
+                        //description = description + `<a href="` + e.features[0].properties.Article + `">` + e.features[0].properties.Article + `</a></h4>`;
+
+                        description = description + `<h4>` + `<b>` + `School board:` + `</b>`
+                        description = description + e.features[0].properties.School_board + `</h4>`;
+
+                        description = description + `<h4>` + `<b>` + `City ` + `</b>`
+                        description = description + e.features[0].properties.City + `</h4>`;
+
+                        console.log(e.features)
+
+                        // Ensure that if the map is zoomed out such that multiple
+                        // copies of the feature are visible, the popup appears
+                        // over the copy being pointed to.
+                        while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
+                            coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
+                        }
+
+                        //add Popup to map
+
+                        new mapboxgl.Popup()
+                            .setLngLat(coordinates)
+                            .setHTML(description)
+                            .addTo(map);
+                    });
+
+                    // Change the cursor to a pointer when the mouse is over the places layer.
+                    map.on('mouseenter', 'csvData', function () {
+                        map.getCanvas().style.cursor = 'pointer';
+                    });
+
+                    // Change it back to a pointer when it leaves.
+                    map.on('mouseleave', 'places', function () {
+                        map.getCanvas().style.cursor = '';
+                    });
+
+                    var bbox = turf.bbox(data);
+                    map.fitBounds(bbox, { padding: 50 });
+
+                }
+
+            );
+        });
+    </script>
+
+</body>
+
+</html>
