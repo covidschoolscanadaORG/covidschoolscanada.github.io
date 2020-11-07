@@ -77,7 +77,6 @@
 
 <body>
 
-    // Inlay with slider at top-left of map
     <style>
         .map-overlay {
             font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
@@ -178,11 +177,10 @@
             // document.getElementById('month').textContent = months[month];
         }
 
-
-        d3.json(
-            'https://drive.google.com/file/d/12NuFSftpJyGd4g1NrlLko4WKDHOZcDjf/view?usp=sharing',
-            function (err, data) {
-                map.on('load', function () {
+        map.on('load', function () {
+            d3.json(
+                'https://drive.google.com/file/d/12NuFSftpJyGd4g1NrlLko4WKDHOZcDjf/view?usp=sharing',
+                function (err, data) {
 
                     //Add the the layer to the map 
                     map.addLayer({
@@ -272,8 +270,9 @@
 
                 });
 
-            });
-        );
+                );
+        });
+
 
 
 
