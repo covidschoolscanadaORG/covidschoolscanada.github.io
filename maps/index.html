@@ -124,7 +124,8 @@
     <div class="map-overlay top">
         <div class="map-overlay-inner">
             <h2>COVID Schools Canada</h2>
-            <label id="Total_case_summed"></label>
+            <h3>Filter by case count:</h3>
+            <label id="case_min"></label>
             <input id="slider" type="range" min="0" max="80" step="1" value="0" />
         </div>
         <div class="map-overlay-inner">
@@ -134,6 +135,7 @@
             </div>
         </div>
     </div>
+    <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
     <script>
 
         var transformRequest = (url, resourceType) => {
@@ -168,116 +170,110 @@
             })
         );
 
-        $(document).ready(function () {
-            $.ajax({
-                type: "GET",
-                //YOUR TURN: Replace with csv export link
-                url: 'https://docs.google.com/spreadsheets/d/1PN81hzYQbjAX6cd4gwNi-xMh49JL9wg1vdqtqczkR60/gviz/tq?tqx=out:csv&sheet=CanadaMap_QuebecMerge-201104.clean_v2',
-                dataType: "text",
-                success: function (csvData) { makeGeoJSON(csvData); }
-            });
+        function filterBy(case_min) {
+            //var filters = ['>=',, case_min];
+            //map.setFilter('csvData', filters);
+
+            // Set the label to the month
+            // document.getElementById('month').textContent = months[month];
+        }
 
 
+        d3.json(
+            'https://drive.google.com/file/d/12NuFSftpJyGd4g1NrlLko4WKDHOZcDjf/view?usp=sharing',
+            function (err, data) {
+                map.on('load', function () {
 
-            function makeGeoJSON(csvData) {
-                csv2geojson.csv2geojson(csvData, {
-                    latfield: 'Latitude',
-                    lonfield: 'Longitude',
-                    delimiter: ','
-                }, function (err, data) {
-                    map.on('load', function () {
-
-                        //Add the the layer to the map 
-                        map.addLayer({
-                            'id': 'csvData',
-                            'type': 'circle',
-                            'source': {
-                                'type': 'geojson',
-                                'data': data
-                            },
-                            'paint': {
-                                'circle-radius': 4,
-                                'circle-color': [
-                                    "match",
-                                    [
-                                        "get",
-                                        "Outbreak_Status"
-                                    ],
-                                    "Single/unlinked cases",
-                                    "yellow",
-                                    "Declared outbreak",
-                                    "orange",
-                                    "Cluster (BC)",
-                                    "purple",
-                                    "gray"
-                                ]
-                            }
-                        });
-
-
-                        // When a click event occurs on a feature in the csvData layer, open a popup at the
-                        // location of the feature, with description HTML from its properties.
-                        map.on('click', 'csvData', function (e) {
-                            var coordinates = e.features[0].geometry.coordinates.slice();
-
-                            //set popup text 
-                            //You can adjust the values of the popup to match the headers of your CSV. 
-                            // For example: e.features[0].properties.Name is retrieving information from the field Name in the original CSV. 
-                            var description = `<h3>` + e.features[0].properties.institute_name + `<h3>`
-                            description = description + `<h4>` + `<b>` + `# cases: ` + `</b>`
-                            description = description + e.features[0].properties.Total_cases_to_date + `</h4>`;
-
-                            description = description + `<h4>` + `<b>` + `# Outbreaks: ` + `</b>`
-                            description = description + e.features[0].properties.Total_outbreaks_to_date + `</h4>`;
-
-
-                            description = description + `<h4>` + `<b>` + `Report Dates: ` + `</b>`
-                            description = description + e.features[0].properties.Date + `</h4>`;
-
-                            description = description + `<h4>` + `<b>` + `Evidence: ` + `</b>`
-                            description = description + `<a href="` + e.features[0].properties.Article + `">` + e.features[0].properties.Article + `</a></h4>`;
-
-                            description = description + `<h4>` + `<b>` + `School board:` + `</b>`
-                            description = description + e.features[0].properties.School_board + `</h4>`;
-
-                            description = description + `<h4>` + `<b>` + `City ` + `</b>`
-                            description = description + e.features[0].properties.City + `</h4>`;
-
-                            console.log(e.features)
-
-                            // Ensure that if the map is zoomed out such that multiple
-                            // copies of the feature are visible, the popup appears
-                            // over the copy being pointed to.
-                            while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
-                                coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
-                            }
-
-                            //add Popup to map
-
-                            new mapboxgl.Popup()
-                                .setLngLat(coordinates)
-                                .setHTML(description)
-                                .addTo(map);
-                        });
-
-                        // Change the cursor to a pointer when the mouse is over the places layer.
-                        map.on('mouseenter', 'csvData', function () {
-                            map.getCanvas().style.cursor = 'pointer';
-                        });
-
-                        // Change it back to a pointer when it leaves.
-                        map.on('mouseleave', 'places', function () {
-                            map.getCanvas().style.cursor = '';
-                        });
-
-                        var bbox = turf.bbox(data);
-                        map.fitBounds(bbox, { padding: 50 });
-
+                    //Add the the layer to the map 
+                    map.addLayer({
+                        'id': 'csvData',
+                        'type': 'circle',
+                        'source': {
+                            'type': 'geojson',
+                            'data': data
+                        },
+                        'paint': {
+                            'circle-radius': 4,
+                            'circle-color': [
+                                "match",
+                                [
+                                    "get",
+                                    "Outbreak_Status"
+                                ],
+                                "Single/unlinked cases",
+                                "yellow",
+                                "Declared outbreak",
+                                "orange",
+                                "Cluster (BC)",
+                                "purple",
+                                "gray"
+                            ]
+                        }
                     });
 
+
+                    // When a click event occurs on a feature in the csvData layer, open a popup at the
+                    // location of the feature, with description HTML from its properties.
+                    map.on('click', 'csvData', function (e) {
+                        var coordinates = e.features[0].geometry.coordinates.slice();
+
+                        //set popup text 
+                        //You can adjust the values of the popup to match the headers of your CSV. 
+                        // For example: e.features[0].properties.Name is retrieving information from the field Name in the original CSV. 
+                        var description = `<h3>` + e.features[0].properties.institute_name + `<h3>`
+                        description = description + `<h4>` + `<b>` + `# cases: ` + `</b>`
+                        description = description + e.features[0].properties.Total_cases_to_date + `</h4>`;
+
+                        description = description + `<h4>` + `<b>` + `# Outbreaks: ` + `</b>`
+                        description = description + e.features[0].properties.Total_outbreaks_to_date + `</h4>`;
+
+
+                        description = description + `<h4>` + `<b>` + `Report Dates: ` + `</b>`
+                        description = description + e.features[0].properties.Date + `</h4>`;
+
+                        description = description + `<h4>` + `<b>` + `Evidence: ` + `</b>`
+                        //description = description + `<a href="` + e.features[0].properties.Article + `">` + e.features[0].properties.Article + `</a></h4>`;
+
+                        description = description + `<h4>` + `<b>` + `School board:` + `</b>`
+                        description = description + e.features[0].properties.School_board + `</h4>`;
+
+                        description = description + `<h4>` + `<b>` + `City ` + `</b>`
+                        description = description + e.features[0].properties.City + `</h4>`;
+
+                        console.log(e.features)
+
+                        // Ensure that if the map is zoomed out such that multiple
+                        // copies of the feature are visible, the popup appears
+                        // over the copy being pointed to.
+                        while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
+                            coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
+                        }
+
+                        //add Popup to map
+
+                        new mapboxgl.Popup()
+                            .setLngLat(coordinates)
+                            .setHTML(description)
+                            .addTo(map);
+                    });
+
+                    // Change the cursor to a pointer when the mouse is over the places layer.
+                    map.on('mouseenter', 'csvData', function () {
+                        map.getCanvas().style.cursor = 'pointer';
+                    });
+
+                    // Change it back to a pointer when it leaves.
+                    map.on('mouseleave', 'places', function () {
+                        map.getCanvas().style.cursor = '';
+                    });
+
+                    var bbox = turf.bbox(data);
+                    map.fitBounds(bbox, { padding: 50 });
+
                 });
-            };
-        });
+
+            });
+        );
 
 
 
