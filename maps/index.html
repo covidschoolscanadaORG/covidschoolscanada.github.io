@@ -167,21 +167,15 @@
             transformRequest: transformRequest
         });
 
-        map.addControl(
-            new MapboxGeocoder({
-                accessToken: mapboxgl.accessToken,
-                // limit results to Canada
-                countries: 'ca',
-                type: 'poi',
-                mapboxgl: mapboxgl
-            })
-        );
-        // listen for an update and change text box
-        //document.querySelector('.mapboxgl-ctrl-geocoder--input').addEventListener('change', titleTest);
-
-        // Add zoom and rotation controls to the map.
-        map.addControl(new mapboxgl.NavigationControl());
-        // Add geolocate control to the map.
+        var geocoder = new MapboxGeocoder({
+            accessToken: mapboxgl.accessToken,
+            // limit results to Canada
+            countries: 'ca',
+            type: 'poi',
+            mapboxgl: mapboxgl
+        });
+        map.addControl(geocoder);
+        map.addControl(new mapboxgl.NavigationControl()); // zoom rotate
         map.addControl(
             new mapboxgl.GeolocateControl({
                 positionOptions: {
