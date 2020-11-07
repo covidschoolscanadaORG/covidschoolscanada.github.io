@@ -193,9 +193,9 @@
             console.log(styleSpecText)
             // lat-long
             var center = ev.result.geometry.coordinates;
-            var name = ev.result.text_en_US;
-            var city = ev.result.context[2].text_EN_US;
-            var prov = ev.result.context[3].text_en_US;
+            var name = ev.result.text;
+            var city = ev.result.context[2].text;
+            var prov = ev.result.context[3].text;
             //var styleSpecBox = document.getElementById('json-response');
             var styleSpecText = JSON.stringify(styleSpec, null, 2);
 
