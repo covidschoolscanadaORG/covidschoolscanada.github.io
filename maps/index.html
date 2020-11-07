@@ -189,10 +189,11 @@
         );
         geocoder.on('result', function (ev) {
             var styleSpec = ev.result;
-            var styleSpecBox = document.getElementById('json-response');
+            //var styleSpecBox = document.getElementById('json-response');
             var styleSpecText = JSON.stringify(styleSpec, null, 2);
-            var syntaxStyleSpecText = syntaxHighlight(styleSpecText);
-            styleSpecBox.innerHTML = syntaxStyleSpecText;
+            console.log(styleSpecText)
+            //var syntaxStyleSpecText = syntaxHighlight(styleSpecText);
+            //styleSpecBox.innerHTML = syntaxStyleSpecText;
         });
 
 
