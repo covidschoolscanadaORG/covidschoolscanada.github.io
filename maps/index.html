@@ -188,12 +188,21 @@
             })
         );
         geocoder.on('result', function (ev) {
+            // full JSON result
             var styleSpec = ev.result;
+            console.log(styleSpecText)
+            // lat-long
             var center = ev.result.geometry.coordinates;
+            var name = ev.result.text_en - US;
+            var city = ev.result.context[2].text_EN - US;
+            var prov = ev.result.context[3].text_en - US;
             //var styleSpecBox = document.getElementById('json-response');
             var styleSpecText = JSON.stringify(styleSpec, null, 2);
-            console.log(styleSpecText)
+
             console.log(JSON.stringify(center))
+            console.log(JSON.stringify(name))
+            console.log(JSON.stringify(city))
+            console.log(JSON.stringify(prov))
         });
 
 
