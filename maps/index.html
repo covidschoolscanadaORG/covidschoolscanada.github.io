@@ -189,9 +189,11 @@
         );
         geocoder.on('result', function (ev) {
             var styleSpec = ev.result;
+            var center = ev.result.geometry.coordinates;
             //var styleSpecBox = document.getElementById('json-response');
             var styleSpecText = JSON.stringify(styleSpec, null, 2);
             console.log(styleSpecText)
+            console.log(JSON.stringify(center))
         });
 
 
