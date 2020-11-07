@@ -137,7 +137,7 @@
                                     ],
                                     "Single/unlinked cases",
                                     "yellow",
-                                    "Declared Outbreak",
+                                    "Declared outbreak",
                                     "orange",
                                     "Cluster (BC)",
                                     "purple",
@@ -155,7 +155,9 @@
                             //set popup text 
                             //You can adjust the values of the popup to match the headers of your CSV. 
                             // For example: e.features[0].properties.Name is retrieving information from the field Name in the original CSV. 
-                            var description = `<h3>` + e.features[0].properties.institute_name + `</h3>` + `<h4>` + `<b>` + `Address: ` + `</b>` + e.features[0].properties.Address + `</h4>`;
+                            var description = `<h3>` + e.features[0].properties.institute_name + `<h3>`
+                            description = description + `<h4>` + `<b>` + `Address: ` + `</b>`
+                            description = description + e.features[0].properties.Address + `</h4>`;
 
                             console.log(e.features)
 
