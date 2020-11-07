@@ -169,6 +169,9 @@
         map.addControl(
             new MapboxGeocoder({
                 accessToken: mapboxgl.accessToken,
+                // limit results to Australia
+                countries: 'ca',
+                type: 'poi',
                 mapboxgl: mapboxgl
             })
         );
