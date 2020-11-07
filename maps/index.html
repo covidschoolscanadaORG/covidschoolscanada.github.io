@@ -185,7 +185,9 @@
             })
         );
         geocoder.on('results', function (results) {
+            var f = results.features[0].center;
             console.log(results);
+            console.log(f);
         })
 
 
