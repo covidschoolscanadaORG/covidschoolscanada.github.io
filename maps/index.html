@@ -225,7 +225,7 @@
 
                     // create new integer property for summed cases because is char by default
                     data.features = data.features.map(function (d) {
-                        d.properties.totcase_int = d.properties.Total_cases_summed + 0
+                        d.properties.totcase_int = d.properties.Total_case_summed + 0
                         return d;
                     });
                     console.log(JSON.stringify(data.features[0]));
@@ -269,7 +269,7 @@
                         // For example: e.features[0].properties.Name is retrieving information from the field Name in the original CSV. 
                         var description = `<h3>` + e.features[0].properties.institute_name + `<h3>`
                         description = description + `<span>` + `<b>` + `# cases: ` + `</b>`
-                        description = description + e.features[0].properties.Total_cases_to_date + `</span>`;
+                        description = description + e.features[0].properties.Total_case_summed + `</span>`;
 
                         description = description + `<span>` + `<b>` + `# Outbreaks: ` + `</b>`
                         description = description + e.features[0].properties.Total_outbreaks_to_date + `</span>`;
