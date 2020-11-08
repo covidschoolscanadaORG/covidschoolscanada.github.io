@@ -209,7 +209,7 @@
         function filterBy(case_min) {
             console.log("in here")
             console.log(JSON.stringify(case_min))
-            var filters = ['>=', 'totcase_int', case_min];
+            var filters = ['>=', 'Total_cases_summed', case_min];
             map.setFilter('csvData', filters);
 
             // Set the label to the month
