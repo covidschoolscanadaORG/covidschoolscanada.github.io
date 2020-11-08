@@ -128,10 +128,9 @@
             <h3>Filter by case count:</h3>
             <label id="case_min"></label>
             <input id="slider" type="range" min="0" max="100" step="1" value="0" />
+
             <h3>Filter by case type:</h3>
             <label id="type_filter"></label>
-            <input id="slider" type="range" min="0" max="100" step="1" value="0" />
-
             <label><input type="checkbox" name="casetype[]" value="outbreak">Outbreak</label>
             <label><input type="checkbox" name="casetype[]" value="cluster">Cluster (BC)</label>
             <label><input type="checkbox" name="casetype[]" value="single">Other</label>
@@ -321,12 +320,16 @@
 
                     // show all cases (1+)
                     filterBy(1);
-                    document
-                        .getElementById('slider')
-                        .addEventListener('input', function (e) {
-                            var case_cutoff = parseInt(e.target.value, 10);
-                            filterBy(case_cutoff)
-                        })
+                    document.getElementById('slider').addEventListener('input', function (e) {
+                        var case_cutoff = parseInt(e.target.value, 10);
+                        filterBy(case_cutoff)
+                    });
+                    document.getElementById('casetype').addEventListener('change', function (e) {
+                        console.log(casetype[0].value);
+                        console.log(casetype[1].value);
+                        console.log(casetype[2].value);
+                    })
+
 
                 }
 
