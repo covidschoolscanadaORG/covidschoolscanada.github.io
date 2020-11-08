@@ -222,22 +222,23 @@
         }
 
         function filterByType(caseType) {
-            console.log("in here too")
-            var val =switch (caseType.target.name) {
-                case outbreak:
-                    "Declared outbreak"
-                    break;
-                case cluster:
-                    "Clusters (BC)"
-                    break;
-                default:
-                    "Single/unlinked cases"
-            }
-            var op = caseType.target.checked ? "==" : "!="
-        }
-        console.log(op)
-        console.log(val)
-        map.setFilter('csvData', [op, 'Outbreak_Status', val])
+            console.log("in here too");
+            var val = (function (x) {
+                switch (x) {
+                    case outbreak:
+                        "Declared outbreak"
+                        break;
+                    case cluster:
+                        "Clusters (BC)"
+                        break;
+                    default:
+                        "Single/unlinked cases"
+                }
+                var op = caseType.target.checked ? "==" : "!="
+            })(caseType.target.name);
+            console.log(op)
+            console.log(val)
+            map.setFilter('csvData', [op, 'Outbreak_Status', val])
 
         }
 
