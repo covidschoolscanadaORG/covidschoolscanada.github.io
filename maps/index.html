@@ -225,7 +225,7 @@
 
                     // create new integer property for summed cases because is char by default
                     data.features = data.features.map(function (d) {
-                        d.properties.totcase_int = parseInt(d.properties.Total_case_summed);
+                        d.properties.totcase_int = 40;
                         return d;
                     });
                     console.log(JSON.stringify(data.features[0]));
