@@ -349,6 +349,7 @@
                         var case_cutoff = parseInt(e.target.value, 10);
                         filterBy(case_cutoff)
                     });
+                    console.log("Bloo")
                     var checkboxElems = document.querySelectorAll("input[type='checkbox']");
                     for (var i = 0; i < checkboxElems.length; i++) {
                         checkboxElems[i].addEventListener("click", filterByType);
