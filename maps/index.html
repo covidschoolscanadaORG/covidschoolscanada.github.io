@@ -207,9 +207,9 @@
 
 
         function filterBy(case_min) {
-            var filters = ['>=', 'Total_case_summed', case_min];
             console.log("in here")
             console.log(JSON.stringify(case_min))
+            var filters = ['>=', 'totcase_int', case_min];
             map.setFilter('csvData', filters);
 
             // Set the label to the month
@@ -222,6 +222,13 @@
                 function (err, data) {
 
                     if (err) throw (err);
+
+                    // create new integer property for summed cases because is char by default
+                    data.features = data.features.map(function (d) {
+                        d.properties.totcase_int = parseInt(d.properties.Total_cases_summed)
+                        return d;
+                    });
+                    console.log(JSON.stringify(data.features[0]));
 
 
                     //Add the the layer to the map 
