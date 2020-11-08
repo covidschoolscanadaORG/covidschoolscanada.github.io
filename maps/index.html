@@ -342,6 +342,8 @@
                         filterBy(case_cutoff)
                     });
                     document.getElementById('type-group').addEventListener('change', function (e) {
+                        console.log("filter type")
+                        console.log(JSON.stringify(e))
                         filterByType(e)
                     })
 
