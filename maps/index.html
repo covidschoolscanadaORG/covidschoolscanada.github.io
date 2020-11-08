@@ -234,8 +234,8 @@
                     default:
                         "Single/unlinked cases"
                 }
-                var op = caseType.target.checked ? "==" : "!="
             })(caseType.target.name);
+            var op = caseType.target.checked ? "==" : "!=";
             console.log(op)
             console.log(val)
             map.setFilter('csvData', [op, 'Outbreak_Status', val])
