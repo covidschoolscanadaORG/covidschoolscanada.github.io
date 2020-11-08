@@ -223,14 +223,21 @@
 
         function filterByType(caseType) {
             console.log("in here too")
-            var filters = ["any",
-                ["==", 'Outbreak_Status', "Declared outbreak"],
-                ["==", 'Outbreak_status', "Cluster (BC)"],
-                ["==", 'Outbreak_status', "Single/unlinked cases"]];
-            if (!caseType.outbreak.checked) filters[1][0] = "!=";
-            if (!caseType.cluster.checked) filters[2][0] = "!=";
-            if (!caseType.other.checked) filters[3][0] = "!=";
-            map.setFilter('csvData', filters)
+            var val =switch (caseType.target.name) {
+                case outbreak:
+                    "Declared outbreak"
+                    break;
+                case cluster:
+                    "Clusters (BC)"
+                    break;
+                default:
+                    "Single/unlinked cases"
+            }
+            var op = caseType.target.checked ? "==" : "!="
+        }
+        console.log(op)
+        console.log(val)
+        map.setFilter('csvData', [op, 'Outbreak_Status', val])
 
         }
 
@@ -341,12 +348,10 @@
                         var case_cutoff = parseInt(e.target.value, 10);
                         filterBy(case_cutoff)
                     });
-                    document.getElementById('type-group').addEventListener('change', function (e) {
-                        console.log("filter type")
-                        console.log(JSON.stringify(e))
-                        filterByType(e)
-                    })
-
+                    var checkboxElemms = document.querySelectorAll("input[type='checkbox']");
+                    for (var i = 0; i < checkboxElems.length; i++) {
+                        checkboxElems[i].addEventListener("click", filterByType);
+                    }
 
                 }
 
