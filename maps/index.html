@@ -349,7 +349,7 @@
                         var case_cutoff = parseInt(e.target.value, 10);
                         filterBy(case_cutoff)
                     });
-                    var checkboxElemms = document.querySelectorAll("input[type='checkbox']");
+                    var checkboxElems = document.querySelectorAll("input[type='checkbox']");
                     for (var i = 0; i < checkboxElems.length; i++) {
                         checkboxElems[i].addEventListener("click", filterByType);
                     }
