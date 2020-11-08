@@ -130,13 +130,17 @@
             <input id="slider" type="range" min="0" max="100" step="1" value="0" />
 
             <h3>Filter by case type:</h3>
-            <label id="type_filter"></label>
-            <label><input type="checkbox" name="casetype[]" value="outbreak">Outbreak</label>
-            <label><input type="checkbox" name="casetype[]" value="cluster">Cluster (BC)</label>
-            <label><input type="checkbox" name="casetype[]" value="single">Other</label>
+            <nav id="type-group" class="type-group">
+                <label id="type_filter"></label>
+                <label for="outbreak">Outbreak</label>
+                <input type="checkbox" checked="checked" id="outbreak">
+                <label for="cluster">Cluster</label>
+                <input type="checkbox" checked="checked" id="cluster">
+                <label for="other">Other</label>
+                <input type="checkbox" checked="checked" id="other">
+            </nav>
         </div>
     </div>
-
 
     <script
         src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.5.1/mapbox-gl-geocoder.min.js"></script>
@@ -215,6 +219,19 @@
 
             // Set the label to the month
             document.getElementById('case_min').textContent = case_min;
+        }
+
+        function filterByType(caseType) {
+            console.log("in here too")
+            var filters = ["any",
+                ["==", 'Outbreak_Status', "Declared outbreak"],
+                ["==", 'Outbreak_status', "Cluster (BC)"],
+                ["==", 'Outbreak_status', "Single/unlinked cases"]];
+            if (!caseType.outbreak.checked) filters[1][0] = "!=";
+            if (!caseType.cluster.checked) filters[2][0] = "!=";
+            if (!caseType.other.checked) filters[3][0] = "!=";
+            map.setFilter('csvData', filters)
+
         }
 
         map.on('load', function () {
@@ -324,10 +341,8 @@
                         var case_cutoff = parseInt(e.target.value, 10);
                         filterBy(case_cutoff)
                     });
-                    document.getElementById('casetype').addEventListener('change', function (e) {
-                        console.log(casetype[0].value);
-                        console.log(casetype[1].value);
-                        console.log(casetype[2].value);
+                    document.getElementById('type-group').addEventListener('change', function (e) {
+                        filterByType(e)
                     })
 
 
