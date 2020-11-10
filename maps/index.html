@@ -222,25 +222,34 @@
         }
         console.log("blah")
         function filterByType(caseType) {
-            console.log("in here too");
-            var val = (function (x) {
-                switch (x) {
-                    case outbreak:
-                        "Declared outbreak"
-                        break;
-                    case cluster:
-                        "Clusters (BC)"
-                        break;
-                    default:
-                        "Single/unlinked cases"
-                }
-                return (val)
-            })(caseType.target.id);
-            console.log("blah2")
+            console.log("in here too87");
+            console.log(caseType.target.id);
+            var val = "Single/unlinked cases";
+            switch (caseType.target.id) {
+                case outbreak:
+                    val = "Declared outbreak"
+                    break;
+                case cluster:
+                    val = "Clusters (BC)"
+                    break;
+                default:
+                    "Single/unlinked cases"
+            }
             var op = caseType.target.checked ? "==" : "!=";
             console.log(op)
             console.log(val)
-            map.setFilter('csvData', [op, 'Outbreak_Status', val])
+            //map.setFilter('csvData', [op, 'Outbreak_Status', val])
+            var f1 = 0; var f2 = 0; var f3 = 0
+            op = document.getElementById("cluster").checked ? "==" : "!="
+            f1 = [op, 'Outbreak_Status', 'Clusters (BC)']
+            op = document.getElementById("outbreak").checked ? "==" : "!="
+            f2 = [op, 'Outbreak_Status', 'Declared outbreak']
+            op = document.getElementById("other").checked ? "==" : "!="
+            f3 = [op, 'Outbreak_Status', 'Single/unlinked cases']
+            console.log(f1)
+            console.log(f2)
+            console.log(f3)
+            map.setFilter('csvData', ['any', f1, f2, f3])
 
         }
 
