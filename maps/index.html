@@ -222,7 +222,7 @@
         }
         console.log("blah")
         function filterByType(caseType) {
-            console.log("in here too3");
+            console.log("in here too4");
             console.log(caseType.target.id);
             var val = "Single/unlinked cases";
             switch (caseType.target.id) {
@@ -239,22 +239,13 @@
             console.log(op)
             console.log(val)
             //map.setFilter('csvData', [op, 'Outbreak_Status', val])
-            var f1 = []; var f2 = []; var f3 = []
-            if (document.getElementById("cluster").checked) {
-                f1 = ['==', 'Outbreak_Status', 'Clusters (BC)']
-            } else {
-                f1 = ['!=', 'Outbreak_Status', 'Clusters (BC)']
-            }
-            if (document.getElementById("outbreak").checked) {
-                f2 = ['==', 'Outbreak_Status', 'Declared outbreak']
-            } else {
-                f2 = ['!=', 'Outbreak_Status', 'Declared outbreak']
-            }
-            if (document.getElementById("other").checked) {
-                f3 = ['==', 'Outbreak_Status', 'Single/unlinked cases']
-            } else {
-                f3 = ['!=', 'Outbreak_Status', 'Single/unlinked cases']
-            }
+            var f1 = 0; var f2 = 0; var f3 = 0
+            op = document.getElementById("cluster").checked ? "==" : "!="
+            f1 = [op, 'Outbreak_Status', 'Clusters (BC)']
+            op = document.getElementById("outbreak").checked ? "==" : "!="
+            f2 = [op, 'Outbreak_Status', 'Declared outbreak']
+            op = document.getElementById("other").checked ? "==" : "!="
+            f3 = [op, 'Outbreak_Status', 'Single/unlinked cases']
             console.log(f1)
             console.log(f2)
             console.log(f3)
