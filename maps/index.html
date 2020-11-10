@@ -235,11 +235,30 @@
                 default:
                     "Single/unlinked cases"
             }
-            console.log("blah2")
             var op = caseType.target.checked ? "==" : "!=";
             console.log(op)
             console.log(val)
-            map.setFilter('csvData', [op, 'Outbreak_Status', val])
+            //map.setFilter('csvData', [op, 'Outbreak_Status', val])
+            var f1 = []; var f2 = []; var f3 = []
+            if (document.getElementById("cluster").checked) {
+                f1 = ['==', 'Outbreak_Status', 'Clusters (BC)']
+            } else {
+                f1 = ['!=', 'Outbreak_Status', 'Clusters (BC)']
+            }
+            if (document.getElementById("outbreak").checked) {
+                f2 = ['==', 'Outbreak_Status', 'Declared outbreak']
+            } else {
+                f2 = ['!=', 'Outbreak_Status', 'Declared outbreak']
+            }
+            if (document.getElementById("other").checked) {
+                f3 = ['==', 'Outbreak_Status', 'Single/unlinked cases']
+            } else {
+                f3 = ['!=', 'Outbreak_Status', 'Single/unlinked cases']
+            }
+            console.log(f1)
+            console.log(f2)
+            console.log(f3)
+            map.setFilter('csvData', ['all', f1, f2, f3])
 
         }
 
