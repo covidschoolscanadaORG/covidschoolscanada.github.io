@@ -226,13 +226,17 @@
             console.log(caseType.target.id);
             //map.setFilter('csvData', [op, 'Outbreak_Status', val])
             var f1 = 0; var f2 = 0; var f3 = 0
-            f1 = document.getElementById("cluster").checked ? [">", "Is_Cluster", 0] : ["<", "Is_Cluster", 1]
-            f2 = document.getElementById("outbreak").checked ? [">", "Is_Outbreak", 0] : ["<", "Is_Outbreak", 1]
-            f3 = document.getElementById("other").checked ? [">", "Is_Single", 0] : ["<", "Is_Single", 1]
-            console.log(f1)
-            console.log(f2)
-            console.log(f3)
-            map.setFilter('csvData', ['any', f1, f2, f3])
+            if (caseType.target.id == "cluster") {
+                f = document.getElementById("cluster").checked ? [">", "Is_Cluster", 0] : ["<", "Is_Cluster", 1]
+            }
+            if (caseType.target.id == "outbreak") {
+                f = document.getElementById("outbreak").checked ? [">", "Is_Outbreak", 0] : ["<", "Is_Outbreak", 1]
+            }
+            if (caseType.target.id == "other") {
+                f = document.getElementById("other").checked ? [">", "Is_Single", 0] : ["<", "Is_Single", 1]
+            }
+            console.log(f)
+            map.setFilter(f)
         }
 
         map.on('load', function () {
