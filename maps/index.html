@@ -83,7 +83,7 @@
         .map-overlay {
             font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
             position: absolute;
-            width: 25%;
+            width: 30%;
             top: 0;
             left: 0;
             padding: 10px;
@@ -99,8 +99,22 @@
 
         .map-overlay h2 {
             line-height: 24px;
+            font-size: 14px;
             display: block;
             margin: 0 0 10px;
+            color: rgb(192, 18, 18)
+        }
+
+        .map-overlay a {
+            text-decoration: none;
+        }
+
+        .map-overlay a:link {
+            color: rgb(192, 18, 18)
+        }
+
+        .map-overlay a:visited {
+            color: rgb(116, 13, 13)
         }
 
         .map-overlay .legend .bar {
@@ -125,11 +139,17 @@
         <div class="map-overlay-inner">
             <h2>Canada COVID-19 School Tracker</h2>
 
-            <h3>Filter by case count:</h3>
             <label id="case_min"></label>
             <input id="slider" type="range" min="0" max="100" step="1" value="0" />
 
-            <h3>Filter by case type:</h3>
+            <label id="date_last"></label>
+            <input id="slider_date" type="range" min="1" max="90" step="7" value="14" />
+
+            <a href="https://masks4canada.org/canadian-schools-covid-19-tracker-submit-a-case/">Report case or
+                correction</a><br>
+            <span style="font-style:italic">Created by <a href="https://twitter.com/covidschoolsCA">@covidschoolsCA</a>
+                <a href="masks4canada.org">#Masks4Canada</a></span>
+            <!-- <h3>Filter by case type:</h3>
             <nav id="type-group" class="type-group">
                 <label id="type_filter"></label>
                 <label for="outbreak">Outbreak</label>
@@ -138,7 +158,7 @@
                 <input type="checkbox" checked="checked" id="cluster">
                 <label for="other">Other</label>
                 <input type="checkbox" checked="checked" id="other">
-            </nav>
+            </nav> -->
         </div>
     </div>
 
@@ -210,33 +230,106 @@
             console.log(JSON.stringify(prov))
         });
 
+        function printFilters() {
+            console.log("got called")
+            console.log(JSON.stringify(map.getFilter('csvData')))
+            updateFilters('blah')
+        }
+
+        function updateFilters(newf) {
+            console.log("-------------------")
+            console.log("Update filter")
+            console.log("-------------------")
+
+            // get current filter
+            f = map.getFilter('csvData')
+            //console.log("Before:")
+            //console.log(JSON.stringify(f))
+            var f2 = new Array();
+            if (typeof f == "undefined") {
+                f2 = newf
+            } else {
+                //console.log("has content")
+                //console.log(JSON.stringify(f[0]))
+                //  console.log("has content2")
+                if (f[0] == "all") {
+                    //  console.log("in all condition")
+                    f.shift(); // remove condition
+                    //   console.log(JSON.stringify(f))
+                    //   console.log("did it work?")
+                }
+                if (!Array.isArray(f[0])) {
+                    f = new Array(f);
+                }
+
+                // make a new array. add all filters except the one 
+                // being updated
+                f2 = new Array();
+                f.forEach(function (arrayItem) {
+                    // console.log("in loop2")
+                    //  console.log(JSON.stringify(arrayItem[1]))
+                    if (arrayItem[1] != newf[1]) {
+                        if (f2.length < 1) {
+                            f2 = arrayItem;
+                        } else {
+                            f2 = [f2, arrayItem]
+                        }
+                    }
+                })
+
+                // now add the new filter to the cleaned filter
+
+                if (!Array.isArray(f2[0])) {
+                    f2 = new Array(f2, newf);
+                } else {
+                    f2.push(newf)
+                }
+                f2.unshift("all");
+            }
+            //  console.log("")
+            // console.log("After:")
+            console.log(JSON.stringify(f2))
+
+            map.setFilter('csvData', f2)
+        }
+
+        function filterByDate(ld) {
+            console.log(ld)
+            var filters = ['<=', 'Difference_In_Days', ld]
+            updateFilters(filters);
+            document.getElementById('date_last').textContent = "Reported cases <=  " + ld + " days ago";
+        }
 
         function filterBy(case_min) {
             //  console.log("in here")
             //  console.log(JSON.stringify(case_min))
             var filters = ['>=', 'totcase_int', case_min];
-            map.setFilter('csvData', filters);
+            updateFilters(filters);
 
             // Set the label to the month
-            document.getElementById('case_min').textContent = case_min;
+            document.getElementById('case_min').textContent = "Total case count >= " + case_min;
         }
-        console.log("blah2")
+
         function filterByType(caseType) {
-            console.log("in here too87");
             console.log(caseType.target.id);
             //map.setFilter('csvData', [op, 'Outbreak_Status', val])
             var f1 = 0; var f2 = 0; var f3 = 0
             if (caseType.target.id == "cluster") {
-                f = document.getElementById("cluster").checked ? [">", "Is_Cluster", 0] : ["<", "Is_Cluster", 1]
+                f1 = document.getElementById("cluster").checked ? [">", "Is_Cluster", 0] : ["<", "Is_Cluster", 1]
             }
             if (caseType.target.id == "outbreak") {
-                f = document.getElementById("outbreak").checked ? [">", "Is_Outbreak", 0] : ["<", "Is_Outbreak", 1]
+                f2 = document.getElementById("outbreak").checked ? [">", "Is_Outbreak", 0] : ["<", "Is_Outbreak", 1]
             }
             if (caseType.target.id == "other") {
-                f = document.getElementById("other").checked ? [">", "Is_Single", 0] : ["<", "Is_Single", 1]
+                f3 = document.getElementById("other").checked ? [">", "Is_Single", 0] : ["<", "Is_Single", 1]
             }
             console.log(f)
-            map.setFilter('csvData', f)
+            console.log("meow1")
+            updateFilters(f1);
+            console.log("meow2")
+            updateFilters(f2);
+            console.log("meow3")
+            updateFilters(f3);
         }
 
         map.on('load', function () {
@@ -246,9 +339,16 @@
 
                     if (err) throw (err);
 
-                    // create new integer property for summed cases because is char by default
+
                     data.features = data.features.map(function (d) {
+                        // create new integer property for summed cases because is char by default
                         d.properties.totcase_int = parseInt(d.properties.Total_Cases_Summed);
+                        // convert strings to int
+                        d.properties.Is_Cluster = parseInt(d.properties.Is_Cluster);
+                        d.properties.Is_Outbreak = parseInt(d.properties.Is_Outbreak);
+                        d.properties.Is_Single = parseInt(d.properties.Is_Single);
+                        d.properties.Difference_In_Days = parseInt(d.properties.Difference_In_Days);
+
                         return d;
                     });
                     console.log(JSON.stringify(data.features[0]));
@@ -289,25 +389,25 @@
                         //set popup text 
                         //You can adjust the values of the popup to match the headers of your CSV. 
                         // For example: e.features[0].properties.Name is retrieving information from the field Name in the original CSV. 
-                        var description = `<h3>` + e.features[0].properties.institute_name + `<h3>`
-                        description = description + `<span>` + `<b>` + `# cases: ` + `</b>`
-                        description = description + e.features[0].properties.Total_Cases_Summed + `</span>`;
+                        var description = `<h3>` + e.features[0].properties.institute_name + `</h3>`
+                        description = description + `<b>` + `Total cases to date: ` + `</b>`;
+                        description = description + e.features[0].properties.Total_Cases_Summed + `<br>`;
 
-                        description = description + `<span>` + `<b>` + `# Outbreaks: ` + `</b>`
-                        description = description + e.features[0].properties.Total_outbreaks_to_date + `</span>`;
+                        description = description + `<b>` + `Total outbreaks to date: ` + `</b>`
+                        description = description + e.features[0].properties.Total_outbreaks_to_date + `<br>`;
 
+                        description = description + `<b>` + `Last Reported Date: ` + `</b>`
+                        description = description + e.features[0].properties.Last_Reported_Date + `<br>`;
 
-                        description = description + `<span>` + `<b>` + `Report Dates: ` + `</b>`
-                        description = description + e.features[0].properties.Date + `</span>`;
-
-                        description = description + `<span>` + `<b>` + `Evidence: ` + `</b>`
+                        //description = description + `<b>` + `Evidence: ` + `</b>`
                         //description = description + `<a href="` + e.features[0].properties.Article + `">` + e.features[0].properties.Article + `</a></span>`;
 
-                        description = description + `<span>` + `<b>` + `School board:` + `</b>`
-                        description = description + e.features[0].properties.School_board + `</span>`;
+                        description = description + `<b>` + `School board: ` + `</b>`
+                        description = description + e.features[0].properties.School_board + `<br>`;
 
-                        description = description + `<span>` + `<b>` + `City ` + `</b>`
-                        description = description + e.features[0].properties.City + `</span>`;
+                        description = description + `<b>` + `City: ` + `</b>`
+                        description = description + e.features[0].properties.City + `<br>`;
+                        description = description;
 
                         console.log(e.features)
 
@@ -345,11 +445,18 @@
                         var case_cutoff = parseInt(e.target.value, 10);
                         filterBy(case_cutoff)
                     });
-                    console.log("Bloo3")
-                    var checkboxElems = document.querySelectorAll("input[type='checkbox']");
-                    for (var i = 0; i < checkboxElems.length; i++) {
-                        checkboxElems[i].addEventListener("click", filterByType);
-                    }
+
+                    // show all cases (1+)
+                    filterByDate(14);
+                    document.getElementById('slider_date').addEventListener('input', function (e) {
+                        var date_cutoff = parseInt(e.target.value, 10);
+                        filterByDate(date_cutoff)
+                    });
+
+                    //var checkboxElems = document.querySelectorAll("input[type='checkbox']");
+                    //for (var i = 0; i < checkboxElems.length; i++) {
+                    //    checkboxElems[i].addEventListener("click", filterByType);
+                    //}
 
                 }
 
