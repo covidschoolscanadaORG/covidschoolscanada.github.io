@@ -236,7 +236,7 @@
                 f = document.getElementById("other").checked ? [">", "Is_Single", 0] : ["<", "Is_Single", 1]
             }
             console.log(f)
-            map.setFilter(f)
+            map.setFilter('csvData', f)
         }
 
         map.on('load', function () {
@@ -345,7 +345,7 @@
                         var case_cutoff = parseInt(e.target.value, 10);
                         filterBy(case_cutoff)
                     });
-                    console.log("Bloo2")
+                    console.log("Bloo3")
                     var checkboxElems = document.querySelectorAll("input[type='checkbox']");
                     for (var i = 0; i < checkboxElems.length; i++) {
                         checkboxElems[i].addEventListener("click", filterByType);
