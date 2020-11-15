@@ -253,7 +253,6 @@
                     });
                     console.log(JSON.stringify(data.features[0]));
 
-
                     //Add the the layer to the map 
                     map.addLayer({
                         'id': 'csvData',
@@ -346,7 +345,7 @@
                         var case_cutoff = parseInt(e.target.value, 10);
                         filterBy(case_cutoff)
                     });
-                    console.log("Bloo")
+                    console.log("Bloo2")
                     var checkboxElems = document.querySelectorAll("input[type='checkbox']");
                     for (var i = 0; i < checkboxElems.length; i++) {
                         checkboxElems[i].addEventListener("click", filterByType);
