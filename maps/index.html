@@ -224,45 +224,27 @@
         function filterByType(caseType) {
             console.log("in here too87");
             console.log(caseType.target.id);
-            var val = "Single/unlinked cases";
-            switch (caseType.target.id) {
-                case outbreak:
-                    val = "Declared outbreak"
-                    break;
-                case cluster:
-                    val = "Clusters (BC)"
-                    break;
-                default:
-                    "Single/unlinked cases"
-            }
-            var op = caseType.target.checked ? "==" : "!=";
-            console.log(op)
-            console.log(val)
             //map.setFilter('csvData', [op, 'Outbreak_Status', val])
             var f1 = 0; var f2 = 0; var f3 = 0
-            op = document.getElementById("cluster").checked ? "==" : "!="
-            f1 = [op, 'Outbreak_Status', 'Clusters (BC)']
-            op = document.getElementById("outbreak").checked ? "==" : "!="
-            f2 = [op, 'Outbreak_Status', 'Declared outbreak']
-            op = document.getElementById("other").checked ? "==" : "!="
-            f3 = [op, 'Outbreak_Status', 'Single/unlinked cases']
+            f1 = document.getElementById("cluster").checked ? [">", "Is_Cluster", 0] : ["<", "Is_Cluster", 1]
+            f2 = document.getElementById("outbreak").checked ? [">", "Is_Outbreak", 0] : ["<", "Is_Outbreak", 1]
+            f3 = document.getElementById("other").checked ? [">", "Is_Single", 0] : ["<", "Is_Single", 1]
             console.log(f1)
             console.log(f2)
             console.log(f3)
             map.setFilter('csvData', ['any', f1, f2, f3])
-
         }
 
         map.on('load', function () {
             d3.json(
-                'https://covidschoolscanada.org/maps/CanadaMap_QuebecMerge-201106.clean3.geojson',
+                'https://covidschoolscanada.org/maps/CanadaMap_QuebecMerge-current.clean.geojson',
                 function (err, data) {
 
                     if (err) throw (err);
 
                     // create new integer property for summed cases because is char by default
                     data.features = data.features.map(function (d) {
-                        d.properties.totcase_int = parseInt(d.properties.Total_case_summed);
+                        d.properties.totcase_int = parseInt(d.properties.Total_Cases_Summed);
                         return d;
                     });
                     console.log(JSON.stringify(data.features[0]));
@@ -306,7 +288,7 @@
                         // For example: e.features[0].properties.Name is retrieving information from the field Name in the original CSV. 
                         var description = `<h3>` + e.features[0].properties.institute_name + `<h3>`
                         description = description + `<span>` + `<b>` + `# cases: ` + `</b>`
-                        description = description + e.features[0].properties.Total_case_summed + `</span>`;
+                        description = description + e.features[0].properties.Total_Cases_Summed + `</span>`;
 
                         description = description + `<span>` + `<b>` + `# Outbreaks: ` + `</b>`
                         description = description + e.features[0].properties.Total_outbreaks_to_date + `</span>`;
