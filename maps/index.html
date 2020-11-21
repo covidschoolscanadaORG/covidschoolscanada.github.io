@@ -47,7 +47,7 @@
         }
 
         .mapboxgl-popup-content h3 {
-            background: rgb(61, 59, 59);
+            background: rgb(121, 21, 21);
             text-align: center;
             color: #fff;
             margin: 0;
@@ -83,7 +83,7 @@
         .map-overlay {
             font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
             position: absolute;
-            width: 30%;
+            width: 20%;
             top: 0;
             left: 0;
             padding: 10px;
@@ -121,6 +121,12 @@
             height: 10px;
             width: 100%;
             background: linear-gradient(to right, #fca107, #7f3121);
+            padding: 10px;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+            line-height: 18px;
+            height: 150px;
+            margin-bottom: 40px;
+            width: 100px;
         }
 
         .map-overlay input {
@@ -131,24 +137,37 @@
             margin: 0;
             cursor: ew-resize;
         }
+
+        .legend-key {
+            display: inline-block;
+            border-radius: 20%;
+            width: 10px;
+            height: 10px;
+            margin-right: 5px;
+        }
     </style>
 
     <div id='map'></div>
 
     <div class="map-overlay top">
         <div class="map-overlay-inner">
-            <h2>Canada COVID-19 School Tracker</h2>
-
+            <img src="../images/logo_simple.png" width="30%" , height="30%"><br>
+            <!-- <h2>Canada COVID-19 School Tracker</h2> -->
+            <span style="color:rgb(192, 18, 18)"><b>Affected Schools</b></span>
+            <div class='map-overlay'></div>
+            <div id="legend"></div>
+            <span style="color:rgb(192, 18, 18)"><b>Filter:</b></span><br>
             <label id="case_min"></label>
-            <input id="slider" type="range" min="0" max="100" step="1" value="0" />
+            <input id="slider" type="range" min="0" max="50" step="5" value="0" />
 
             <label id="date_last"></label>
             <input id="slider_date" type="range" min="1" max="90" step="7" value="14" />
 
             <a href="https://masks4canada.org/canadian-schools-covid-19-tracker-submit-a-case/">Report case or
                 correction</a><br>
-            <span style="font-style:italic">Created by <a href="https://twitter.com/covidschoolsCA">@covidschoolsCA</a>
+            <span style="font-style:italic"><a href="https://twitter.com/covidschoolsCA">@covidschoolsCA</a>
                 <a href="masks4canada.org">#Masks4Canada</a></span>
+
             <!-- <h3>Filter by case type:</h3>
             <nav id="type-group" class="type-group">
                 <label id="type_filter"></label>
@@ -186,10 +205,12 @@
             };
         };
 
+
+
         mapboxgl.accessToken = 'pk.eyJ1IjoiY292aWRzY2hvb2xzY2FuYWRhIiwiYSI6ImNraDk2bzg3bDBsNjAycnBkNXN4ZjJibDMifQ.Gy20Etm1I_Jtd8znGFP7kA'; //Mapbox token 
         var map = new mapboxgl.Map({
             container: 'map', // container id
-            style: 'mapbox://styles/mapbox/streets-v11', //stylesheet location
+            style: 'mapbox://styles/mapbox/dark-v10', //stylesheet location
             center: [-98.61328125, 52.05249047600099], // starting position
             zoom: 5,// starting zoom
             transformRequest: transformRequest
@@ -229,6 +250,27 @@
             console.log(JSON.stringify(city))
             console.log(JSON.stringify(prov))
         });
+
+        function addLegend() {
+            console.log("called legend")
+            var layers = ['Single/unlinked', 'Outbreaks', 'Clusters (BC)'];
+            var colors = ['#F6D608', '#E28800', '#6F09BD'];
+            console.log(layers.length);
+            for (i = 0; i < layers.length; i++) {
+                var layer = layers[i];
+                var color = colors[i];
+                var item = document.createElement('div');
+                var key = document.createElement('span');
+                key.className = 'legend-key';
+                key.style.backgroundColor = color;
+
+                var value = document.createElement('span');
+                value.innerHTML = layer;
+                item.appendChild(key);
+                item.appendChild(value);
+                legend.appendChild(item);
+            }
+        }
 
         function printFilters() {
             console.log("got called")
@@ -334,11 +376,9 @@
 
         map.on('load', function () {
             d3.json(
-                'https://covidschoolscanada.org/maps/CanadaMap_QuebecMerge-current.clean.geojson',
+                'CanadaMap_QuebecMerge-current.clean.geojson',
                 function (err, data) {
-
                     if (err) throw (err);
-
 
                     data.features = data.features.map(function (d) {
                         // create new integer property for summed cases because is char by default
@@ -348,10 +388,10 @@
                         d.properties.Is_Outbreak = parseInt(d.properties.Is_Outbreak);
                         d.properties.Is_Single = parseInt(d.properties.Is_Single);
                         d.properties.Difference_In_Days = parseInt(d.properties.Difference_In_Days);
-
                         return d;
                     });
-                    console.log(JSON.stringify(data.features[0]));
+                    //console.log(JSON.stringify(data.features[0]));
+                    console.log("FIXED5")
 
                     //Add the the layer to the map 
                     map.addLayer({
@@ -362,22 +402,24 @@
                             'data': data
                         },
                         'paint': {
-                            'circle-radius': 4,
+                            'circle-radius': ['case',
+                                ['<=', ["number", ["get", "totcase_int"]], 4],
+                                4,
+                                ["*", ["number", ["get", "totcase_int"]], 0.6]
+                            ],
+                            'circle-opacity': 0.8,
                             'circle-color': [
                                 "match",
                                 [
                                     "get",
                                     "Outbreak_Status"
                                 ],
-                                "Single/unlinked cases",
-                                "yellow",
-                                "Declared outbreak",
-                                "orange",
-                                "Cluster (BC)",
-                                "purple",
+                                "Single/unlinked cases", "#F6D608",
+                                "Declared outbreak", "#E28800",
+                                "Cluster (BC)", "#6F09BD",
                                 "gray"
                             ]
-                        }
+                        },
                     });
 
 
@@ -407,7 +449,10 @@
 
                         description = description + `<b>` + `City: ` + `</b>`
                         description = description + e.features[0].properties.City + `<br>`;
-                        description = description;
+
+                        description = description + `<b>` + `Province: ` + `</b>`
+                        description = description + e.features[0].properties.Province + `<br>`;
+
 
                         console.log(e.features)
 
@@ -457,7 +502,7 @@
                     //for (var i = 0; i < checkboxElems.length; i++) {
                     //    checkboxElems[i].addEventListener("click", filterByType);
                     //}
-
+                    addLegend();
                 }
 
             );
