@@ -162,6 +162,7 @@
 
             <label id="date_last"></label>
             <input id="slider_date" type="range" min="1" max="90" step="7" value="14" />
+            <!-- <button id="addpoint" onclick="addPoint()" disabled=TRUE>Add point to map</button> -->
 
             <a href="https://masks4canada.org/canadian-schools-covid-19-tracker-submit-a-case/">Report case or
                 correction</a><br>
@@ -205,8 +206,6 @@
             };
         };
 
-
-
         mapboxgl.accessToken = 'pk.eyJ1IjoiY292aWRzY2hvb2xzY2FuYWRhIiwiYSI6ImNraDk2bzg3bDBsNjAycnBkNXN4ZjJibDMifQ.Gy20Etm1I_Jtd8znGFP7kA'; //Mapbox token 
         var map = new mapboxgl.Map({
             container: 'map', // container id
@@ -216,10 +215,36 @@
             transformRequest: transformRequest
         });
 
+        function findSchools(query) {
+            console.log("in geocoder bloo")
+            var matchingFeatures = [];
+            var schools = map.querySourceFeatures('csvData');
+
+            console.log(schools.length)
+            for (var i = 0; i < schools.length; i++) {
+                var feature = schools[i];
+                // handle queries with different capitalization than the source data by calling toLowerCase()
+                if (
+                    feature.properties.institute_name
+                        .toLowerCase()
+                        .search(query.toLowerCase()) !== -1
+                ) {
+
+                    feature['place_name'] = '🏫 ' + feature.properties.institute_name;
+                    feature['center'] = feature.geometry.coordinates;
+                    feature['place_type'] = ['park'];
+                    matchingFeatures.push(feature);
+                }
+            }
+            return matchingFeatures;
+        }
+
         var geocoder = new MapboxGeocoder({
             accessToken: mapboxgl.accessToken,
+            localGeocoder: findSchools,
             // limit results to Canada
             countries: 'ca',
+            placeholder: 'Enter search e.g. Glamorgan School',
             // type: 'poi',
             mapboxgl: mapboxgl
         });
@@ -234,22 +259,32 @@
             })
         );
         geocoder.on('result', function (ev) {
+            console.log("search result event")
             // full JSON result
             var styleSpec = ev.result;
-            console.log(styleSpecText)
-            // lat-long
-            var center = ev.result.geometry.coordinates;
-            var name = ev.result.text;
-            var city = ev.result.context[2].text;
-            var prov = ev.result.context[3].text;
-            //var styleSpecBox = document.getElementById('json-response');
-            var styleSpecText = JSON.stringify(styleSpec, null, 2);
-            console.log(styleSpecText)
-            console.log(JSON.stringify(center))
-            console.log(JSON.stringify(name))
-            console.log(JSON.stringify(city))
-            console.log(JSON.stringify(prov))
+            console.log(styleSpec);
+            //      console.log(styleSpecText)
+
+            //   console.log(ev)
+            //    console.log(document.getElementById("addpoint"));
+
+            // // lat-long
+            // var center = ev.result.geometry.coordinates;
+            // var name = ev.result.text;
+            // var city = ev.result.context[2].text;
+            // var prov = ev.result.context[3].text;
+            // //var styleSpecBox = document.getElementById('json-response');
+            // var styleSpecText = JSON.stringify(styleSpec, null, 2);
+            // console.log(styleSpecText)
+            // console.log(JSON.stringify(center))
+            // console.log(JSON.stringify(name))
+            // console.log(JSON.stringify(city))
+            // console.log(JSON.stringify(prov))
         });
+
+        function addPoint() {
+            console.log("adding point")
+        }
 
         function addLegend() {
             console.log("called legend")
