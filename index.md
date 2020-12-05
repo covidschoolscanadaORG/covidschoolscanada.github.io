@@ -3,7 +3,8 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: page
-title: Canada COVID-19 Tracker Map
+title: About
+image: /images/banner-newedited.png # URL to a hero image associated with the post (e.g., /assets/page-pic.jpg)
 ---
 
 <!--
@@ -79,5 +80,5 @@ $('.contact1-form').on('submit',function(e){
 </table>
 -->
 
-Nothing here yet.
+
 
