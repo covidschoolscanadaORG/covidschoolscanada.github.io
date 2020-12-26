@@ -4,6 +4,7 @@ title: School Board Daily Advisory Updates
 ---
 
 Each update below compares the current day to the previous day:
+1. [2020-12-26 (Saturday)](SUMMARY-2020-12-26T1630.html)
 1. [2020-12-25 (Friday)](SUMMARY-2020-12-25T1630.html)
 1. [2020-12-24 (Thursday)](SUMMARY-2020-12-24T1630.html)
 1. [2020-12-23 (Wednesday)](SUMMARY-2020-12-23T1630.html)
