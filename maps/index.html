@@ -161,7 +161,7 @@
             <input id="slider" type="range" min="0" max="50" step="5" value="0" />
 
             <label id="date_last"></label>
-            <input id="slider_date" type="range" min="1" max="90" step="7" value="14" />
+            <input id="slider_date" type="range" min="1" max="150" step="7" value="150" />
             <!-- <button id="addpoint" onclick="addPoint()" disabled=TRUE>Add point to map</button> -->
 
             <a href="https://masks4canada.org/canadian-schools-covid-19-tracker-submit-a-case/">Report case or
@@ -477,7 +477,7 @@
                         description = description + e.features[0].properties.Last_Reported_Date + `<br>`;
 
                         //description = description + `<b>` + `Evidence: ` + `</b>`
-                        //description = description + `<a href="` + e.features[0].properties.Article + `">` + e.features[0].properties.Article + `</a></span>`;
+                        //description = description + e.features[0].properties.Article_Pretty`<br>`;
 
                         description = description + `<b>` + `School board: ` + `</b>`
                         description = description + e.features[0].properties.School_board + `<br>`;
@@ -527,7 +527,7 @@
                     });
 
                     // show all cases (1+)
-                    filterByDate(14);
+                    filterByDate(150);
                     document.getElementById('slider_date').addEventListener('input', function (e) {
                         var date_cutoff = parseInt(e.target.value, 10);
                         filterByDate(date_cutoff)
