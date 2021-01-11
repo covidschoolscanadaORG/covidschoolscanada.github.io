@@ -3,6 +3,10 @@
 
 //useful tutorials:
 //https://docs.mapbox.com/help/demos/how-mapbox-works/how-geocoding-works.html
+<!-- TODO
+* List articles as a list - currently articles are separated by semicolons in the geojson
+* Add a total count of schools that match both filters in response to point 2
+* Add project name instead of logo to display project title throughout  -->
 
 <head>
     <meta charset='utf-8' />
@@ -78,16 +82,72 @@
     </style>
 </head>
 
+<!-- 
+TODO:
+1) The tab in the left (the one with the logo, sliders etc.,) needs to look good on mobile devices; it would be great to have it be collapsible so it can be out of the way. 
+2) It would be great to have a counter showing how many data points are being shown at a time - e.g. if I change the filter using sliders, the text should update. Ideally it would show: 1) total count, 2) total outbreaks (orange), 3) total clusters (purple) being displayed.
+3) When you click on a school, you get a popup with the school's info. We want the popup to also show the "Article" field of the underlying JSON file. The article is a set of URLs (see sample JSON attached), and we need to create a "<a href>" wrapper around each link so the popup shows: Link1 ; Link2 ; Link3. I hope this makes sense.
+ -->
+
 <body>
     <style>
-        .map-overlay {
-            font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
-            position: absolute;
-            width: 20%;
-            top: 0;
-            left: 0;
-            padding: 10px;
+        /* Smartphones (portrait and landscape) ----------- */
+        @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+            .map-overlay {
+                font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+                position: absolute;
+                width: 100vw;
+                bottom: 0;
+                left: 0;
+                padding: 10px;
+            }
+
+            #legend {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .mapboxgl-ctrl-geocoder {
+                width: 94vw !important;
+            }
+
+            #logo {
+                display: none;
+            }
         }
+
+        /* Tablets */
+        @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+            .map-overlay {
+                font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+                position: absolute;
+                width: 20%;
+                top: 0;
+                left: 0;
+                padding: 10px;
+            }
+
+            #title {
+                display: none;
+            }
+        }
+
+        /* Desktops and laptops ----------- */
+        @media only screen and (min-width : 480px) {
+            .map-overlay {
+                font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+                position: absolute;
+                width: 20%;
+                top: 0;
+                left: 0;
+                padding: 10px;
+            }
+
+            #title {
+                display: none;
+            }
+        }
+
 
         .map-overlay .map-overlay-inner {
             background-color: #fff;
@@ -95,6 +155,7 @@
             border-radius: 3px;
             padding: 10px;
             margin-bottom: 10px;
+            width: 89%;
         }
 
         .map-overlay h2 {
@@ -151,9 +212,9 @@
 
     <div class="map-overlay top">
         <div class="map-overlay-inner">
-            <img src="../images/logo_simple.png" width="30%" , height="30%"><br>
-            <!-- <h2>Canada COVID-19 School Tracker</h2> -->
-            <span style="color:rgb(192, 18, 18)"><b>Affected Schools</b></span>
+            <img src="./../images/logo_simple.png" width="30%" , height="30%" id="logo"><br>
+            <h2 id="title">Canada COVID-19 School Tracker</h2>
+            <span style="color:rgb(192, 18, 18)"><b>Affected Schools (School Count)</b></span>
             <div class='map-overlay'></div>
             <div id="legend"></div>
             <span style="color:rgb(192, 18, 18)"><b>Filter:</b></span><br>
@@ -161,7 +222,7 @@
             <input id="slider" type="range" min="0" max="50" step="5" value="0" />
 
             <label id="date_last"></label>
-            <input id="slider_date" type="range" min="1" max="150" step="7" value="150" />
+            <input id="slider_date" type="range" min="1" max="90" step="7" value="14" />
             <!-- <button id="addpoint" onclick="addPoint()" disabled=TRUE>Add point to map</button> -->
 
             <a href="https://masks4canada.org/canadian-schools-covid-19-tracker-submit-a-case/">Report case or
@@ -182,6 +243,7 @@
         </div>
     </div>
 
+
     <script
         src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.5.1/mapbox-gl-geocoder.min.js"></script>
     <link rel="stylesheet"
@@ -193,7 +255,6 @@
 
     <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
     <script>
-
 
         var transformRequest = (url, resourceType) => {
             var isMapboxRequest =
@@ -215,12 +276,20 @@
             transformRequest: transformRequest
         });
 
+        // Globals
+        var rendered_clusterCount = 4040;
+        var rendered_outbreakCount = 4042;
+        var rendered_singleCount = 4041;
+
+        var case_cutoff = 0;
+        var date_cutoff = 15;
+
         function findSchools(query) {
-            console.log("in geocoder bloo")
+            // console.log("in geocoder bloo")
             var matchingFeatures = [];
             var schools = map.querySourceFeatures('csvData');
 
-            console.log(schools.length)
+            console.log("total schools: " + schools.length)
             for (var i = 0; i < schools.length; i++) {
                 var feature = schools[i];
                 // handle queries with different capitalization than the source data by calling toLowerCase()
@@ -259,10 +328,10 @@
             })
         );
         geocoder.on('result', function (ev) {
-            console.log("search result event")
+            // console.log("search result event")
             // full JSON result
             var styleSpec = ev.result;
-            console.log(styleSpec);
+            // console.log(styleSpec);
             //      console.log(styleSpecText)
 
             //   console.log(ev)
@@ -283,16 +352,18 @@
         });
 
         function addPoint() {
-            console.log("adding point")
+            // console.log("adding point")
         }
 
         function addLegend() {
-            console.log("called legend")
+            // console.log("called legend")
             var layers = ['Single/unlinked', 'Outbreaks', 'Clusters (BC)'];
             var colors = ['#F6D608', '#E28800', '#6F09BD'];
-            console.log(layers.length);
+            var totalCount = [rendered_singleCount, rendered_outbreakCount, rendered_clusterCount]
+            // console.log(layers.length);
             for (i = 0; i < layers.length; i++) {
                 var layer = layers[i];
+                var count = totalCount[i]
                 var color = colors[i];
                 var item = document.createElement('div');
                 var key = document.createElement('span');
@@ -301,30 +372,38 @@
 
                 var value = document.createElement('span');
                 value.innerHTML = layer;
+
+
+                var case_count = document.createElement('span');
+                case_count.innerHTML = " (" + count + ")";
+                case_count.id = "legendItem_" + i;
+
                 item.appendChild(key);
                 item.appendChild(value);
+                item.appendChild(case_count);
                 legend.appendChild(item);
             }
         }
 
         function printFilters() {
-            console.log("got called")
-            console.log(JSON.stringify(map.getFilter('csvData')))
+            // console.log("print Filters got called")
+            // console.log(JSON.stringify(map.getFilter('csvData')))
             updateFilters('blah')
         }
 
         function updateFilters(newf) {
-            console.log("-------------------")
+            // console.log("-------------------")
             console.log("Update filter")
-            console.log("-------------------")
+            // console.log("-------------------")
 
             // get current filter
             f = map.getFilter('csvData')
-            //console.log("Before:")
-            //console.log(JSON.stringify(f))
+            // console.log("Before:")
+            // console.log(JSON.stringify(f))
             var f2 = new Array();
             if (typeof f == "undefined") {
-                f2 = newf
+                // f2 = newf
+                f2 = ["all", [">=", "totcase_int", 0], ["<=", "Difference_In_Days", 14]]
             } else {
                 //console.log("has content")
                 //console.log(JSON.stringify(f[0]))
@@ -364,14 +443,50 @@
                 f2.unshift("all");
             }
             //  console.log("")
-            // console.log("After:")
-            console.log(JSON.stringify(f2))
-
+            console.log("After:")
+            // console.log(JSON.stringify(f2))
+            console.log(f2)
             map.setFilter('csvData', f2)
+
+            // updateTotals(f2)
+
+
+            // console.log("rendered total")
+            // console.log(rendered_total.length);
+
+            // rendered_total.forEach(e => console.log(e.properties.Outbreak_Status))
+            // Outbreak Status: Single/unlinked cases, Declared outbreak, Cluster (BC)
+            // rendered_total.forEach(e => console.log(e.properties.Is_Cluster))
+        }
+
+        function updateTotals(data, cases, days) {
+            // Filters the data set to count how many schools have been declared to have single cases, outbreaks, or clusters based on the filters
+            var data_filterByCase = data.features.filter(schools => schools.properties.totcase_int >= cases)
+            var data_filterByDate = data_filterByCase.filter(schools => schools.properties.Difference_In_Days <= days)
+
+
+            var total_single = data_filterByDate.filter(schools => schools.properties.Outbreak_Status == "Single/unlinked cases").length;
+            var total_outbreaks = data_filterByDate.filter(schools => schools.properties.Outbreak_Status === "Declared outbreak").length;
+            var total_clusters = data_filterByDate.filter(schools => schools.properties.Outbreak_Status === "Cluster (BC)").length;
+
+            var clusterCount_DOM = document.getElementById("legendItem_2")
+            if (clusterCount_DOM) {
+                clusterCount_DOM.innerHTML = " (" + total_clusters + ")"
+            }
+
+            var outbreakCount_DOM = document.getElementById("legendItem_1")
+            if (outbreakCount_DOM) {
+                outbreakCount_DOM.innerHTML = " (" + total_outbreaks + ")"
+            }
+
+            var singleCount_DOM = document.getElementById("legendItem_0")
+            if (singleCount_DOM) {
+                singleCount_DOM.innerHTML = " (" + total_single + ")"
+            }
         }
 
         function filterByDate(ld) {
-            console.log(ld)
+            // console.log(ld)
             var filters = ['<=', 'Difference_In_Days', ld]
             updateFilters(filters);
             document.getElementById('date_last').textContent = "Reported cases <=  " + ld + " days ago";
@@ -400,13 +515,13 @@
             if (caseType.target.id == "other") {
                 f3 = document.getElementById("other").checked ? [">", "Is_Single", 0] : ["<", "Is_Single", 1]
             }
-            console.log(f)
-            console.log("meow1")
-            updateFilters(f1);
-            console.log("meow2")
-            updateFilters(f2);
-            console.log("meow3")
-            updateFilters(f3);
+            // console.log(f)
+            // console.log("meow1")
+            // updateFilters(f1);
+            // console.log("meow2")
+            // updateFilters(f2);
+            // console.log("meow3")
+            // updateFilters(f3);
         }
 
         map.on('load', function () {
@@ -426,7 +541,7 @@
                         return d;
                     });
                     //console.log(JSON.stringify(data.features[0]));
-                    console.log("FIXED5")
+                    // console.log("FIXED5")
 
                     //Add the the layer to the map 
                     map.addLayer({
@@ -477,7 +592,7 @@
                         description = description + e.features[0].properties.Last_Reported_Date + `<br>`;
 
                         //description = description + `<b>` + `Evidence: ` + `</b>`
-                        //description = description + e.features[0].properties.Article_Pretty`<br>`;
+                        //description = description + `<a href="` + e.features[0].properties.Article + `">` + e.features[0].properties.Article + `</a></span>`;
 
                         description = description + `<b>` + `School board: ` + `</b>`
                         description = description + e.features[0].properties.School_board + `<br>`;
@@ -487,6 +602,13 @@
 
                         description = description + `<b>` + `Province: ` + `</b>`
                         description = description + e.features[0].properties.Province + `<br>`;
+
+                        description = description + `<b>` + `Source(s): ` + `</b>`
+                        e.features[0].properties.Article.split(';').forEach((link, idx) => {
+                            var articleNumber = idx + 1
+                            description = description + `<a href='` + link + `' target="_blank">Article ` + articleNumber + `</a> `;
+                        })
+                        description += ``
 
 
                         console.log(e.features)
@@ -522,22 +644,38 @@
                     // show all cases (1+)
                     filterBy(1);
                     document.getElementById('slider').addEventListener('input', function (e) {
-                        var case_cutoff = parseInt(e.target.value, 10);
+                        case_cutoff = parseInt(e.target.value, 10);
                         filterBy(case_cutoff)
+                        updateTotals(data, case_cutoff, date_cutoff)
                     });
 
                     // show all cases (1+)
-                    filterByDate(150);
+                    filterByDate(15);
                     document.getElementById('slider_date').addEventListener('input', function (e) {
-                        var date_cutoff = parseInt(e.target.value, 10);
+                        date_cutoff = parseInt(e.target.value, 10);
                         filterByDate(date_cutoff)
+                        updateTotals(data, case_cutoff, date_cutoff)
                     });
+                    addLegend();
+
+                    updateTotals(data, case_cutoff, date_cutoff)
+                    // map.on('data', e => {
+                    //     // updateFilters(["all", [">=", "totcase_int", 0], ["<=", "Difference_In_Days", 14]]);
+                    //     // updateTotals(["all"])
+                    //     // updateFilters(data)
+                    // })
+
+
+                    // console.log("DATA");
+                    // console.log(data)
+                    // console.log( "After filter: " + rendered_clusterCount)
+
 
                     //var checkboxElems = document.querySelectorAll("input[type='checkbox']");
                     //for (var i = 0; i < checkboxElems.length; i++) {
                     //    checkboxElems[i].addEventListener("click", filterByType);
                     //}
-                    addLegend();
+
                 }
 
             );
