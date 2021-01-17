@@ -1,26 +1,34 @@
 {% if site.logo contains '://' %}
-  {% assign site_logo = site.logo %}
+{% assign site_logo = site.logo %}
 {% else %}
-  {% assign site_logo = site.logo | relative_url %}
+{% assign site_logo = site.logo | relative_url %}
 {% endif %}
 
 <header id="masthead">
   <div class="inner">
     <div class="title-area">
       {% if page.url == '/' %}
-        <h1 class="site-title">
-          <a href="{{ '/' | relative_url }}">
-            {% if site.logo %}<img src="{{ site_logo }}" alt="" class="site-logo">{% endif %}
-            <span>{{ site.title | escape }}</span>
-          </a>
-        </h1>
+      <h1 class="site-title">
+        <a href="{{ '/' | relative_url }}">
+          {% if site.logo %}<img src="{{ site_logo }}" alt="" class="site-logo">{% endif %}
+          <span>{{ site.title | escape }}</span><br>
+        </a>
+        <span
+          style="font-size:10pt;font-family:Menlo, Consolas, Monaco,Courier,monospace; font-weight:normal; color:red">
+          A Project of Masks4Canada</span>
+      </h1>
+
       {% else %}
-        <p class="site-title">
-          <a href="{{ '/' | relative_url }}">
-            {% if site.logo %}<img src="{{ site_logo }}" alt="" class="site-logo">{% endif %}
-            <span>{{ site.title | escape }}</span>
-          </a>
-        </p>
+      <p class="site-title">
+        <a href="{{ '/' | relative_url }}">
+          {% if site.logo %}<img src="{{ site_logo }}" alt="" class="site-logo">{% endif %}
+          <span>{{ site.title | escape }}</span><br>
+        </a>
+        <span
+          style="font-size:10pt; font-family:Menlo, Consolas, Monaco,Courier,monospace; font-weight:normal; color:red">
+          A Project of Masks4Canada</span>
+      </p>
+
       {% endif %}
     </div>
   </div>

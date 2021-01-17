@@ -4,11 +4,12 @@ title: About
 permalink: /about/
 ---
 
-Canada COVID-19 School Tracker is 100% volunteer-led, and is a project of the grassroots advocacy group <a href="https://masks4canada.org/">Masks4Canada</a>.
+<h3>Canada COVID-19 School Tracker is 100% volunteer-led.</h3> 
+This is a project of the grassroots advocacy group <b><a href="https://masks4canada.org/">Masks4Canada</a></b>.
 
 <h1>Team</h1>
 
-|  | Member | Titles & Affiliations |
+|  |  |  |
 | ------| ------------|------------------------|
 |<img src="../images/Shraddha_blazer_web-2-300x201.jpeg">|<b>Creator & Lead</b><br><a href="http://twitter.com/spaiglass">Dr. Shraddha Pai, PhD</a>|Data Science/Genomic Scientist, Ontario Institute for Cancer Research|
 ||<a href="http://twitter.com/rafoiyaa">Rafa Abbas</a>||
@@ -21,7 +22,7 @@ Canada COVID-19 School Tracker is 100% volunteer-led, and is a project of the gr
 ||<a href="http://twitter.com/uroojkhannn">Urooj Khan</a>||
 ||<a href="http://twitter.com/BusyBee27987775">Andreea Manas</a>||
 ||<a href="http://twitter.com/DrLolaMD">Ololadeo Ogunsuyi</a>||
-||<a href="https://oicr.on.ca/investigators/lincoln-stein/">Dr. Lincoln D. Stein, MD PhD</a>|Research Scientist, Ontario Institute for Cancer Research|
+|<img src="../images/R02dW1W-_400x400.jpg" width=200 height=200>|<a href="https://oicr.on.ca/investigators/lincoln-stein/">Dr. Lincoln D. Stein, MD PhD</a>|Research Scientist, Ontario Institute for Cancer Research|
 ||<a href="http//twitter.com/LadyScorcher">Cheryl White</a>||
 
 
