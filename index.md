@@ -3,81 +3,17 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: page
-title: Canada COVID-19 Tracker Map
+title: Home
+image: /images/banner-newedited.png # URL to a hero image associated with the post (e.g., /assets/page-pic.jpg
 ---
+The <b>Canada COVID-19 School Tracker</b> is a 100% volunteer-led project tracking COVID-19 cases and outbreaks in schools across Canada. The goal of this project is to highlight the impact of COVID-19 on schools and families; to advocate for safer schools; and to advocate for transparency in our educational system. <br>
+This project is an initiative of grassroots advocacy group <a href="https://masks4canada.org/">Masks4Canada</a>.
 
-<!--
-<!-- scripts copied from Shraddha's original -->
-<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
-<script src="vendor/bootstrap/js/popper.js"></script>
-<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-<script src="vendor/select2/select2.min.js"></script>
-<script src="vendor/tilt/tilt.jquery.min.js"></script>
-<script >
-  $('.js-tilt').tilt({
-  scale: 1.1
-  })
-</script>
-
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-23581568-13');
-</script>
--->
-
-<!--
-<script>
-$('.contact1-form').on('submit',function(e){
-       //optional validation code here
-       alert('hi there');
-  
-        e.preventDefault();
-      
-        $.ajax({
-            url: "https://script.google.com/macros/s/AKfycbyoouz-6mVMOT_eCOVgW6SznUL1sPeIIP5D0V9vh4Sz5p7uNbdk/exec",
-            method: "POST",
-            dataType: "json",
-            data: $(".contact1-form").serialize(),
-            success: function(response) {
-                
-                if(response.result == "success") {
-                    $('.contact1-form')[0].reset();
-                    alert('Thank you for contacting us.');
-                    return true;
-                }
-                else {
-                    alert("Something went wrong. Please try again.")
-                }
-            },
-            error: function() {
-                
-                alert("Something went wrong. Please try again.")
-            }
-        })
-    });
-</script>
--->
-<!--===============================================================================================-->
-<!--
-<script src="js/main.js"></script>
-
-<table class="heavyborder">
-
-  <tr>
-    <td class="noborder"><span class="contact1-form-title">Case/Outbreak Map</span></td>
-    <td  class="noborder"><span class="contact1-form-title">Submit a COVID-19 case</span></td>
-  </tr>
-
-  <tr>
-    <td  class="noborder" valign="top">{% include map.html %}</td>
-  </tr>
-
-</table>
--->
-
-Nothing here yet.
-
+<h1>
+<p style="color:#791e1e;text-decoration:none;">
+<h2><a href="map.html" style="color:#791e1e;text-decoration:none;">See The Map</a></h2>
+<h2><a href="submit.html" style="color:#791e1e;text-decoration:none;">Submit COVID-19 case/outbreak in school</a></h2>
+<h2><a href="faq.html" style="color:#791e1e;text-decoration:none;">FAQ</a></h2>
+<h2><a href="/about/" style="color:#791e1e;text-decoration:none;">About</a></h2>
+<h2><a href="press.html" style="color:#791e1e;text-decoration:none;">Media Coverage</a></h2>
+</p>

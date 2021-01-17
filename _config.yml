@@ -13,6 +13,7 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
+lang: en-US
 title: Covid Schools Canada
 email: covidschoolscanada@gmail.com
 description: Website to come. For now visit covidschoolsCA on Twitter
@@ -20,21 +21,54 @@ baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://masks4canada.org/canada-covid-19-school-case-tracker/" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: covidschoolsCA
 facebook_username: covidschoolsCA
+repository: covidschoolscanadaORG/covidschoolscanada.github.io
+logo: /images/logo-new2.png # path of site logo, e.g. "/assets/images/logo.png"
+search: true, # true, false (default)
+search_full_content: false, # true, false (default)
+search_provider: lunr, # lunr (default), algolia
+algolia:
+  application_id: # YOUR_APPLICATION_ID
+  index_name: # YOUR_INDEX_NAME
+  search_only_api_key: # YOUR_SEARCH_ONLY_API_KEY
+  powered_by: # true (default), false
 
 # Build settings
 markdown: kramdown
-theme: minima
-plugins:
+# Removed minima theme as it is now a regular basically basic theme.
+# theme: jekyll-theme-basically-basic
+plugins: # previously gems
   - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-paginate
+feed:
+  path: atom.xml
+
+# Pagination - https://jekyllrb.com/docs/pagination/
+paginate: 10
+paginate_path: /page:num/
 
 # Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+exclude:
+  - .asset-cache
+  - .bundle
+  - .codeclimate.yml
+  - .jekyll-assets-cache
+  - .sass-cache
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+
+# Front Matter Defaults
+defaults:
+  # _posts
+  - scope:
+      path: "_posts"
+      type: posts
+    values:
+      layout: post
+      read_time: false
