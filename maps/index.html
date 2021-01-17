@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html>
+
+//useful tutorials:
+//https://docs.mapbox.com/help/demos/how-mapbox-works/how-geocoding-works.html
+<!-- TODO
+* List articles as a list - currently articles are separated by semicolons in the geojson
+* Add a total count of schools that match both filters in response to point 2
+* Add project name instead of logo to display project title throughout  -->
+
+<head>
+    <meta charset='utf-8' />
+    <title>Canada COVID-19 School Tracker</title>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+    <script src="https://api.mapbox.com/mapbox-gl-js/v1.9.1/mapbox-gl.js"></script>
+    <link href="https://api.mapbox.com/mapbox-gl-js/v1.9.1/mapbox-gl.css" rel="stylesheet" />
+    <script src='https://npmcdn.com/csv2geojson@latest/csv2geojson.js'></script>
+    <script src='https://npmcdn.com/@turf/turf/turf.min.js'></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        #map {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Popup styling */
+
+        .mapboxgl-popup {
+            padding-bottom: 5px;
+        }
+
+        .mapboxgl-popup-close-button {
+            display: none;
+        }
+
+        .mapboxgl-popup-content {
+            font: 400 15px/22px 'Source Sans Pro', 'Helvetica Neue', Sans-serif;
+            padding: 0;
+            width: 250px;
+        }
+
+        .mapboxgl-popup-content-wrapper {
+            padding: 1%;
+        }
+
+        .mapboxgl-popup-content h3 {
+            background: rgb(121, 21, 21);
+            text-align: center;
+            color: #fff;
+            margin: 0;
+            display: block;
+            padding: 15px;
+            font-weight: 700;
+            margin-top: -5px;
+        }
+
+        .mapboxgl-popup-content span {
+            margin: 0;
+            display: block;
+            padding: 10px 3px 10px 10px;
+            font-weight: 400;
+        }
+
+        .mapboxgl-container {
+            cursor: pointer;
+        }
+
+        .mapboxgl-popup-anchor-top>.mapboxgl-popup-content {
+            margin-top: 3px;
+        }
+
+        .mapboxgl-popup-anchor-top>.mapboxgl-popup-tip {
+            border-bottom-color: rgb(61, 59, 59);
+        }
+    </style>
+</head>
+
+<!-- 
+TODO:
+1) The tab in the left (the one with the logo, sliders etc.,) needs to look good on mobile devices; it would be great to have it be collapsible so it can be out of the way. 
+2) It would be great to have a counter showing how many data points are being shown at a time - e.g. if I change the filter using sliders, the text should update. Ideally it would show: 1) total count, 2) total outbreaks (orange), 3) total clusters (purple) being displayed.
+3) When you click on a school, you get a popup with the school's info. We want the popup to also show the "Article" field of the underlying JSON file. The article is a set of URLs (see sample JSON attached), and we need to create a "<a href>" wrapper around each link so the popup shows: Link1 ; Link2 ; Link3. I hope this makes sense.
+ -->
+
+<body>
+    <style>
+        /* Smartphones (portrait and landscape) ----------- */
+        @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+            .map-overlay {
+                font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+                position: absolute;
+                width: 100vw;
+                bottom: 0;
+                left: 0;
+                padding: 10px;
+            }
+
+            #legend {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .mapboxgl-ctrl-geocoder {
+                width: 94vw !important;
+            }
+
+            #logo {
+                display: none;
+            }
+        }
+
+        /* Tablets */
+        @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+            .map-overlay {
+                font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+                position: absolute;
+                width: 20%;
+                top: 0;
+                left: 0;
+                padding: 10px;
+            }
+
+            #title {
+                display: none;
+            }
+        }
+
+        /* Desktops and laptops ----------- */
+        @media only screen and (min-width : 480px) {
+            .map-overlay {
+                font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+                position: absolute;
+                width: 20%;
+                top: 0;
+                left: 0;
+                padding: 10px;
+            }
+
+            #title {
+                display: none;
+            }
+        }
+
+
+        .map-overlay .map-overlay-inner {
+            background-color: #fff;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+            border-radius: 3px;
+            padding: 10px;
+            margin-bottom: 10px;
+            width: 89%;
+        }
+
+        .map-overlay h2 {
+            line-height: 24px;
+            font-size: 14px;
+            display: block;
+            margin: 0 0 10px;
+            color: rgb(192, 18, 18)
+        }
+
+        .map-overlay a {
+            text-decoration: none;
+        }
+
+        .map-overlay a:link {
+            color: rgb(192, 18, 18)
+        }
+
+        .map-overlay a:visited {
+            color: rgb(116, 13, 13)
+        }
+
+        .map-overlay .legend .bar {
+            height: 10px;
+            width: 100%;
+            background: linear-gradient(to right, #fca107, #7f3121);
+            padding: 10px;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+            line-height: 18px;
+            height: 150px;
+            margin-bottom: 40px;
+            width: 100px;
+        }
+
+        .map-overlay input {
+            background-color: transparent;
+            display: inline-block;
+            width: 100%;
+            position: relative;
+            margin: 0;
+            cursor: ew-resize;
+        }
+
+        .legend-key {
+            display: inline-block;
+            border-radius: 20%;
+            width: 10px;
+            height: 10px;
+            margin-right: 5px;
+        }
+    </style>
+
+    <div id='map'></div>
+
+    <div class="map-overlay top">
+        <div class="map-overlay-inner">
+            <img src="./../images/logo_simple.png" width="30%" , height="30%" id="logo"><br>
+            <h2 id="title">Canada COVID-19 School Tracker</h2>
+            <span style="color:rgb(192, 18, 18)"><b>Affected Schools (School Count)</b></span>
+            <div class='map-overlay'></div>
+            <div id="legend"></div>
+            <span style="color:rgb(192, 18, 18)"><b>Filter:</b></span><br>
+            <label id="case_min"></label>
+            <input id="slider" type="range" min="0" max="50" step="5" value="0" />
+
+            <label id="date_last"></label>
+            <input id="slider_date" type="range" min="1" max="90" step="7" value="14" />
+            <!-- <button id="addpoint" onclick="addPoint()" disabled=TRUE>Add point to map</button> -->
+
+            <a href="https://masks4canada.org/canadian-schools-covid-19-tracker-submit-a-case/">Report case or
+                correction</a><br>
+            <span style="font-style:italic"><a href="https://twitter.com/covidschoolsCA">@covidschoolsCA</a>
+                <a href="masks4canada.org">#Masks4Canada</a></span>
+
+            <!-- <h3>Filter by case type:</h3>
+            <nav id="type-group" class="type-group">
+                <label id="type_filter"></label>
+                <label for="outbreak">Outbreak</label>
+                <input type="checkbox" checked="checked" id="outbreak">
+                <label for="cluster">Cluster</label>
+                <input type="checkbox" checked="checked" id="cluster">
+                <label for="other">Other</label>
+                <input type="checkbox" checked="checked" id="other">
+            </nav> -->
+        </div>
+    </div>
+
+
+    <script
+        src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.5.1/mapbox-gl-geocoder.min.js"></script>
+    <link rel="stylesheet"
+        href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.5.1/mapbox-gl-geocoder.css"
+        type="text/css" />
+    <!-- Promise polyfill script required to use Mapbox GL Geocoder in IE 11 -->
+    <script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.auto.min.js"></script>
+
+    <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+    <script>
+
+        var transformRequest = (url, resourceType) => {
+            var isMapboxRequest =
+                url.slice(8, 22) === "api.mapbox.com" ||
+                url.slice(10, 26) === "tiles.mapbox.com";
+            return {
+                url: isMapboxRequest
+                    ? url.replace("?", "?pluginName=sheetMapper&")
+                    : url
+            };
+        };
+
+        mapboxgl.accessToken = 'pk.eyJ1IjoiY292aWRzY2hvb2xzY2FuYWRhIiwiYSI6ImNraDk2bzg3bDBsNjAycnBkNXN4ZjJibDMifQ.Gy20Etm1I_Jtd8znGFP7kA'; //Mapbox token 
+        var map = new mapboxgl.Map({
+            container: 'map', // container id
+            style: 'mapbox://styles/mapbox/dark-v10', //stylesheet location
+            center: [-98.61328125, 52.05249047600099], // starting position
+            zoom: 5,// starting zoom
+            transformRequest: transformRequest
+        });
+
+        // Globals
+        var rendered_clusterCount = 4040;
+        var rendered_outbreakCount = 4042;
+        var rendered_singleCount = 4041;
+
+        var case_cutoff = 0;
+        var date_cutoff = 15;
+
+        function findSchools(query) {
+            // console.log("in geocoder bloo")
+            var matchingFeatures = [];
+            var schools = map.querySourceFeatures('csvData');
+
+            console.log("total schools: " + schools.length)
+            for (var i = 0; i < schools.length; i++) {
+                var feature = schools[i];
+                // handle queries with different capitalization than the source data by calling toLowerCase()
+                if (
+                    feature.properties.institute_name
+                        .toLowerCase()
+                        .search(query.toLowerCase()) !== -1
+                ) {
+
+                    feature['place_name'] = '🏫 ' + feature.properties.institute_name;
+                    feature['center'] = feature.geometry.coordinates;
+                    feature['place_type'] = ['park'];
+                    matchingFeatures.push(feature);
+                }
+            }
+            return matchingFeatures;
+        }
+
+        var geocoder = new MapboxGeocoder({
+            accessToken: mapboxgl.accessToken,
+            localGeocoder: findSchools,
+            // limit results to Canada
+            countries: 'ca',
+            placeholder: 'Enter search e.g. Glamorgan School',
+            // type: 'poi',
+            mapboxgl: mapboxgl
+        });
+        map.addControl(geocoder);
+        map.addControl(new mapboxgl.NavigationControl()); // zoom rotate
+        map.addControl(
+            new mapboxgl.GeolocateControl({
+                positionOptions: {
+                    enableHighAccuracy: true
+                },
+                trackUserLocation: true
+            })
+        );
+        geocoder.on('result', function (ev) {
+            // console.log("search result event")
+            // full JSON result
+            var styleSpec = ev.result;
+            // console.log(styleSpec);
+            //      console.log(styleSpecText)
+
+            //   console.log(ev)
+            //    console.log(document.getElementById("addpoint"));
+
+            // // lat-long
+            // var center = ev.result.geometry.coordinates;
+            // var name = ev.result.text;
+            // var city = ev.result.context[2].text;
+            // var prov = ev.result.context[3].text;
+            // //var styleSpecBox = document.getElementById('json-response');
+            // var styleSpecText = JSON.stringify(styleSpec, null, 2);
+            // console.log(styleSpecText)
+            // console.log(JSON.stringify(center))
+            // console.log(JSON.stringify(name))
+            // console.log(JSON.stringify(city))
+            // console.log(JSON.stringify(prov))
+        });
+
+        function addPoint() {
+            // console.log("adding point")
+        }
+
+        function addLegend() {
+            // console.log("called legend")
+            var layers = ['Single/unlinked', 'Outbreaks', 'Clusters (BC)'];
+            var colors = ['#F6D608', '#E28800', '#6F09BD'];
+            var totalCount = [rendered_singleCount, rendered_outbreakCount, rendered_clusterCount]
+            // console.log(layers.length);
+            for (i = 0; i < layers.length; i++) {
+                var layer = layers[i];
+                var count = totalCount[i]
+                var color = colors[i];
+                var item = document.createElement('div');
+                var key = document.createElement('span');
+                key.className = 'legend-key';
+                key.style.backgroundColor = color;
+
+                var value = document.createElement('span');
+                value.innerHTML = layer;
+
+
+                var case_count = document.createElement('span');
+                case_count.innerHTML = " (" + count + ")";
+                case_count.id = "legendItem_" + i;
+
+                item.appendChild(key);
+                item.appendChild(value);
+                item.appendChild(case_count);
+                legend.appendChild(item);
+            }
+        }
+
+        function printFilters() {
+            // console.log("print Filters got called")
+            // console.log(JSON.stringify(map.getFilter('csvData')))
+            updateFilters('blah')
+        }
+
+        function updateFilters(newf) {
+            // console.log("-------------------")
+            console.log("Update filter")
+            // console.log("-------------------")
+
+            // get current filter
+            f = map.getFilter('csvData')
+            // console.log("Before:")
+            // console.log(JSON.stringify(f))
+            var f2 = new Array();
+            if (typeof f == "undefined") {
+                // f2 = newf
+                f2 = ["all", [">=", "totcase_int", 0], ["<=", "Difference_In_Days", 14]]
+            } else {
+                //console.log("has content")
+                //console.log(JSON.stringify(f[0]))
+                //  console.log("has content2")
+                if (f[0] == "all") {
+                    //  console.log("in all condition")
+                    f.shift(); // remove condition
+                    //   console.log(JSON.stringify(f))
+                    //   console.log("did it work?")
+                }
+                if (!Array.isArray(f[0])) {
+                    f = new Array(f);
+                }
+
+                // make a new array. add all filters except the one 
+                // being updated
+                f2 = new Array();
+                f.forEach(function (arrayItem) {
+                    // console.log("in loop2")
+                    //  console.log(JSON.stringify(arrayItem[1]))
+                    if (arrayItem[1] != newf[1]) {
+                        if (f2.length < 1) {
+                            f2 = arrayItem;
+                        } else {
+                            f2 = [f2, arrayItem]
+                        }
+                    }
+                })
+
+                // now add the new filter to the cleaned filter
+
+                if (!Array.isArray(f2[0])) {
+                    f2 = new Array(f2, newf);
+                } else {
+                    f2.push(newf)
+                }
+                f2.unshift("all");
+            }
+            //  console.log("")
+            console.log("After:")
+            // console.log(JSON.stringify(f2))
+            console.log(f2)
+            map.setFilter('csvData', f2)
+
+            // updateTotals(f2)
+
+
+            // console.log("rendered total")
+            // console.log(rendered_total.length);
+
+            // rendered_total.forEach(e => console.log(e.properties.Outbreak_Status))
+            // Outbreak Status: Single/unlinked cases, Declared outbreak, Cluster (BC)
+            // rendered_total.forEach(e => console.log(e.properties.Is_Cluster))
+        }
+
+        function updateTotals(data, cases, days) {
+            // Filters the data set to count how many schools have been declared to have single cases, outbreaks, or clusters based on the filters
+            var data_filterByCase = data.features.filter(schools => schools.properties.totcase_int >= cases)
+            var data_filterByDate = data_filterByCase.filter(schools => schools.properties.Difference_In_Days <= days)
+
+
+            var total_single = data_filterByDate.filter(schools => schools.properties.Outbreak_Status == "Single/unlinked cases").length;
+            var total_outbreaks = data_filterByDate.filter(schools => schools.properties.Outbreak_Status === "Declared outbreak").length;
+            var total_clusters = data_filterByDate.filter(schools => schools.properties.Outbreak_Status === "Cluster (BC)").length;
+
+            var clusterCount_DOM = document.getElementById("legendItem_2")
+            if (clusterCount_DOM) {
+                clusterCount_DOM.innerHTML = " (" + total_clusters + ")"
+            }
+
+            var outbreakCount_DOM = document.getElementById("legendItem_1")
+            if (outbreakCount_DOM) {
+                outbreakCount_DOM.innerHTML = " (" + total_outbreaks + ")"
+            }
+
+            var singleCount_DOM = document.getElementById("legendItem_0")
+            if (singleCount_DOM) {
+                singleCount_DOM.innerHTML = " (" + total_single + ")"
+            }
+        }
+
+        function filterByDate(ld) {
+            // console.log(ld)
+            var filters = ['<=', 'Difference_In_Days', ld]
+            updateFilters(filters);
+            document.getElementById('date_last').textContent = "Reported cases <=  " + ld + " days ago";
+        }
+
+        function filterBy(case_min) {
+            //  console.log("in here")
+            //  console.log(JSON.stringify(case_min))
+            var filters = ['>=', 'totcase_int', case_min];
+            updateFilters(filters);
+
+            // Set the label to the month
+            document.getElementById('case_min').textContent = "Total case count >= " + case_min;
+        }
+
+        function filterByType(caseType) {
+            console.log(caseType.target.id);
+            //map.setFilter('csvData', [op, 'Outbreak_Status', val])
+            var f1 = 0; var f2 = 0; var f3 = 0
+            if (caseType.target.id == "cluster") {
+                f1 = document.getElementById("cluster").checked ? [">", "Is_Cluster", 0] : ["<", "Is_Cluster", 1]
+            }
+            if (caseType.target.id == "outbreak") {
+                f2 = document.getElementById("outbreak").checked ? [">", "Is_Outbreak", 0] : ["<", "Is_Outbreak", 1]
+            }
+            if (caseType.target.id == "other") {
+                f3 = document.getElementById("other").checked ? [">", "Is_Single", 0] : ["<", "Is_Single", 1]
+            }
+            // console.log(f)
+            // console.log("meow1")
+            // updateFilters(f1);
+            // console.log("meow2")
+            // updateFilters(f2);
+            // console.log("meow3")
+            // updateFilters(f3);
+        }
+
+        map.on('load', function () {
+            d3.json(
+                'CanadaMap_QuebecMerge-current.clean.geojson',
+                function (err, data) {
+                    if (err) throw (err);
+
+                    data.features = data.features.map(function (d) {
+                        // create new integer property for summed cases because is char by default
+                        d.properties.totcase_int = parseInt(d.properties.Total_Cases_Summed);
+                        // convert strings to int
+                        d.properties.Is_Cluster = parseInt(d.properties.Is_Cluster);
+                        d.properties.Is_Outbreak = parseInt(d.properties.Is_Outbreak);
+                        d.properties.Is_Single = parseInt(d.properties.Is_Single);
+                        d.properties.Difference_In_Days = parseInt(d.properties.Difference_In_Days);
+                        return d;
+                    });
+                    //console.log(JSON.stringify(data.features[0]));
+                    // console.log("FIXED5")
+
+                    //Add the the layer to the map 
+                    map.addLayer({
+                        'id': 'csvData',
+                        'type': 'circle',
+                        'source': {
+                            'type': 'geojson',
+                            'data': data
+                        },
+                        'paint': {
+                            'circle-radius': ['case',
+                                ['<=', ["number", ["get", "totcase_int"]], 4],
+                                4,
+                                ["*", ["number", ["get", "totcase_int"]], 0.6]
+                            ],
+                            'circle-opacity': 0.8,
+                            'circle-color': [
+                                "match",
+                                [
+                                    "get",
+                                    "Outbreak_Status"
+                                ],
+                                "Single/unlinked cases", "#F6D608",
+                                "Declared outbreak", "#E28800",
+                                "Cluster (BC)", "#6F09BD",
+                                "gray"
+                            ]
+                        },
+                    });
+
+
+                    // When a click event occurs on a feature in the csvData layer, open a popup at the
+                    // location of the feature, with description HTML from its properties.
+                    map.on('click', 'csvData', function (e) {
+                        var coordinates = e.features[0].geometry.coordinates.slice();
+
+                        //set popup text 
+                        //You can adjust the values of the popup to match the headers of your CSV. 
+                        // For example: e.features[0].properties.Name is retrieving information from the field Name in the original CSV. 
+                        var description = `<h3>` + e.features[0].properties.institute_name + `</h3>`
+                        description = description + `<b>` + `Total cases to date: ` + `</b>`;
+                        description = description + e.features[0].properties.Total_Cases_Summed + `<br>`;
+
+                        description = description + `<b>` + `Total outbreaks to date: ` + `</b>`
+                        description = description + e.features[0].properties.Total_outbreaks_to_date + `<br>`;
+
+                        description = description + `<b>` + `Last Reported Date: ` + `</b>`
+                        description = description + e.features[0].properties.Last_Reported_Date + `<br>`;
+
+                        //description = description + `<b>` + `Evidence: ` + `</b>`
+                        //description = description + `<a href="` + e.features[0].properties.Article + `">` + e.features[0].properties.Article + `</a></span>`;
+
+                        description = description + `<b>` + `School board: ` + `</b>`
+                        description = description + e.features[0].properties.School_board + `<br>`;
+
+                        description = description + `<b>` + `City: ` + `</b>`
+                        description = description + e.features[0].properties.City + `<br>`;
+
+                        description = description + `<b>` + `Province: ` + `</b>`
+                        description = description + e.features[0].properties.Province + `<br>`;
+
+                        description = description + `<b>` + `Source(s): ` + `</b>`
+                        e.features[0].properties.Article.split(';').forEach((link, idx) => {
+                            var articleNumber = idx + 1
+                            description = description + `<a href='` + link + `' target="_blank">Article ` + articleNumber + `</a> `;
+                        })
+                        description += ``
+
+
+                        console.log(e.features)
+
+                        // Ensure that if the map is zoomed out such that multiple
+                        // copies of the feature are visible, the popup appears
+                        // over the copy being pointed to.
+                        while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
+                            coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
+                        }
+
+                        //add Popup to map
+
+                        new mapboxgl.Popup()
+                            .setLngLat(coordinates)
+                            .setHTML(description)
+                            .addTo(map);
+                    });
+
+                    // Change the cursor to a pointer when the mouse is over the places layer.
+                    map.on('mouseenter', 'csvData', function () {
+                        map.getCanvas().style.cursor = 'pointer';
+                    });
+
+                    // Change it back to a pointer when it leaves.
+                    map.on('mouseleave', 'places', function () {
+                        map.getCanvas().style.cursor = '';
+                    });
+
+                    var bbox = turf.bbox(data);
+                    map.fitBounds(bbox, { padding: 50 });
+
+                    // show all cases (1+)
+                    filterBy(1);
+                    document.getElementById('slider').addEventListener('input', function (e) {
+                        case_cutoff = parseInt(e.target.value, 10);
+                        filterBy(case_cutoff)
+                        updateTotals(data, case_cutoff, date_cutoff)
+                    });
+
+                    // show all cases (1+)
+                    filterByDate(15);
+                    document.getElementById('slider_date').addEventListener('input', function (e) {
+                        date_cutoff = parseInt(e.target.value, 10);
+                        filterByDate(date_cutoff)
+                        updateTotals(data, case_cutoff, date_cutoff)
+                    });
+                    addLegend();
+
+                    updateTotals(data, case_cutoff, date_cutoff)
+                    // map.on('data', e => {
+                    //     // updateFilters(["all", [">=", "totcase_int", 0], ["<=", "Difference_In_Days", 14]]);
+                    //     // updateTotals(["all"])
+                    //     // updateFilters(data)
+                    // })
+
+
+                    // console.log("DATA");
+                    // console.log(data)
+                    // console.log( "After filter: " + rendered_clusterCount)
+
+
+                    //var checkboxElems = document.querySelectorAll("input[type='checkbox']");
+                    //for (var i = 0; i < checkboxElems.length; i++) {
+                    //    checkboxElems[i].addEventListener("click", filterByType);
+                    //}
+
+                }
+
+            );
+        });
+    </script>
+
+</body>
+
+</html>
