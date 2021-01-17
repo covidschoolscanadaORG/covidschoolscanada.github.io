@@ -9,20 +9,20 @@ $large: 1024px !default;
 $xlarge: 1280px !default;
 
 /* Fluid type */
-$base-font-size: 16px !default;
+$base-font-size: 12px !default;
 $min-vw: $small !default;
 $max-vw: $xlarge !default;
-$min-font-size: 14px !default;
-$max-font-size: 18px !default;
+$min-font-size: 10px !default;
+$max-font-size: 14px !default;
 
 /* Calculate Modular Scale */
-$modular-scale-1: 1.067 !default; /* small */
-$modular-scale-2: 1.296 !default; /* large */
+$modular-scale-1: 1.096 !default; /* small */
+$modular-scale-2: 1.2 !default; /* large */
 /* Heading 1 */
 $h1-min: $modular-scale-1 * $modular-scale-1 * $modular-scale-1 *
-  $modular-scale-1 * $base-font-size !default;
+   $modular-scale-1 * $base-font-size !default;
 $h1-max: $modular-scale-2 * $modular-scale-2 * $modular-scale-2 *
-  $modular-scale-2 * $base-font-size !default;
+   $modular-scale-2 * $base-font-size !default;
 /* Heading 2 */
 $h2-min: $modular-scale-1 * $modular-scale-1 * $modular-scale-1 *
   $base-font-size !default;
