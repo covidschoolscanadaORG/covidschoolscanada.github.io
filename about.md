@@ -15,7 +15,7 @@ This is a project of the grassroots advocacy group <b><a href="https://masks4can
 ||<a href="http://twitter.com/rafoiyaa">Rafa Abbas</a>||
 ||Ahmed Aldarajji||
 ||<a href="http://twitter.com/AAlJaishi">Ahmed Al-Jaishi</a>|Epidemiologst, London Sciences Health Centre, ON|
-||<a href="http://twitter.com/Josh_JamesA">Joshua Atienza</a>||
+|<img src="../images/JoshuaAtienza.png" width=200 height=200>|<a href="http://twitter.com/Josh_JamesA">Joshua Atienza</a>|Molecular Diagnostics Lab Technician, Public Health Ontario |
 ||<a href="http://twitter.com/AnjaleeBenedict">Anjalee Benedict</a>||
 ||<a href="http://twitter.com/javeriathehasan">Javeria Hassan</a>||
 ||Hinda Hussein||
