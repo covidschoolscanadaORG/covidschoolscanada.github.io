@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-Canada COVID-19 School Tracker is 100% volunteer-led, and is a project of the grassroots advocacy group <a href="masks4canada.org">Masks4Canada</a>.
+Canada COVID-19 School Tracker is 100% volunteer-led, and is a project of the grassroots advocacy group <a href="https://masks4canada.org/">Masks4Canada</a>.
 
 <h1>Team</h1>
 

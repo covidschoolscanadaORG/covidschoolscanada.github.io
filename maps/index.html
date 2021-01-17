@@ -212,12 +212,17 @@ TODO:
 
     <div class="map-overlay top">
         <div class="map-overlay-inner">
-            <img src="./../images/logo_simple.png" width="30%" , height="30%" id="logo"><br>
-            <h2 id="title">Canada COVID-19 School Tracker</h2>
-            <span style="color:rgb(192, 18, 18)"><b>Affected Schools (School Count)</b></span>
+            <div align="left">
+                <a href="https://covidschoolscanada.org/" style="text-decoration:none;">
+                    <img src="../images/logo-new2.png" width="33%" , height="30%" id="logo" align="top"></a>
+                <h2
+                    style="color:rgb(192, 18, 18); font-family:Menlo, Consolas, Monaco,Courier,monospace; font-size:14px">
+                    Affected Schools</h2>
+            </div>
             <div class='map-overlay'></div>
             <div id="legend"></div>
-            <span style="color:rgb(192, 18, 18)"><b>Filter:</b></span><br>
+            <span style="color:rgb(192, 18, 18); font-family:Menlo, Consolas, Monaco,Courier,monospace; font-size:12px">
+                <b>Filter by min. cases or date</b></span><br>
             <label id="case_min"></label>
             <input id="slider" type="range" min="0" max="50" step="5" value="0" />
 
@@ -225,12 +230,13 @@ TODO:
             <input id="slider_date" type="range" min="1" max="90" step="7" value="14" />
             <!-- <button id="addpoint" onclick="addPoint()" disabled=TRUE>Add point to map</button> -->
 
-            <a href="https://masks4canada.org/canadian-schools-covid-19-tracker-submit-a-case/">Report case or
-                correction</a><br>
+            <b></b><a href="https://masks4canada.org/canadian-schools-covid-19-tracker-submit-a-case/">Report case or
+                correction</a></b><br>
             <span style="font-style:italic"><a href="https://twitter.com/covidschoolsCA">@covidschoolsCA</a>
-                <a href="masks4canada.org">#Masks4Canada</a></span>
+                <span style="font-style:italic"><a href="http://covidschoolscanada.org">covidschoolscanada.org</a>
+                    <a href="https://masks4canada.org">#Masks4Canada</a></span>
 
-            <!-- <h3>Filter by case type:</h3>
+                <!-- <h3>Filter by case type:</h3>
             <nav id="type-group" class="type-group">
                 <label id="type_filter"></label>
                 <label for="outbreak">Outbreak</label>

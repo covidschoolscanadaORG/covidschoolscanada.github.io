@@ -7,7 +7,7 @@ title: Home
 image: /images/banner-newedited.png # URL to a hero image associated with the post (e.g., /assets/page-pic.jpg
 ---
 The <b>Canada COVID-19 School Tracker</b> is a 100% volunteer-led project tracking COVID-19 cases and outbreaks in schools across Canada. The goal of this project is to highlight the impact of COVID-19 on schools and families; to advocate for safer schools; and to advocate for transparency in our educational system. <br>
-The Canada COVID-19 School Tracker project is an initiative of <a href="masks4canada.org">Masks4Canada</a>.
+This project is an initiative of grassroots advocacy group <a href="https://masks4canada.org/">Masks4Canada</a>.
 
 <h1>
 <p style="color:#791e1e;text-decoration:none;">
