@@ -53,31 +53,38 @@ h4,
 h5,
 h6 {
   font-family: $headline-font-family;
+  colour:#791e1e;
   text-rendering: optimizeLegibility; /* enable common ligatures and kerning */
 }
 
 h1 {
   @include fluid-type($min-vw, $max-vw, $h1-min, $h1-max);
+  colour:#791e1e;
 }
 
 h2 {
   @include fluid-type($min-vw, $max-vw, $h2-min, $h2-max);
+  colour:#791e1e;
 }
 
 h3 {
   @include fluid-type($min-vw, $max-vw, $h3-min, $h3-max);
+  colour:#791e1e;
 }
 
 h4 {
   @include fluid-type($min-vw, $max-vw, $h4-min, $h4-max);
+  colour:#791e1e;
 }
 
 h5 {
   @include fluid-type($min-vw, $max-vw, $h5-min, $h5-max);
+  colour:#791e1e;
 }
 
 h6 {
   @include fluid-type($min-vw, $max-vw, $h6-min, $h6-max);
+  colour:#791e1e;
 }
 
 dt {

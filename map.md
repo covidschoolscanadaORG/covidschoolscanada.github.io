@@ -1,7 +1,12 @@
 ---
 layout: page
-title: Canada COVID-19 Tracker Map
+title: Canada COVID-19 School Map
 ---
-<iframe src="https://www.google.com/maps/d/embed?mid=1blA_H3Hv5S9Ii_vyudgDk-j6SfJQil9S" width="640" height="480"></iframe>
 
-Please [click through to the actual map](https://www.google.com/maps/d/viewer?mid=1blA_H3Hv5S9Ii_vyudgDk-j6SfJQil9S&ll=55.148345736491585%2C-100.93825674490813&z=4) for legend and search options.
+Move slides to change mininum number of cases and recency of reports. 
+Circle size indicates total number of cases in the school
+<h1><a href="maps/index.html" style="text-decoration:none">Open in full screen</a></h1>
+<iframe src='maps/index.html'
+        width='100%' height='600px'>
+</iframe>
+ <i>Disclaimer: This is an aggregation of publicly available data and information that has been disclosed on a voluntary basis in the public interest. No representations are made as to accuracy, completeness or currency of this data. This information is correct to the best of Masks4Canada and we are not legally prevented from disclosing it.</i>
