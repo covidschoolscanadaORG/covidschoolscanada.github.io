@@ -10,3 +10,5 @@ Circle size indicates total number of cases in the school
         width='100%' height='600px'>
 </iframe>
  <i>Disclaimer: This is an aggregation of publicly available data and information that has been disclosed on a voluntary basis in the public interest. No representations are made as to accuracy, completeness or currency of this data. This information is correct to the best of Masks4Canada and we are not legally prevented from disclosing it.</i>
+
+Map created by Shraddha Pai, with special thanks to Donn Pasiliao. Gratitude to the Mapbox Community team for their guidance.
