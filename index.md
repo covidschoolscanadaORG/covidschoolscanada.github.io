@@ -12,7 +12,7 @@ This project is an initiative of grassroots advocacy group <a href="https://mask
 
 <p style="color:#791e1e;text-decoration:none;">
 <h2><a href="map.html" style="color:#791e1e;text-decoration:none;">See The Map</a></h2>
-<h2><a href="submit.html" style="color:#791e1e;text-decoration:none;">Submit COVID-19 case/outbreak in school</a></h2>
+<h2><a href="submit.html" style="color:#791e1e;text-decoration:none;">Submit confirmed report of COVID-19 case/outbreak in school</a></h2>
 <h2><a href="faq.html" style="color:#791e1e;text-decoration:none;">FAQ</a></h2>
 <h2><a href="/about/" style="color:#791e1e;text-decoration:none;">About</a></h2>
 <h2><a href="/press/" style="color:#791e1e;text-decoration:none;">Media Coverage</a></h2>
