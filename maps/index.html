@@ -222,16 +222,17 @@ TODO:
             <div class='map-overlay'></div>
             <div id="legend"></div>
             <span style="color:rgb(192, 18, 18); font-family:Menlo, Consolas, Monaco,Courier,monospace; font-size:12px">
-                <b>Filter by min. cases or date</b></span><br>
-            <label id="case_min"></label>
+                Filter by min. cases or date</span><br>
+            <label id="case_min" style="font-weight:bold"></label>
             <input id="slider" type="range" min="0" max="50" step="5" value="0" />
             <!-- <input id="change_radius" type="checkbox" name="change_radius">Size reflects case count -->
 
-            <label id="date_last"></label>
-            <input id="slider_date" type="range" min="1" max="90" step="7" value="14" />
+            <label id="date_last" style="font-weight:bold"></label>
+            <input id="slider_date" type="range" min="1" max="180" step="2" value="180" />
             <!-- <button id="addpoint" onclick="addPoint()" disabled=TRUE>Add point to map</button> -->
 
-            <b></b><a href="https://masks4canada.org/canadian-schools-covid-19-tracker-submit-a-case/">Report case or
+            <b></b><a href="https://masks4canada.org/canadian-schools-covid-19-tracker-submit-a-case/">Report case
+                or
                 correction</a></b><br>
             <span style="font-style:italic"><a href="https://twitter.com/covidschoolsCA">@covidschoolsCA</a>
                 <span style="font-style:italic"><a href="http://covidschoolscanada.org">covidschoolscanada.org</a>
@@ -410,7 +411,7 @@ TODO:
             var f2 = new Array();
             if (typeof f == "undefined") {
                 // f2 = newf
-                f2 = ["all", [">=", "totcase_int", 0], ["<=", "Difference_In_Days", 14]]
+                f2 = ["all", [">=", "totcase_int", 0], ["<=", "Difference_In_Days", 180]]
             } else {
                 //console.log("has content")
                 //console.log(JSON.stringify(f[0]))
@@ -496,7 +497,7 @@ TODO:
             // console.log(ld)
             var filters = ['<=', 'Difference_In_Days', ld]
             updateFilters(filters);
-            document.getElementById('date_last').textContent = "Reported cases <=  " + ld + " days ago";
+            document.getElementById('date_last').textContent = 'Last report <= ' + ld + 'd ago';
         }
 
         function filterBy(case_min) {
@@ -506,7 +507,7 @@ TODO:
             updateFilters(filters);
 
             // Set the label to the month
-            document.getElementById('case_min').textContent = "Total case count >= " + case_min;
+            document.getElementById('case_min').textContent = "Total cases >= " + case_min;
         }
 
         function filterByType(caseType) {
@@ -657,7 +658,7 @@ TODO:
                     });
 
                     // show all cases (1+)
-                    filterByDate(15);
+                    filterByDate(180);
                     document.getElementById('slider_date').addEventListener('input', function (e) {
                         date_cutoff = parseInt(e.target.value, 10);
                         filterByDate(date_cutoff)
