@@ -17,7 +17,11 @@
    id="SVGRoot"
    inkscape:version="0.92.2 5c3e80d, 2017-08-06"
    sodipodi:docname="banner5.svg"
+<<<<<<< HEAD
    inkscape:export-filename="/Users/shraddhapai/software/covidschoolscanada.github.io/images/banner5.png"
+=======
+   inkscape:export-filename="C:\Users\anjal\Downloads\banner-new.png"
+>>>>>>> 4bd14d0ce58e133c06b3e3391dcc6466548c51e9
    inkscape:export-xdpi="96"
    inkscape:export-ydpi="96">
   <sodipodi:namedview
@@ -27,8 +31,13 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
+<<<<<<< HEAD
      inkscape:zoom="0.53750741"
      inkscape:cx="666.2128"
+=======
+     inkscape:zoom="0.38007514"
+     inkscape:cx="740.63038"
+>>>>>>> 4bd14d0ce58e133c06b3e3391dcc6466548c51e9
      inkscape:cy="91.328893"
      inkscape:document-units="px"
      inkscape:current-layer="g6619"
@@ -151,11 +160,16 @@
        xlink:href="#linearGradient1474"
        id="linearGradient1559"
        gradientUnits="userSpaceOnUse"
+<<<<<<< HEAD
        gradientTransform="matrix(1.271551,0,0,1.271551,-326.89393,55.98052)"
+=======
+       gradientTransform="matrix(1.2337787,0,0,1.2337787,-1815.409,-506.84631)"
+>>>>>>> 4bd14d0ce58e133c06b3e3391dcc6466548c51e9
        x1="413.233"
        y1="320.94366"
        x2="1540.9095"
        y2="303.88348" />
+<<<<<<< HEAD
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient1474"
@@ -187,6 +201,18 @@
          x="-1890.5818"
          y="-661.4856"
          mask="none" />
+=======
+    <mask
+       maskUnits="userSpaceOnUse"
+       id="mask1555">
+      <rect
+         y="-656.41351"
+         x="-1890.5818"
+         height="984.71399"
+         width="1978.6095"
+         id="rect1557"
+         style="opacity:1;fill:url(#linearGradient1559);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:6.16889334;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+>>>>>>> 4bd14d0ce58e133c06b3e3391dcc6466548c51e9
     </mask>
   </defs>
   <metadata
@@ -236,14 +262,23 @@
              height="967.93622"
              width="1451.9043"
              clip-path="url(#clipPath1457)"
+<<<<<<< HEAD
              transform="matrix(0.91119767,0,0,0.91119767,565.5009,81.134846)" />
+=======
+             transform="matrix(0.91119767,0,0,0.91119767,-0.07269238,84.855726)" />
+>>>>>>> 4bd14d0ce58e133c06b3e3391dcc6466548c51e9
           <rect
              style="fill:#ffffff;fill-opacity:0.56716416;stroke:none;stroke-width:1.07318318;stroke-opacity:0.31840796"
              id="rect1394"
              width="1600.1139"
              height="697.17261"
+<<<<<<< HEAD
              x="80.350555"
              y="31.832726" />
+=======
+             x="0.35165724"
+             y="-64.910126" />
+>>>>>>> 4bd14d0ce58e133c06b3e3391dcc6466548c51e9
           <rect
              style="fill:#b3b3b3;fill-opacity:0.36815945;stroke:none;stroke-width:1.22997606;stroke-opacity:0.31840796"
              id="rect1413"
@@ -259,8 +294,13 @@
              id="image905"
              x="-1888.6702"
              y="-651.34143"
+<<<<<<< HEAD
              mask="url(#mask1630)"
              transform="matrix(1.0306151,0,0,1.0306151,1544.094,552.29782)" />
+=======
+             mask="url(#mask1555)"
+             transform="matrix(1.0306151,0,0,1.0306151,1542.2336,531.833)" />
+>>>>>>> 4bd14d0ce58e133c06b3e3391dcc6466548c51e9
           <rect
              style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:29.71331978;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.61691541"
              id="rect1420"
@@ -327,7 +367,11 @@
              height="671.07306"
              width="1570.2567"
              id="rect1576"
+<<<<<<< HEAD
              style="opacity:1;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#fffffe;stroke-width:4.84685755;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+=======
+             style="opacity:1;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#ffffff;stroke-width:4.84685755;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+>>>>>>> 4bd14d0ce58e133c06b3e3391dcc6466548c51e9
         </g>
       </g>
     </g>
