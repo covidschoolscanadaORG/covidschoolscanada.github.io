@@ -1,0 +1,189 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#map {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Tablets */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+    .map-overlay {
+        font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+        position: absolute;
+        width: 20%;
+        top: 0;
+        left: 0;
+        padding: 10px;
+    }
+
+    #title {
+        display: none;
+    }
+}
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width : 480px) {
+    .map-overlay {
+        font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+        position: absolute;
+        width: 20%;
+        top: 0;
+        left: 0;
+        padding: 10px;
+    }
+
+    #title {
+        display: none;
+    }
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .map-overlay {
+        font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+        position: absolute;
+        width: 100vw;
+        bottom: 0;
+        left: 0;
+        padding: 10px;
+    }
+
+    #legend {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .mapboxgl-ctrl-geocoder {
+        width: 94vw !important;
+    }
+
+    #logo {
+        display: none;
+    }
+}
+
+/* Popup styling */
+
+.mapboxgl-popup {
+    padding-bottom: 5px;
+}
+
+.mapboxgl-popup-close-button {
+    display: none;
+}
+
+.mapboxgl-popup-content {
+    font: 400 15px/22px 'Source Sans Pro', 'Helvetica Neue', Sans-serif;
+    padding: 0;
+    width: 250px;
+}
+
+.mapboxgl-popup-content-wrapper {
+    padding: 1%;
+}
+
+.mapboxgl-popup-content h3 {
+    background: rgb(121, 21, 21);
+    text-align: center;
+    color: #fff;
+    margin: 0;
+    display: block;
+    padding: 15px;
+    font-weight: 500;
+    margin-top: -5px;
+}
+
+.mapboxgl-popup-content span {
+    margin: 0;
+    display: block;
+    padding: 10px 3px 10px 10px;
+    font-weight: 400;
+}
+
+.mapboxgl-container {
+    cursor: pointer;
+}
+
+.mapboxgl-popup-anchor-top>.mapboxgl-popup-content {
+    margin-top: 3px;
+}
+
+.mapboxgl-popup-anchor-top>.mapboxgl-popup-tip {
+    border-bottom-color: rgb(61, 59, 59);
+}
+
+.map-overlay .map-overlay-inner {
+    background-color: #fff;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 89%;
+}
+
+.map-overlay h2 {
+    line-height: 24px;
+    font-size: 14px;
+    display: block;
+    margin: 0 0 10px;
+    color: rgb(192, 18, 18)
+}
+
+.map-overlay a {
+    text-decoration: none;
+}
+
+.map-overlay a:link {
+    color: rgb(192, 18, 18)
+}
+
+.map-overlay a:visited {
+    color: rgb(116, 13, 13)
+}
+
+.map-overlay .legend .bar {
+    height: 10px;
+    width: 100%;
+    background: linear-gradient(to right, #fca107, #7f3121);
+    padding: 10px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    line-height: 18px;
+    height: 150px;
+    margin-bottom: 40px;
+    width: 100px;
+}
+
+.map-overlay input {
+    background-color: transparent;
+    display: inline-block;
+    width: 100%;
+    position: relative;
+    margin: 0;
+    cursor: ew-resize;
+
+}
+
+.legend-key {
+    display: inline-block;
+    border-radius: 20%;
+    width: 10px;
+    height: 10px;
+    margin-right: 5px;
+}
+
+.ui-input-text {
+    margin: 0 !important;
+}
+
+.mapboxgl-ctrl-geocoder--input {
+    margin-left: 10% !important;
+    width: 90% !important;
+}
+
+button {
+    margin: 0 !important;
+}
