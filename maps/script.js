@@ -31,7 +31,7 @@ $(() => {
 
                 //Add the the layer to the map 
                 map.addLayer({
-                    'id': 'csvData',
+                    'id': 'affectedSchools',
                     'type': 'circle',
                     'source': {
                         'type': 'geojson',
@@ -59,9 +59,11 @@ $(() => {
                 });
 
 
-                // When a click event occurs on a feature in the csvData layer, open a popup at the
+
+
+                // When a click event occurs on a feature in the affectedSchools layer, open a popup at the
                 // location of the feature, with description HTML from its properties.
-                map.on('click', 'csvData', function (e) {
+                map.on('click', 'affectedSchools', function (e) {
                     var coordinates = e.features[0].geometry.coordinates.slice();
 
                     //set popup text 
@@ -99,7 +101,7 @@ $(() => {
                 });
 
                 // Change the cursor to a pointer when the mouse is over the places layer.
-                map.on('mouseenter', 'csvData', function () {
+                map.on('mouseenter', 'affectedSchools', function () {
                     map.getCanvas().style.cursor = 'pointer';
                 });
 
@@ -161,10 +163,130 @@ var map = new mapboxgl.Map({
     transformRequest: transformRequest
 });
 
+$(document).ready(function () {
+    $.ajax({
+        type: "GET",
+        //YOUR TURN: Replace with csv export link
+        url: 'https://docs.google.com/spreadsheets/d/1Rpk8F-yJk-t1BxqC4mLvEpf6rRH2y-OQ91onvcwU-Dw/gviz/tq?tqx=out:csv&sheet=Canadian_Schools_with_Air_Purifiers',
+        dataType: "text",
+        success: function (purifiers) { makeGeoJSON(purifiers); }
+    });
+
+    function makeGeoJSON(purifiers) {
+        csv2geojson.csv2geojson(purifiers, {
+            latfield: 'Latitude',
+            lonfield: 'Longitude',
+            delimiter: ','
+        }, function (err, data) {
+            map.on('load', function () {
+
+                //Add the the layer to the map 
+                map.addLayer({
+                    'id': 'purifiers',
+                    'type': 'circle',
+                    'source': {
+                        'type': 'geojson',
+                        'data': data
+                    },
+                    'paint': {
+                        'circle-radius': 4,
+                        'circle-color': [
+                            "match",
+                            [
+                                "get",
+                                "PublicPrivate"
+                            ],
+                            "Private",
+                            "pink",
+                            "blue"
+                        ]
+                    }
+                });
+
+
+                // When a click event occurs on a feature in the affectedSchools layer, open a popup at the
+                // location of the feature, with description HTML from its properties.
+                map.on('click', 'purifiers', function (e) {
+                    var coordinates = e.features[0].geometry.coordinates.slice();
+
+                    //set popup text 
+                    //You can adjust the values of the popup to match the headers of your CSV. 
+                    // For example: e.features[0].properties.Name is retrieving information from the field Name in the original CSV. 
+                    var description = `<h3>` + e.features[0].properties.institute_name + `</h3>`;
+
+                    console.log(e.features)
+
+                    // Ensure that if the map is zoomed out such that multiple
+                    // copies of the feature are visible, the popup appears
+                    // over the copy being pointed to.
+                    while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
+                        coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
+                    }
+
+                    //add Popup to map
+
+                    new mapboxgl.Popup()
+                        .setLngLat(coordinates)
+                        .setHTML(description)
+                        .addTo(map);
+                });
+
+                // Change the cursor to a pointer when the mouse is over the places layer.
+                map.on('mouseenter', 'purifiers', function () {
+                    map.getCanvas().style.cursor = 'pointer';
+                });
+
+                // Change it back to a pointer when it leaves.
+                map.on('mouseleave', 'places', function () {
+                    map.getCanvas().style.cursor = '';
+                });
+
+                var bbox = turf.bbox(data);
+                map.fitBounds(bbox, { padding: 50 });
+
+            });
+
+        });
+    };
+});
+
+// enumerate ids of the layers
+var toggleableLayerIds = ['purifiers', 'affectedSchools'];
+
+// set up the corresponding toggle button for each layer
+for (var i = 0; i < toggleableLayerIds.length; i++) {
+    var id = toggleableLayerIds[i];
+
+    var link = document.createElement('a');
+    link.href = '#';
+    link.className = 'active';
+    link.textContent = id;
+
+    link.onclick = function (e) {
+        var clickedLayer = this.textContent;
+        e.preventDefault();
+        e.stopPropagation();
+
+        var visibility = map.getLayoutProperty(clickedLayer, 'visibility');
+
+        // toggle layer visibility by changing the layout object's visibility property
+        if (visibility === 'visible') {
+            map.setLayoutProperty(clickedLayer, 'visibility', 'none');
+            this.className = '';
+        } else {
+            this.className = 'active';
+            map.setLayoutProperty(clickedLayer, 'visibility', 'visible');
+        }
+    };
+
+    var layers = document.getElementById('menu');
+    layers.appendChild(link);
+}
+
 function findSchools(query) {
     // console.log("in geocoder bloo")
     var matchingFeatures = [];
-    var schools = map.querySourceFeatures('csvData');
+    var schools = map.querySourceFeatures('affectedSchools');
 
     console.log("total schools: " + schools.length)
     for (var i = 0; i < schools.length; i++) {
@@ -268,12 +390,12 @@ function updateTotals(data) {
 function newUpdateFilters() {
     var f2 = ["all", [">=", "totcase_int", case_min], ["<=", "totcase_int", case_max], ["<=", "Difference_In_Days", date_set]]
 
-    map.setFilter('csvData', f2)
+    map.setFilter('affectedSchools', f2)
 }
 
 function filterByType(caseType) {
     console.log(caseType.target.id);
-    //map.setFilter('csvData', [op, 'Outbreak_Status', val])
+    //map.setFilter('affectedSchools', [op, 'Outbreak_Status', val])
     var f1 = 0; var f2 = 0; var f3 = 0
     if (caseType.target.id == "cluster") {
         f1 = document.getElementById("cluster").checked ? [">", "Is_Cluster", 0] : ["<", "Is_Cluster", 1]
