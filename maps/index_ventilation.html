@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+//useful tutorials:
+//https://docs.mapbox.com/help/demos/how-mapbox-works/how-geocoding-works.html
+<!-- TODO
+* List articles as a list - currently articles are separated by semicolons in the geojson
+* Add a total count of schools that match both filters in response to point 2
+* Add project name instead of logo to display project title throughout  -->
+
+<head>
+    <meta charset='utf-8' />
+    <title>Canada COVID-19 School Tracker</title>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+
+
+    <link href="style.css" rel="stylesheet" type="text/css" />
+
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+
+    <link href="https://api.mapbox.com/mapbox-gl-js/v1.9.1/mapbox-gl.css" rel="stylesheet" />
+
+
+    <link rel="stylesheet"
+        href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.5.1/mapbox-gl-geocoder.css"
+        type="text/css" />
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script> -->
+    <script src="https://api.mapbox.com/mapbox-gl-js/v1.9.1/mapbox-gl.js"></script>
+    <script src='https://npmcdn.com/csv2geojson@latest/csv2geojson.js'></script>
+    <script src='https://npmcdn.com/@turf/turf/turf.min.js'></script>
+    <script
+        src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.5.1/mapbox-gl-geocoder.min.js"></script>
+    <!-- Promise polyfill script required to use Mapbox GL Geocoder in IE 11 -->
+    <script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.auto.min.js"></script>
+
+    <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+
+
+
+</head>
+
+<body>
+
+    <div id='map'></div>
+
+    <div class="map-overlay top">
+        <div class="map-overlay-inner">
+            <div>
+                <a href="https://covidschoolscanada.org/" style="text-decoration:none;">
+                    <img src="../images/logo-new2.png" width="33%" , height="30%" id="logo" align="top"></a>
+                <h2
+                    style="color:rgb(192, 18, 18); font-family:Menlo, Consolas, Monaco,Courier,monospace; font-size:14px">
+                    Affected Schools</h2>
+            </div>
+            <div class='map-overlay'></div>
+            <div id="legend"></div>
+            <span style="color:rgb(192, 18, 18); font-family:Menlo, Consolas, Monaco,Courier,monospace; font-size:12px">
+                Filter by min/max cases or date:</span><br>
+
+            <div data-role="rangeslider">
+                <label id="case_min" for="min_range" style="font-weight:bold"></label>
+                <input id="slider_min" type="range" name="min_range" id="min_range" min="1" max="110" step="1"
+                    value="0" />
+
+                <label id="case_max" for="max_range"></label>
+                <input id="slider_max" type="range" name="max_range" id="max_range" min="1" max="110" step="1"
+                    value="110" />
+            </div>
+
+
+            <label id="date_last" style="font-weight:bold">Last report &lt;X days</label>
+            <input id="slider_date" type="range" min="1" max="210" step="2" value="210" />
+
+            <b></b><a href="https://masks4canada.org/canadian-schools-covid-19-tracker-submit-a-case/">Report case
+                or
+                correction</a></b><br>
+            <span style="font-style:italic"><a href="https://twitter.com/covidschoolsCA">@covidschoolsCA</a>
+                <span style="font-style:italic"><a href="http://covidschoolscanada.org">covidschoolscanada.org</a>
+                    <a href="https://masks4canada.org">#Masks4Canada</a></span>
+
+                <span style="font-style:italic">Turn layers on and off</span>
+                <nav id="menu"></nav>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
