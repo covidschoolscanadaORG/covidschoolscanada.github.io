@@ -17,7 +17,7 @@
       </div>
     {% endif %}
     <h3 class="entry-title">
-      <a href="{{ post.url | relative_url }}" rel="bookmark">{{ title }}</a>
+      <a>{{ title }}</a>
     </h3>
   </header>
   <footer class="entry-meta">
@@ -33,7 +33,7 @@
   <div class="entry-excerpt">
     {% if post.excerpt %}
       {{ post.excerpt | markdownify }}
-      <p><a href="{{ post.url | relative_url }}" class="more-link">{{ site.data.theme.t.read_more | default: 'Read More' }} <span class="icon icon--arrow-right">{% include icon-arrow-right.svg %}</span></a></p>
+      <p><a href="{{ post.url | relative_url }}"></a></p>
     {% endif %}
   </div>
 </article>
