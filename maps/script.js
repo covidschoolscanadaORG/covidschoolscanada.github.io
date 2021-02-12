@@ -163,6 +163,7 @@ var map = new mapboxgl.Map({
     transformRequest: transformRequest
 });
 
+/*
 $(document).ready(function () {
     $.ajax({
         type: "GET",
@@ -171,6 +172,7 @@ $(document).ready(function () {
         dataType: "text",
         success: function (purifiers) { makeGeoJSON(purifiers); }
     });
+
 
     function makeGeoJSON(purifiers) {
         csv2geojson.csv2geojson(purifiers, {
@@ -202,6 +204,8 @@ $(document).ready(function () {
                         ]
                     }
                 });
+                
+
 
 
                 // When a click event occurs on a feature in the affectedSchools layer, open a popup at the
@@ -249,7 +253,9 @@ $(document).ready(function () {
         });
     };
 });
+*/
 
+/*
 // enumerate ids of the layers
 var toggleableLayerIds = ['purifiers', 'affectedSchools'];
 
@@ -282,6 +288,7 @@ for (var i = 0; i < toggleableLayerIds.length; i++) {
     var layers = document.getElementById('menu');
     layers.appendChild(link);
 }
+*/
 
 function findSchools(query) {
     // console.log("in geocoder bloo")
