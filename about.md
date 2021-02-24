@@ -21,7 +21,7 @@ This is a project of the grassroots advocacy group <b><a href="https://masks4can
 ||Hinda Hussein|BSc Health Studies<br>University of Waterloo|
 |<img src="../images/team/UroojKhan.jpg" width=200 height=200>|<a href="http://twitter.com/uroojkhannn">Urooj Khan</a>|Biomedical Sciences student<br>Ryerson University|
 |<img src="../images/team/AndreeaManea.JPG" width=200 height=200>|<a href="http://twitter.com/BusyBee27987775">Andreea Manas</a>||
-||<a href="http://twitter.com/DrLolaMD">Ololadeo Ogunsuyi</a>||
+|<img src="../images/team/OloladeOgunsuyi.jpg" width=200 height=200>|<a href="http://twitter.com/DrLolaMD">Ololade Ogunsuyi</a>|MSc Systems Medicine (Precision Medicine)<br>Georgetown University|
 |<img src="../images/team/LincolnStein.jpg" width=200 height=200>|<a href="https://oicr.on.ca/investigators/lincoln-stein/">Dr. Lincoln D. Stein, MD PhD</a>|Research Scientist<br>Ontario Institute for Cancer Research|
 ||<a href="http://twitter.com/LadyScorcher">Cheryl White</a>||
 
