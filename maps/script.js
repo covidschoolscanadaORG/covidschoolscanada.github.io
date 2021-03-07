@@ -88,6 +88,12 @@ $(() => {
                     description = description + `<b>` + `Province: ` + `</b>`
                     description = description + e.features[0].properties.Province + `<br>`;
 
+                    description = description + `<b>` + `Source(s): ` + `</b>`
+                    e.features[0].properties.Article.split(';').forEach((link, idx) => {
+                        var articleNumber = idx + 1
+                        description = description + `<a href='` + link + `' target="_blank">Article ` + articleNumber + `</a> `;
+                    })
+
                     while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
                         coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
                     }
