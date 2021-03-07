@@ -57,7 +57,10 @@ Each point shows a school with one or more confirmed cases of COVID-19. A yellow
 
 <h3>Do you verify the cases entered on the map?</h3>
 
-Yes. We always verify cases before adding them to the map.
+Update 7 March 2021: The short answer is: yes. The long answer is: verify cases in ON, MB, SK, and the Atlantic Provinces. For BC, QC and AB, we rely directly on the cases collected by the most excellent grassroots trackers <a href="https://bcschoolcovidtracker.knack.com/bc-school-covid-tracker">BC School COVID Tracker</a>, <a href="https://www.covidecolesquebec.org/">Covid Ecoles Quebec</a>, and <a href="https://www.supportourstudents.ca/">SOS Alberta</a>, whose process we have observed for months and record-keeping we've found to be diligent.
+
+<h3>Why do some ON/MB/SK cases seem to be missing supporting links on your map? </h3>
+*sigh*. In late November, our previous website provider accidentally deleted a fraction of uploaded documents from our WordPress website. It was immensely frustrating, after the hard work of our volunteers put in painstakingly collecting each case. We went through our supporting links and removed pointers to these broken links. Those that are preserved, and anything after Jan 1 2021 (when we migrated to our new system, which we manage ourselves on Google Drive) should exist.
 
 <h3>What sources do you use to verify the cases on the map?</h3>
 
@@ -65,11 +68,11 @@ We use one or more of the following: a letter from school or school board; a con
 
 <h3>Can I just tag you on social media to submit a report?</h3>
 
-This project is complex and a huge volume of work for our team of volunteers.  We have created some automation to help manage duplicates and keep our records clean. Our team relies on your support to use the form, which will help us update on time and without mistakes.
+Update 7 March 2021: The most reliable way to submit a report is <a href="https://covidschoolscanada.org/submit">through our online form</a>. That way it gets on the to-do list.
 
 <h3>I don’t see a case on the map. Can I report it?</h3>
 
-Absolutely, please use this form to report a confirmed case. Note that our volunteers verify each case before adding to the map, this could take up to a day to complete.
+Absolutely, please <a href="https://covidschoolscanada.org/submit">use this form</a> to report a confirmed case. Note that our volunteers verify each case before adding to the map, this could take up to a day to complete.
 
 <h3>I see a mistake on the  map. Can I report it?</h3>
 
