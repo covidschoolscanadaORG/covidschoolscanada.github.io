@@ -4,6 +4,7 @@ title: School Board Daily Advisory Updates
 ---
 
 Each update below compares the current day to the previous day:
+1. [2021-03-11 (Thursday)](SUMMARY-2021-03-11T1630.html)
 1. [2021-03-10 (Wednesday)](SUMMARY-2021-03-10T1630.html)
 1. [2021-03-09 (Tuesday)](SUMMARY-2021-03-09T1630.html)
 1. [2021-03-08 (Monday)](SUMMARY-2021-03-08T1630.html)
