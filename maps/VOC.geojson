@@ -1732,6 +1732,24 @@
     {
       "type": "Feature",
       "properties": {
+        "School": "Polyvalente de La Pocatière",
+        "City": "La Pocatière",
+        "Date": "2021/03/21",
+        "Article": "https://docs.google.com/spreadsheets/d/1cU9_JiWJ4NdvCWAleivb3pNweYgaqt4GBRIWPl3MyxM/edit?ts=60553d34#gid=0",
+        "Province": "QC",
+        "Last_Reported_Date": "2021-03-21"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.02255,
+          47.36919
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "School": "École Le Sommet",
         "City": "Québec",
         "Date": "2021/03/21",
