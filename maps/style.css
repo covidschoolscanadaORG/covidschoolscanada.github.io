@@ -96,6 +96,16 @@ body {
     font-weight: 500;
     margin-top: -5px;
 }
+.mapboxgl-popup-content h4 {
+    background: rgb(255, 247, 0);
+    text-align: center;
+    color: #000;
+    margin: 0;
+    display: block;
+    padding: 15px;
+    font-weight: 500;
+    margin-top: -5px;
+}
 
 .mapboxgl-popup-content span {
     margin: 0;
