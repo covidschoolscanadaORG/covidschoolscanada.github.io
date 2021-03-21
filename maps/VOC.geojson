@@ -1771,15 +1771,15 @@
         "School": "Panorama Ridge Secondary",
         "City": "Surrey",
         "Date": "2021-03-18",
-        "Article": "https://drive.google.com/open?id=167Zdxco3_iZwlDJEJbS1WtEoqBmYi2bm;https://drive.google.com/open?id=1SyuetXtkjomNC3GbzP0TfR1ST82uT_Yz;https://drive.google.com/open?id=17jeUg37yOtM681_dF0XcwBO-wl01s1xc;https://drive.google.com/open?id=1vKt7L7t6dUX1EYmOCPyFPjzYFCZHnn0M;https://drive.google.com/open?id=1yUsGcgWsm4PCL_X8aPdTZQ9m82zXp_oD;https://drive.google.com/open?id=1LrXm6XlLfu7F1_bZteO4FAuljQJWkdOG;https://drive.google.com/open?id=1pPnByocgF6MMgFHJF5sJSXxAjeQtYr0x;https://drive.google.com/open?id=1RTrKUdBqp-uKCJWPqSH5vmdwAq2xHynn;https://drive.google.com/open?id=11x_4E8w5IX8RK-gMN5wSYqPIW7MTANvf;https://drive.google.com/open?id=1XhZVJIM75jCBlCe14R34-fBzosf-Ac1y;https://drive.google.com/open?id=1TBF_trs6kWB-Vdkk2iVcoNre5p3yn_OC;https://drive.google.com/open?id=1DZH9F_MiEgRNta0pzoYWHpOSVJ1JICjo;https://drive.google.com/open?id=1UW0hTIF44-CYTEEmT4CwqsWPMxuoSBZC;https://drive.google.com/open?id=1ky3Rdq08_rcK31G71Taoi3WCRlGpKA28;https://drive.google.com/open?id=1_78LH2OHt1StB297V5rDhLmPdeo8uav-;https://drive.google.com/open?id=1nxwLpAAr46MtF9k3UHO3AcMd6OuYKGA1;https://drive.google.com/open?id=1frzBesy57_u0cmuKjiEuhXAHKJwldCmB;https://drive.google.com/open?id=1UJTO0iSsRDNj3eO6s09Fpq9Yh6V5TWm-;https://drive.google.com/open?id=1eGH1jznhSXwXAfEKJdR5URsM1DC7z4_k;https://drive.google.com/open?id=1AyFZvnJvQfkcQer6u3fsSpMnbafeQtQS;https://drive.google.com/open?id=1P8OUXZA1iTcfExgxYNNEavk3CKIMxIxC;https://drive.google.com/open?id=1ZBkWRZIXwVJM_pZxAFUL7Mi0S72qRzur;https://drive.google.com/open?id=1LPNsNdi0p5wxouTw_MV5zzoTR_z8jQ3B;https://drive.google.com/open?id=17sXgsegb9M7r4fxVXlH0Pmeth0R1oz0G;https://drive.google.com/open?id=1M11_25UWxpoA2ZDW_run_ILDex5lEwHn;https://drive.google.com/open?id=1gnQMMk7600tsrJ2m8cZBDdJNHObgqFlW;https://drive.google.com/open?id=1wu5RY19SYfw0J22Y5LutIZ-D3_A9Zk9R;https://drive.google.com/open?id=1MA8QXv3gDqEyvmlCro8j8P4f5WhTTiBw;https://drive.google.com/open?id=10otmMZelbPYkabAhZovcYgb6MGAMM5Y3;https://drive.google.com/open?id=1TIaPP9ZzOT_6_o9EWswS8lmRTzvQh8jA;https://drive.google.com/open?id=1y7QwYl7t4GT5HankXQKdhF8nXl-vDboC;https://drive.google.com/open?id=1a0P0-65HJBnjPCOvGEMoAajrUTtj7Goj;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA",
+        "Article": "https://bcschoolcovidtracker.knack.com/bc-school-covid-tracker",
         "Province": "BC",
         "Last_Reported_Date": "2021-03-18"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -122.854987,
-          49.118791
+          -122.854687,
+          49.119091
         ]
       }
     },
@@ -1789,15 +1789,15 @@
         "School": "Maple Green Elementary",
         "City": "Surrey",
         "Date": "2021-03-18",
-        "Article": "https://drive.google.com/open?id=10Q0-kFzp93XN3XQreLRuy4MGujl-Ikiz;https://drive.google.com/open?id=1LXMXwIew-0TcDCoMwaZgSwT_vwfiK-1n;https://drive.google.com/open?id=1dn_mox7_5F0WnFqqg5me_sFQ-4q4kbmO;https://drive.google.com/open?id=1hIfLLtX4Os9tfSAeEH3nq4716Tls9-7h;https://drive.google.com/open?id=1xsokHxbi815fHcAFsdaNxnSl_R_S5LPx;https://drive.google.com/open?id=1Jz6-Oh8cQ2NP6iX5ncYn7dL6csgLswgc",
+        "Article": "https://bcschoolcovidtracker.knack.com/bc-school-covid-tracker",
         "Province": "BC",
         "Last_Reported_Date": "2021-03-18"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -122.809731,
-          49.157327
+          -122.809431,
+          49.157627
         ]
       }
     },
@@ -1807,15 +1807,15 @@
         "School": "Enver Creek Secondary",
         "City": "Surrey",
         "Date": "2021-03-17",
-        "Article": "https://drive.google.com/open?id=1t1gEziJPuVY-Od-6eVNzWn4kEu1bSnsE;https://drive.google.com/open?id=1t1gEziJPuVY-Od-6eVNzWn4kEu1bSnsE;https://drive.google.com/open?id=1rt0smbT8MeMSGfgMtjx4bu6HpXCYwCiZ;https://drive.google.com/open?id=1TC9wuF-UeRkS62sQ1UB-JV4uB3HuE3Y8;https://drive.google.com/open?id=1x0ysaph5RxCxNuO_mCQ36z7vBXaF0BM6;https://drive.google.com/open?id=1VgacU-uC1odxb3sRpiNBeuXX6yW9mZOb;https://drive.google.com/open?id=1hZoNCSI9rCrDrAzTVvS_EVsFblD1PlUF;https://drive.google.com/open?id=1bdIlTu-IMVKqv9Z_AWgDYn7P6y0--4zz;https://drive.google.com/open?id=1zNStG3qY0AzJdsoXmeTDyc71fb9gUApT;https://drive.google.com/open?id=1nHG48GgOV9zMBlA28gzrVfEOQccGDRA4;https://drive.google.com/open?id=1urlp4fZ3dNPeWuNAUkIfYRmtaJVJva_u;https://drive.google.com/open?id=1Zl2zv2cq7dJdWxt-At1-36clI6dESIDy;https://drive.google.com/open?id=1S1bON5GNGC4kTrJeg14WMi9rnEkSDFtN;https://drive.google.com/open?id=1oiddZgNxfBfr7kWhoOS5m0koXC-kmpGX;https://drive.google.com/open?id=1J5uZMI-CpDoxQ9LzhRzdZbQ90pim_QGZ;https://drive.google.com/open?id=1BK-lIrwcHz0oIjtgfj5N6DM6oUX5WjMy;https://drive.google.com/open?id=1KDrbmI1nNV7ZIFpHNU2A4oPVYL4kAjYE;https://drive.google.com/open?id=1aMvcCgL0AWqjmuerF32AtRnXfwddedCo;https://drive.google.com/open?id=1sgzHtVjxJAQCZRoHDcgake2wgBJJZko_;https://drive.google.com/open?id=1mn9bxZUKVyRz9c3Ou9KbJfQSdz4pn6rc;https://drive.google.com/open?id=1ulKw02wVEhT57EsD4CNLftyNP8sF-uE5;https://drive.google.com/open?id=1fCd3e5AxWuSPCJ7RVdQay3dK4FsMSyIu;https://drive.google.com/open?id=1odVVeUsCfuZsSWcibflQkeWGyH5Y50Nv;https://drive.google.com/open?id=1miuF-UlEgQh-t1SpWzon5LQSPHdkmGZ8;https://drive.google.com/open?id=1gagFq0qvREZvdiYkIjJYc4KhFtJjykdp;https://drive.google.com/open?id=1SgkL3Pl8ZYkxi5ABZXyFdjeeWFfC2E66;https://drive.google.com/open?id=1vQYWG_K1VspWTbme55gB9fV86ILS_mJQ;https://drive.google.com/open?id=1JezUyajFtcmp4n_VjtpytJLG-sji5kGM;https://drive.google.com/open?id=1ZUJvZou-KpkzyQC2ahBymHdLLcl_MraF;https://drive.google.com/open?id=1hlTFWmAXf2AUJM-UBqxeQR0dFZLMO5MM;NA;NA;NA;NA;NA;NA;NA;NA",
+        "Article": "https://bcschoolcovidtracker.knack.com/bc-school-covid-tracker",
         "Province": "BC",
         "Last_Reported_Date": "2021-03-17"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -122.82025,
-          49.155828
+          -122.81995,
+          49.156128
         ]
       }
     },
@@ -1825,15 +1825,15 @@
         "School": "des Deux-rives",
         "City": "Mission",
         "Date": "2021-03-16",
-        "Article": "https://drive.google.com/open?id=1YR2XKFgIx06zkx98Cr5SAZhOACczQ4e9",
+        "Article": "https://bcschoolcovidtracker.knack.com/bc-school-covid-tracker",
         "Province": "BC",
         "Last_Reported_Date": "2021-03-16"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -122.291425,
-          49.14134
+          -122.291125,
+          49.14164
         ]
       }
     },
@@ -1843,15 +1843,15 @@
         "School": "Martha Currie Elementary",
         "City": "Surrey",
         "Date": "2021-03-16",
-        "Article": "https://drive.google.com/open?id=16SIZHw4ammmebSxSpkIJ9C5LcFCmV-n3;https://drive.google.com/open?id=1oqRkzFwiTMmx_4DajsDHbBr2p0-QDESR;https://drive.google.com/open?id=1YiU2zTRT2_qzvceXc2jBvhQd-qu5ekZc;https://drive.google.com/open?id=1PbrM515vt921lYjih6lFE3bAYSeUKygG;https://drive.google.com/open?id=1KraO94dLKksRqBvrVu7Oi1n4Rn1YfsXz;https://drive.google.com/open?id=1gcaPIlH294n9Yhdi60pOgv_rjHTWCiiS;NA",
+        "Article": "https://bcschoolcovidtracker.knack.com/bc-school-covid-tracker",
         "Province": "BC",
         "Last_Reported_Date": "2021-03-16"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -122.712947,
-          49.107815
+          -122.712647,
+          49.108115
         ]
       }
     },
@@ -1861,15 +1861,15 @@
         "School": "Fleetwood Park Secondary",
         "City": "Surrey",
         "Date": "2021-03-14",
-        "Article": "https://drive.google.com/open?id=1Gc3mn3Jx_jBjjO04lhv2nIo0Z28LKwbm;https://drive.google.com/open?id=1t6OTYhIWUjPTakMuSAW9iEIUQW4tMlN8;https://drive.google.com/open?id=14NcZbQ7MqEEGIlXf0a0bPNfrX928s1Ro;https://drive.google.com/open?id=1X9eW4iBOb12wbrn_PzCQS4_KXd2Kbkmh;https://drive.google.com/open?id=10gl-xmALMo2qvoAbR8PWpKMy-O9l8Wf-;https://drive.google.com/open?id=1Gv7qTXX55Omz-BsHW0CRiNsdqNwOUpZ_;https://drive.google.com/open?id=1TYuL5ORA8DVZeF4rv32uZd6ecqdrUldI;https://drive.google.com/open?id=1frF6fl0WWBab4Ijoqk70yZ-EMLPH4SYk;https://drive.google.com/open?id=1cjcE7VEGvIxhbEl-Xqu3rFCDOqlLRYqV;https://drive.google.com/open?id=1khitEw8nkyogeQeM4GDOSzH4E7Po6mlL;https://drive.google.com/open?id=15KYD3aJR5-ejZHfOhPRZ14fTiqfCMI3L;https://drive.google.com/open?id=1OhObQ19iS1qMjGF-x-DRq3KszYT7o3Pe;https://drive.google.com/open?id=1pRf97cFNU3HwfsjiYEw76kx8Mmy1pU5D;https://drive.google.com/open?id=18taAUC3O4srxThgDVFURjhaf4UfaPFOy;https://drive.google.com/open?id=1NZ5a-WRHvFK7c0NxK7aIda3BX7kBfRAd;NA;NA;NA;NA",
+        "Article": "https://bcschoolcovidtracker.knack.com/bc-school-covid-tracker",
         "Province": "BC",
         "Last_Reported_Date": "2021-03-14"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -122.7902581,
-          49.1081509
+          -122.7899581,
+          49.1084509
         ]
       }
     },
@@ -1879,15 +1879,15 @@
         "School": "Westerman Elementary",
         "City": "Surrey",
         "Date": "2021-03-08",
-        "Article": "https://drive.google.com/open?id=1z_Iumul2BYdScsDAwpLFP4N8yrjbNAZq;https://drive.google.com/open?id=1gTbwfQPhDYVAaYcbHpwJMV1KEbJoWWlC;https://drive.google.com/open?id=1cbzudcsCTiDsiQCnSNYJMRJBM-Uop-vZ;https://drive.google.com/open?id=1xbW_e3yzXPBOVJFRSmKa0bYiJNsg7I6x;https://drive.google.com/open?id=1arKeYVB8K-OmVBFeaN5zkHLTNNaaXqr6;https://drive.google.com/open?id=1bIDwFkO_aB-Tc5lKgKeluBYt08xCTTF2;https://drive.google.com/open?id=1vqTl5JbiXogCe0w-C6ScCmNkFXUs_qM2;https://drive.google.com/open?id=12-WkpKG5IGFPvjevj1cLlkD1OJ9ykIZZ;https://drive.google.com/open?id=1z2KEwDs2b2h7XBpdtIXi3PwwVPnmntdx;NA;NA;NA",
+        "Article": "https://bcschoolcovidtracker.knack.com/bc-school-covid-tracker",
         "Province": "BC",
         "Last_Reported_Date": "2021-03-08"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -122.884378,
-          49.141658
+          -122.884078,
+          49.141958
         ]
       }
     },
@@ -1897,15 +1897,15 @@
         "School": "J T Brown Elementary",
         "City": "Surrey",
         "Date": "2021-03-06",
-        "Article": "https://drive.google.com/open?id=1e2hHFWhSHKlngdD1CK9SyaOsqXfgy1oU;https://drive.google.com/open?id=1DPJnqG9gjj6ctYRreOENoG5L8tDq6BOm;https://drive.google.com/open?id=1L0dXVGtaDoeVLOu9JTzLFxi9GBflgg-d;https://drive.google.com/open?id=1oQ6F_XZOgR6QwsKygWaeSOYTqU8aRbRH;https://drive.google.com/open?id=1S-K-4ElI0vWF4bWK4bViAUyIpHY4V5s5;https://drive.google.com/open?id=1US9rT0NNboxDif2jAwxFhrYhFg2StOXR",
+        "Article": "https://bcschoolcovidtracker.knack.com/bc-school-covid-tracker",
         "Province": "BC",
         "Last_Reported_Date": "2021-03-06"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -122.875717,
-          49.111645
+          -122.875417,
+          49.111945
         ]
       }
     },
@@ -1915,15 +1915,15 @@
         "School": "Goldstone Park Elementary",
         "City": "Surrey",
         "Date": "2021-03-05",
-        "Article": "https://drive.google.com/open?id=1zLkbASUVMA26KvtsRbwgmZGVOYMEwRRx;https://drive.google.com/open?id=1c0RZyDpBCa_WABdYtW6piClkOtwQH88k;https://drive.google.com/open?id=1HIHdRatweHOrxIoNeCtNzKTfEFZhrxJe;https://drive.google.com/open?id=161NmVYQp-KLXh7-Ii0BBCdEaos2EFFwI;https://drive.google.com/open?id=1rwLUMR4w6mqueJSVQbc08QU2dN9k19tL;https://drive.google.com/open?id=1XTPUAPNoOnW0ZlxYyl-YvwxKJ0jvP2Cb;https://drive.google.com/open?id=1qXPjSr_hu_EIaeEaPnWpVfvD4DHr1UNM;https://drive.google.com/open?id=1hVd4ESTinOYPfoTrTmxR1IK8rmmT9vfZ;https://drive.google.com/open?id=1v25s-NI9vMt3apKDMqe53YSA1Rom7E-z",
+        "Article": "https://bcschoolcovidtracker.knack.com/bc-school-covid-tracker",
         "Province": "BC",
         "Last_Reported_Date": "2021-03-05"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -122.818103,
-          49.116556
+          -122.817803,
+          49.116856
         ]
       }
     },
@@ -1933,15 +1933,15 @@
         "School": "Johnston Heights Secondary",
         "City": "Surrey",
         "Date": "2021-03-04",
-        "Article": "NA;https://drive.google.com/open?id=1VVp0mU5p-xu0AECqqueLU56UHoXYv5qu;https://drive.google.com/open?id=1kgpOXtGr7KDqyodqGP1p37ev455aLS9u;https://drive.google.com/open?id=156AjYlTTedaOyRC_ov2Uf6iXa3U8Gwhw;https://drive.google.com/open?id=1Xxub786VbIBxAJCfB6VrflDcxWKY9Tz4;https://drive.google.com/open?id=1AySH33qFGbg2hfISWsaYA1kekN-aVH7M;https://drive.google.com/open?id=1xUFGumZex8d4xPhCpl6kjBKREXYCT1oe;https://drive.google.com/open?id=1lj0YzJTWBKdSiFjuPRijKeg6V45D6xG-;https://drive.google.com/open?id=1MygJOS88E4-Q2EIIhfkRrWjg6vsbOvF9;https://drive.google.com/open?id=1Uws9AgZ4w9K4Z1oPAlfG0mEs9EduWqug;https://drive.google.com/open?id=1tasoSsFkGnJLpXX3kLfSSPrsf50Vzk8v;https://drive.google.com/open?id=1FSuhh4tqFfpxGOM19B3HOF9rhLBH_OIa;https://drive.google.com/open?id=1o7hDXxdv0P6TtRf8jJnkY_P3993_w0wR;https://drive.google.com/open?id=1bjDEkeIBJ-KB72JJuvbVTRRfiSSD9dqz;https://drive.google.com/open?id=1v-EW2Rg0tk1go_VljpbM5OsF7JhIdxSt;https://drive.google.com/open?id=100f2Ahc6jhvT9CyM42V1mLVOjP7PkWRS;https://drive.google.com/open?id=1NLfE9n5eaMrg-YylXNk_WXa8hiq4q_Zf;NA;NA;NA;NA;NA;NA;NA",
+        "Article": "https://bcschoolcovidtracker.knack.com/bc-school-covid-tracker",
         "Province": "BC",
         "Last_Reported_Date": "2021-03-04"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -122.79808,
-          49.182153
+          -122.79778,
+          49.182453
         ]
       }
     },
@@ -1951,15 +1951,15 @@
         "School": "Kwantlen Park Secondary",
         "City": "Surrey",
         "Date": "2021-03-04",
-        "Article": "https://drive.google.com/open?id=1hoQQEIXVYLRO07Y19Qlz-o6NvLePh7sl;https://drive.google.com/open?id=1a_ko2AEvZ3oP60qCkx76H2J3yPd1T_zJ;https://drive.google.com/open?id=1NJleMd4FDFzTVNNoMrBV6LCDle5q9it1;https://drive.google.com/open?id=1MFdjiq5HGwxRp8SiyF1I6yqIPfpo54sy;https://drive.google.com/open?id=1a4jfvbcgIj2M1Ovowb9qCLoe1SX_FDc0;https://drive.google.com/open?id=152OOZqaO5ifGD5PgC6rxK-6dXnqzInNZ;https://drive.google.com/open?id=1VLoXiYLyHN7t_pdyg8isXfzO3aIb6Qg6;https://drive.google.com/open?id=1vz0dKp5p8Z2ZKEM34r6Rd9esflHcklmw;https://drive.google.com/open?id=1VdvuJBzZYosOmmDBCdjZTjxrSxxklkD0;https://drive.google.com/open?id=1Kaq5KzV3XrnOetfsxACwwujqsIgsY8DB;https://drive.google.com/open?id=1naejTQmagOqMik6NUXqVgg95-de1Khcp;https://drive.google.com/open?id=19ZxH0uE4AL_ALoXdGuiVCkS6i0YFpqal;https://drive.google.com/open?id=1L-O6R7SsGqOeq30DsjJ5wia_r5kdcxqP;NA;NA;NA",
+        "Article": "https://bcschoolcovidtracker.knack.com/bc-school-covid-tracker",
         "Province": "BC",
         "Last_Reported_Date": "2021-03-04"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -122.85668,
-          49.19222
+          -122.85638,
+          49.19252
         ]
       }
     },
@@ -1969,15 +1969,15 @@
         "School": "McLeod Road Traditional",
         "City": "Surrey",
         "Date": "2021-03-04",
-        "Article": "https://drive.google.com/open?id=1HCGoFozljrxA-zm0am87YzjtWMkNIjCn;https://drive.google.com/open?id=13qYoTnc-rCXxtBZ8QLxwPJn8lkp1Xwyc;https://drive.google.com/open?id=1PpcXwuCDWk8vPAF9ZwubtwYU_3LwrmTR;https://drive.google.com/open?id=1DnwzYMnBS8k3ttcsz6i-CDs__J0lwcYE;https://drive.google.com/open?id=1YPap38C3qQbWlK6BORaemNdPpCHvIEht;NA",
+        "Article": "https://bcschoolcovidtracker.knack.com/bc-school-covid-tracker",
         "Province": "BC",
         "Last_Reported_Date": "2021-03-04"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -122.829112,
-          49.118001
+          -122.828812,
+          49.118301
         ]
       }
     },
@@ -1987,15 +1987,15 @@
         "School": "John MacLure Community School",
         "City": "Abbotsford",
         "Date": "2021-03-04",
-        "Article": "https://drive.google.com/open?id=1ysQkYvf6sIGJxArVZI9Wj65grBaUdJGG;https://drive.google.com/open?id=1bZe1e00h-umOlEGtGWLuB9F0fl4v8Rl0;https://drive.google.com/open?id=1lWNEZ3d8sQmNShdbwvUmpiodaIJJhPol;https://drive.google.com/open?id=1adchdpPKYeZSLPP5_-GPWkdeMQTMWNMN",
+        "Article": "https://bcschoolcovidtracker.knack.com/bc-school-covid-tracker",
         "Province": "BC",
         "Last_Reported_Date": "2021-03-04"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -122.319344,
-          49.056259
+          -122.319044,
+          49.056559
         ]
       }
     },
@@ -2005,15 +2005,15 @@
         "School": "Burnaby Central Secondary",
         "City": "Burnaby",
         "Date": "2021-03-03",
-        "Article": "https://drive.google.com/open?id=1RY2ghuXP-5CCXLwkxBRANslIuSsIhinH;https://drive.google.com/open?id=1N4UhpcDBJJb2Vl4lx63ymt7SIXZhIdIH;https://drive.google.com/open?id=1KVDUwZhUEGNShv_YtNeRlctNAT6BhNrr;https://drive.google.com/open?id=1If1_dN3BJhxjb8wzeJm3Fukyro-FIPMT;https://drive.google.com/open?id=1ltXyxvAL-AOZochur8wYCNOW8QGVgOxR;https://drive.google.com/open?id=1GxwmOr4lwcErNPY_lncylOrR200gKV_R;https://drive.google.com/open?id=1wLi6Kf9d8q2Tg8SqENHs5e6tqOC9_0ws;https://drive.google.com/open?id=1CHAJJia5a3qnlLcz749n3TBlOPtKceyE;https://drive.google.com/open?id=1WnSJjIXiG9pcHVp2Ziv5La424g516pyg;https://drive.google.com/open?id=1jz7i9JkYGvlj3VeUuY8WGhaZDM7yHtnw;NA;NA;NA",
+        "Article": "https://bcschoolcovidtracker.knack.com/bc-school-covid-tracker",
         "Province": "BC",
         "Last_Reported_Date": "2021-03-03"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -122.974878,
-          49.243489
+          -122.974578,
+          49.243789
         ]
       }
     },
@@ -2023,15 +2023,15 @@
         "School": "Mountain Elementary",
         "City": "Abbotsford",
         "Date": "2021-03-03",
-        "Article": "https://drive.google.com/open?id=15oorDmlVlPXPuz_b9m52ArAXt2RdqhKp;https://drive.google.com/open?id=1rBEa1AuTJvU1C1ExqqawtQ_qUDzKsdN2;NA",
+        "Article": "https://bcschoolcovidtracker.knack.com/bc-school-covid-tracker",
         "Province": "BC",
         "Last_Reported_Date": "2021-03-03"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -122.234828,
-          49.042989
+          -122.234528,
+          49.043289
         ]
       }
     },
@@ -2041,15 +2041,15 @@
         "School": "Sullivan Heights Secondary",
         "City": "Surrey",
         "Date": "2021-03-02",
-        "Article": "https://drive.google.com/open?id=1H1XCu8JV27FfsRkGf0uqqBDrGFcuUy4T;https://drive.google.com/open?id=14qXL5PxDNrsgG4zvk5U7LxPJDniH4ffU;https://drive.google.com/open?id=1JWtt1-pTovf_tpyLGwFcroiv7FPFTDwe;https://drive.google.com/open?id=1V_dzJFsvVIbXmxygi8oP35PaTjaSBC-V;https://drive.google.com/open?id=1RtE_hqVMMUlofmUTYjUbjIq8D9tT0kSS;https://drive.google.com/open?id=1ZrBzypHhRjWlihXzOORnOa2moQt-DLB8;https://drive.google.com/open?id=1HIhtMQbkRTfpEG9iqsNdpH1JUxdhPkom;https://drive.google.com/open?id=1Lei394dxf8Vis2iR1jXC5yNy8Ki7z4_n;https://drive.google.com/open?id=168XV0vYQjjI4_9I268qfU0JmY9o5s_dw;https://drive.google.com/open?id=1ezi9IqDy5zhVnKx7UErt1ZkAY8pOkQ0-;https://drive.google.com/open?id=1x1vApSZS_SGSs5RR-HAkbHqK8Q4FRCMM;https://drive.google.com/open?id=1qEcLkKRVRiBtKiGrNikh5ufMFf4EDgmD;https://drive.google.com/open?id=1Et3NRU2XTnZ5JZ1ak9dmAfLbBTh7RHGt;https://drive.google.com/open?id=1fEdJ5E27buNPgluE7AYzqUwbpMQUtkm7;https://drive.google.com/open?id=1CLrHd5YebeDKwdZxGqvFw6yn03_aTowO;https://drive.google.com/open?id=1u7hBSMhACmzB6tBMNCTqPx1GJICzYlN5;https://drive.google.com/open?id=1qe6Enfpazvpmr4IWXH9zVN1EmamdJpzU;https://drive.google.com/open?id=1JRU3Dc4wJRZicvG-S9wkU8ua45Ksfr5R;NA;NA;https://drive.google.com/open?id=1YDCFVDEYo14f8tFwEE_rkdrkrEiP0CL5;https://drive.google.com/open?id=10TirDbiZgphEHK8nEVMlRkqJmdfDCprQ;https://drive.google.com/open?id=1HszWAQDYFJoTk8FB4F4ImrEhgyuqEXIy;https://drive.google.com/open?id=1BDpEmG4WB6cRtdSAx5JyUlNCnVcoS7f8;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA",
+        "Article": "https://bcschoolcovidtracker.knack.com/bc-school-covid-tracker",
         "Province": "BC",
         "Last_Reported_Date": "2021-03-02"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -122.822943,
-          49.115746
+          -122.822643,
+          49.116046
         ]
       }
     },
@@ -2059,15 +2059,15 @@
         "School": "Strawberry Hill Elementary",
         "City": "Surrey",
         "Date": "2021-03-02",
-        "Article": "https://drive.google.com/open?id=1YsN_V8ewKCfpFdnPXHgjNJh6ve1pz8W-;https://drive.google.com/open?id=1_y26uh6Hd_TH19iNAmifLJ2BHLD70-qP;https://drive.google.com/open?id=1G7xXzX716dvD4cKje9f9jad07iP6sqs-;https://drive.google.com/open?id=1Q6Ta3fejuDTGbamrw49aEDDBQXCyBh6P;https://drive.google.com/open?id=1GpN0cFYs8XQMbhZ2bGABk40rV0PmR-5f;https://drive.google.com/open?id=1lJ36C2TQl0Q9M97FnaKeGGcGoDlpFWSd;NA;NA",
+        "Article": "https://bcschoolcovidtracker.knack.com/bc-school-covid-tracker",
         "Province": "BC",
         "Last_Reported_Date": "2021-03-02"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -122.87951,
-          49.14166
+          -122.87921,
+          49.14196
         ]
       }
     },
@@ -2077,15 +2077,15 @@
         "School": "North Surrey Secondary",
         "City": "Surrey",
         "Date": "2021-03-01",
-        "Article": "https://drive.google.com/open?id=1vdDT1r5PcG1uC4aLGMIncHOMbIe0kIoF;https://drive.google.com/open?id=1bzFn2884efjp-qIHFShtbGPFFH84furz;https://drive.google.com/open?id=1ERE25_aeTMTEKf6HpANXHO4xVFGncUbs;https://drive.google.com/open?id=1lnJTdfSC5QhrFehaUbB_vY3KXZENhkwj;https://drive.google.com/open?id=11S1WBWkCqxqADlrvSeoHcbf1yzJ4kFv6;https://drive.google.com/open?id=1CnjFNJJXHhLEP_fy9122hoUjcgEmw001;https://drive.google.com/open?id=16ENAyPZBE_rGP6PDJT7VisPP4yZbZirG;https://drive.google.com/open?id=1Nk5US6jUYcqjGDBMtXwcnjwdeB0nN4CI;https://drive.google.com/open?id=1JpRlI_q4Ceyt38hJFcRLX5E-zFH_iAHY;https://drive.google.com/open?id=1a49JIIVZyFRgf48GrXOF2GtZ3a48uGCf;https://drive.google.com/open?id=1QW6KIxi1YkzNgbhfzxTYIzvvI2of2GlT;https://drive.google.com/open?id=1Py48f8ul_wHJJijXNyfyd21RNXd6z46S;https://drive.google.com/open?id=1ccWbdVi9-VfeAB0_oxsHoIzCTM8kBw5a;NA;NA;NA;NA;NA",
+        "Article": "https://bcschoolcovidtracker.knack.com/bc-school-covid-tracker",
         "Province": "BC",
         "Last_Reported_Date": "2021-03-01"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -122.780131,
-          49.178333
+          -122.779831,
+          49.178633
         ]
       }
     },
@@ -2095,15 +2095,15 @@
         "School": "Frost Road Elementary",
         "City": "Surrey",
         "Date": "2021-03-01",
-        "Article": "https://drive.google.com/open?id=1arLE3oXTHwqkB9MY3YSK1Rn8J0zzsqgO;https://drive.google.com/open?id=1PIy2wSazHVjPfnxlXyQEdGV-VJWuypD5;https://drive.google.com/open?id=1DopjnyAtKbFWnT7WvWzRq8V5Ez09LadV;NA",
+        "Article": "https://bcschoolcovidtracker.knack.com/bc-school-covid-tracker",
         "Province": "BC",
         "Last_Reported_Date": "2021-03-01"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -122.773042,
-          49.159287
+          -122.772742,
+          49.159587
         ]
       }
     },
@@ -2113,15 +2113,15 @@
         "School": "Ecole Maple Creek Middle",
         "City": "Port Coquitlam",
         "Date": "2021-03-01",
-        "Article": "https://drive.google.com/open?id=1i5yDUT7hHQEUr1eNgOc4fuRTK4JNhJwA;https://drive.google.com/open?id=1kytdPVe6al8jFX6lWI7fxbdWnNzi9uMg",
+        "Article": "https://bcschoolcovidtracker.knack.com/bc-school-covid-tracker",
         "Province": "BC",
         "Last_Reported_Date": "2021-03-01"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -122.78042,
-          49.279675
+          -122.78012,
+          49.279975
         ]
       }
     },
@@ -2131,15 +2131,15 @@
         "School": "A J McLellan Elementary",
         "City": "Surrey",
         "Date": "2021-03-01",
-        "Article": "https://drive.google.com/open?id=1JJtcUUiIuesvUNFoh4erpTuOkxLEkl55;https://drive.google.com/open?id=1FuY8H8FWjy0TH7eDm-Tj4jFE0LV5tSTR;https://drive.google.com/open?id=167SDdTyxLEkv233atBFiX3l0-mghbX9G;https://drive.google.com/open?id=1-UizezM6LGvjCROAfZ4Jgx3BEY2uod2L;https://drive.google.com/open?id=1l3gFisXztN4oA_Ld2e14TKCuVQfzkEYq;https://drive.google.com/open?id=1m_GBeqQcQn0bqhCjDKaTyqcxVNxSuWys",
+        "Article": "https://bcschoolcovidtracker.knack.com/bc-school-covid-tracker",
         "Province": "BC",
         "Last_Reported_Date": "2021-03-01"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -122.763513,
-          49.11354
+          -122.763213,
+          49.11384
         ]
       }
     },
@@ -2149,15 +2149,15 @@
         "School": "Archbishop Carney Regional Secondary",
         "City": "Port Coquitlam",
         "Date": "2021-03-01",
-        "Article": "https://drive.google.com/open?id=1Li-IaCnD7rdXxMkcjryl3SOsvFlKZBZ5;https://drive.google.com/open?id=1jqKHUBok6-9yToQIt88uGgc4Td781PO0;https://drive.google.com/open?id=1OPiCDjdmz4CFf4GOLevgUj6GIvKph4In;https://drive.google.com/open?id=1rhSbSavkGWEyjEuT2A5_nJ050FovvMwY;https://drive.google.com/open?id=1AV6fEPGD-JS-ClGa7tteK3JD34ping7C;https://drive.google.com/open?id=16AjPv0LC1Xk_ymgOSU73Tqq4E4pj1hFc;NA",
+        "Article": "https://bcschoolcovidtracker.knack.com/bc-school-covid-tracker",
         "Province": "BC",
         "Last_Reported_Date": "2021-03-01"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -122.757185,
-          49.272109
+          -122.756885,
+          49.272409
         ]
       }
     },
@@ -2167,15 +2167,15 @@
         "School": "Ecole Marlborough Elementary",
         "City": "Burnaby",
         "Date": "2021-03-01",
-        "Article": "https://drive.google.com/open?id=1Nj_vocFMCg_TtszeQ6lDLiGOea1aImnW;https://drive.google.com/open?id=1a426nprqB5HJ4tLEmtUirAFDRDxIVWG1;https://drive.google.com/open?id=1RnuL_2-q6SRhLI-gY-noaE0oEYL_Fsvj;https://drive.google.com/open?id=1kz9uRou33SyjQDJP77sI7wfy_t4aiP66;https://drive.google.com/open?id=1sfDMAyELT4j_UB2mJbX8WBPPINvpq3k9",
+        "Article": "https://bcschoolcovidtracker.knack.com/bc-school-covid-tracker",
         "Province": "BC",
         "Last_Reported_Date": "2021-03-01"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -122.991411,
-          49.22866
+          -122.991111,
+          49.22896
         ]
       }
     },
@@ -2185,15 +2185,15 @@
         "School": "Cindrich Elementary",
         "City": "Surrey",
         "Date": "2021-02-27",
-        "Article": "https://drive.google.com/open?id=1q_0Lqci2OgeleLBSn2X64dt2I5zqxOJd;https://drive.google.com/open?id=1bMXEWtXvawQ945Lhb6bjVBhQykg6ltbY;https://drive.google.com/open?id=1zopojh__E-mgYr3iJqG2QLR0qMN4x25w;https://drive.google.com/open?id=1_iqcxhpq04dug_DfjAHak0d4B1OauUF7;https://drive.google.com/open?id=1Xg4wq22cXCOu2JbaSDE4yNUhnUihhigY;https://drive.google.com/open?id=1EgBTLuTZV-sS3h15nx9xLbch1kZ3YcvZ;https://drive.google.com/open?id=1BWgc16wJM0e7e87KHQ-3P8SrBAL3nZn5;https://drive.google.com/open?id=1WeudFyTWWBCaRCTjfDNCYKiOJs6jp8oJ;NA",
+        "Article": "https://bcschoolcovidtracker.knack.com/bc-school-covid-tracker",
         "Province": "BC",
         "Last_Reported_Date": "2021-02-27"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -122.849955,
-          49.166523
+          -122.849655,
+          49.166823
         ]
       }
     },
@@ -2203,15 +2203,15 @@
         "School": "M B Sanford Elementary",
         "City": "Surrey",
         "Date": "2021-02-26",
-        "Article": "https://drive.google.com/open?id=1iZJsHB8K7YFmIINKSPtVGrlVqCGrrkX8;https://drive.google.com/open?id=16cEKBe-6RLXkWAPZYMBoo62KEhygJ1e8;https://drive.google.com/open?id=1O3MVSt7nQeQMi9HJljrZcDTzaK-_Zd82;https://drive.google.com/open?id=1s6sET6Ad3wLHtGir__D5BrEJKeaOvu2a;https://drive.google.com/open?id=1CVJkTgaZJd5pNndf7XIo8PaqXxz7rJw1;https://drive.google.com/open?id=1SYViX5t_3wJzEfC0ECGs23ztoMrBTClB;https://drive.google.com/open?id=1hK6R7dWNQb3mMG9WDg1gtLs8X5qESkcF;NA",
+        "Article": "https://bcschoolcovidtracker.knack.com/bc-school-covid-tracker",
         "Province": "BC",
         "Last_Reported_Date": "2021-02-26"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -122.825879,
-          49.13574
+          -122.825579,
+          49.13604
         ]
       }
     },
@@ -2221,15 +2221,15 @@
         "School": "Frank Hurt Secondary",
         "City": "Surrey",
         "Date": "2021-02-25",
-        "Article": "https://drive.google.com/open?id=1vaSVbXQZlI-ZbBlLS7NbE8KxOqw8HNQS;https://drive.google.com/open?id=1b5sb7w-mN8rYKEPfN_Mu9iSVjsitjJJv;https://drive.google.com/open?id=1AksC6uiPj8F86iKp2nYu5ZqJQz0P6U3B;https://drive.google.com/open?id=17matTdUKAruTNVczeOqwFecMrUC5FGA_;https://drive.google.com/open?id=1mdoCCeRxq2EmhSeUrJHFOXHYEifd1uKT;https://drive.google.com/open?id=1QkOZv6PbG36J86ji8phU4FRc4NKJEmjS;https://drive.google.com/open?id=1gUxx-b2XjKgsOCsvRKz1Lvi2MBgdZiCA;https://drive.google.com/open?id=1fOFa29FRhab26EF8TVHa_-FMvdoAx1eA;https://drive.google.com/open?id=1FVsCjRUYbWYcBLvJoUtzs8_dYs8UQHJT;https://drive.google.com/open?id=16KCeo8C8k7CtP0BHRCG6tb3nOOTUe67K;https://drive.google.com/open?id=1SnTWdG-BEWN2269jNnRXiSO-Y-guVoH5;https://drive.google.com/open?id=1HybS4QlaahmExYbovotJEEI4xbof4EA3;https://drive.google.com/open?id=1ULICQ37EucW7-8pxnlxvlOEY7NUekHy9;https://drive.google.com/open?id=13Bfoy-8bDwGkdfQsqk12y9bQRSdSuYx7;https://drive.google.com/open?id=1KvzWRX2gWNyZ7Y-o8MSvFsbScbX-pSda;https://drive.google.com/open?id=1RHjxT7Dk-0oMgtYzvZ54vO88Gfp1W4w1;https://drive.google.com/open?id=1sM_Dd6WLt_G3fMZ-D3v0hh_o1dJXqOMq;https://drive.google.com/open?id=1vdtJuC_M6xBPU7qZRxWMS0RXATQsfcto;https://drive.google.com/open?id=1J2TRVwOg00DknSmplht7jSypUwiqN-4S;https://drive.google.com/open?id=1O3EPtHKXfzfWflmNaXUfPP7sevK2VcqS;https://drive.google.com/open?id=1dC2NLkdMNEC_RH6LfzJN1Zdx3BdbB-we;https://drive.google.com/open?id=1DYDKaitPhJd59gifIrK-YPshBA6bzwE-;https://drive.google.com/open?id=1_tRAVw2xhp2banqGc9JEQl0aKM4Sxyuh;https://drive.google.com/open?id=1ksNMDsmD3lrx9OVE9RWHUFC9Smu35A7d;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA",
+        "Article": "https://bcschoolcovidtracker.knack.com/bc-school-covid-tracker",
         "Province": "BC",
         "Last_Reported_Date": "2021-02-25"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -122.845753,
-          49.142709
+          -122.845453,
+          49.143009
         ]
       }
     },
@@ -2239,15 +2239,15 @@
         "School": "New Westminster Secondary",
         "City": "New Westminster",
         "Date": "2021-02-25",
-        "Article": "https://drive.google.com/open?id=1DFv6pxtRcwsi5fpx64VFBKIL68jjTFXH;https://drive.google.com/open?id=1aEutEzimK0c8p8t6Hr2TUdvwNFg3lhMk;https://drive.google.com/open?id=1U5V4YHTOrvNxufikggvZ2DP98U7FfRpc;https://drive.google.com/open?id=18zo35Q7_Il8TgtFvWVcIlz5RBGbPXHkv;https://drive.google.com/open?id=1cpIKZC9ADyyhb4m3w2dcIH7wQwxkqZVu;https://drive.google.com/open?id=1Hm4hQ-npt2AonXLGik-AkZqpbl9KB6Rq;https://drive.google.com/open?id=130L-1YvCR94OO_Rpd06yRd3Sgv2g4XnB;https://drive.google.com/open?id=14UvfM6kmvU0E0MtHOUK8vTx704whZhUn;https://drive.google.com/open?id=1NTr4JnbHfsaeUtfraOt4s2StkaOyxPsK;https://drive.google.com/open?id=1NOTHAZeZply-eXp1AmLOHyLB0sJ6-WKI;https://drive.google.com/open?id=1fHpSrGYB3iO3G2QVgGJqrt9JolVWfcNP;https://drive.google.com/open?id=1DWVTUMupXL-Mkq9G1UxCY3e9hMk6vSK9;https://drive.google.com/open?id=1MUqwBvsILr9VKzfWaclI1qv41jmM6HtW;https://drive.google.com/open?id=1WGT6lbKiL-FMA7e4z8fWop0USCC2QCa9;https://drive.google.com/open?id=17oaE5zk6-MzIbvH19bAZNZMsK47A-2d9;https://drive.google.com/open?id=1NGLINWS2CppjeSJkTGNnZD1IgA3x-Iyk;https://drive.google.com/open?id=1XV0wsEcgqE91VVbN6MsLEksv4jNU9bdm;https://drive.google.com/open?id=17SPCfy1NJyT6QSG5LxIL3dPMyBu_FYTR;https://drive.google.com/open?id=1lM6y_obwQOtehHM7Bd0RbHC7Licab45I;https://drive.google.com/open?id=18PZbjGSRZqk9DBSqwLDk8jkp_3nB7xGA;NA;NA;NA;NA;NA;NA",
+        "Article": "https://bcschoolcovidtracker.knack.com/bc-school-covid-tracker",
         "Province": "BC",
         "Last_Reported_Date": "2021-02-25"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -122.929174,
-          49.215798
+          -122.928874,
+          49.216098
         ]
       }
     },
@@ -2257,15 +2257,15 @@
         "School": "Tamanawis Secondary",
         "City": "Surrey",
         "Date": "2021-02-20",
-        "Article": "https://drive.google.com/open?id=1ABX4ngW4lydskh1XDM9c_pG3IR__El97;https://drive.google.com/open?id=1CXWF28BHWsMTeff50PGJuUltrj11PZD5;https://drive.google.com/open?id=1spTMRVdsDqZlISBg4ShMprkhEJ9ioag4;https://drive.google.com/open?id=1b6OnWX7el4772fDgNJV40Qee7wHyPZG4;https://drive.google.com/open?id=1y7WobJNPBKtAlfBKritrJBkol10Pf23C;https://drive.google.com/open?id=1iqZZgxsaisqLDVZyYSETRai-FdLcoeVm;https://drive.google.com/open?id=1XkNun0C0JRDCz-eyeoIvmcYt0v6n7_Nh;https://drive.google.com/open?id=1u96Dr3rj0FlQBNsPCp1oPfdTmK0gtbSO;https://drive.google.com/open?id=1SxszG9ltsCsr2lzu1zyPEwhxPPWosxFW;https://drive.google.com/open?id=1H5GNLhen9WiGc2pG00KwOGSFLAgXE3h0;https://drive.google.com/open?id=1eKAOk-vABQNVNOCdUJHoJ_qDF4hMfeoV;https://drive.google.com/open?id=1Id78TlaWompzOxyFhfrSR5cS7WMlcGi2;https://drive.google.com/open?id=1Zxm7UBZo--cH0_y0i3yqX-ccxx52Bqfo;https://drive.google.com/open?id=1WQuP-8AocrmOwdw0Wcbew3zW9zUN2FuS;https://drive.google.com/open?id=1v4u8Pmg4hRZlXZRMCGA3oEc_y2ha6eu9;https://drive.google.com/open?id=1GU9-Qq_UcgqB1OJubpTiW0UxCfdx8f_k;https://drive.google.com/open?id=121rU5LtxOktEZcWIf6mMqmG6iFs6VnMJ;https://drive.google.com/open?id=1G9FhwiomqRlmo5b4YML0Y5O5zqIkVzcY;https://drive.google.com/open?id=1R90GBt6MB80aBylaDu8riVYeed_Mjs0P;https://drive.google.com/open?id=1ofpiGxDzMMt2ZKbaKBnNRIoole9n9eAq;https://drive.google.com/open?id=1ZEzPA4HfJY4WVPa2pfAkyS2MsYVYfJuJ;https://drive.google.com/open?id=1j9nszEtyB6infZSJ3MSPmS7scidvYJaU;https://drive.google.com/open?id=1QV90Emjmv7tqhJvVkuC2gxytgWXdMoGU;https://drive.google.com/open?id=1gsUdjnPr2MLkUPXuURAkLwUZfeFItieT;https://drive.google.com/open?id=1AH3QObuWtyLBv62ioMjmRS1XMCrlXQnk;https://drive.google.com/open?id=1iPOIkleGSsSeio34wCJ5yjvgJ8X_Unf_;https://drive.google.com/open?id=1souZhQfNpThlYsbC8i-n12zrmB7ly-qW;https://drive.google.com/open?id=1SlUaQmvu7lFjmx-1wQBsfD9zYZTCpXMt;https://drive.google.com/open?id=1L4YxiInjSzWV5vxywu8LaFOM3v_K8OQL;https://drive.google.com/open?id=1zbjPTBG4u1gI-maCrW0GR5wYTlYDX1HI;https://drive.google.com/open?id=1iiK_HTWl2xz0lrHRlQfdFv9A9F_CEtAe;https://drive.google.com/open?id=1JE6PkOhr0OZsaAVn2ONx36bLkUt6StMG;https://drive.google.com/open?id=1N9xPErYeG8BbMB2DYkpInMADPzDm9pWo;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA",
+        "Article": "https://bcschoolcovidtracker.knack.com/bc-school-covid-tracker",
         "Province": "BC",
         "Last_Reported_Date": "2021-02-20"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -122.872426,
-          49.122715
+          -122.872126,
+          49.123015
         ]
       }
     },
@@ -2275,15 +2275,15 @@
         "School": "Hellings Elementary",
         "City": "Delta",
         "Date": "2021-02-10",
-        "Article": "https://drive.google.com/open?id=1zuZdTstOgwB00CNZ8u_H_vBSEEQnYZ4w;https://drive.google.com/open?id=1QvBs1v9xPjOTbsxwMX9PFIjlzyOqqtEx;https://drive.google.com/open?id=1GT6JFpvxOafMNg0Cojs-R4WoCwEd88oW;https://drive.google.com/open?id=1N0hkCLUGyj6f9HWhWL4QzjUobj7KMrLx;https://drive.google.com/open?id=1EiUv59Jj7hUFR-hsys0tufKhTZiCU178;https://drive.google.com/open?id=1gtzQ2a-dKAAIm2MoVxZbvvy8UBkXhv-t;https://drive.google.com/open?id=14gv1Bx7mJiVDDLDmPYGhR05v_Q6C0AkE;https://drive.google.com/open?id=1nAsXxkSbb2AZgKTLoN2gGsIFEJ0J_ICH;https://drive.google.com/open?id=1CgRBgQAfrClMUy1OZvkyafGJrEJYmA-C;https://drive.google.com/open?id=1w4NXnjAMAo8Or5D6utjQsWcUFhAXuB2a;https://drive.google.com/open?id=1mk9AyCMJfLfwnQGUCJEWPtwC5LnIZgPt",
+        "Article": "https://bcschoolcovidtracker.knack.com/bc-school-covid-tracker",
         "Province": "BC",
         "Last_Reported_Date": "2021-02-10"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -122.899678,
-          49.16055
+          -122.899378,
+          49.16085
         ]
       }
     },
@@ -2293,15 +2293,15 @@
         "School": "A H P Matthew Elementary",
         "City": "Surrey",
         "Date": "2021-02-08",
-        "Article": "https://drive.google.com/open?id=1p51Tkk5QOE025T1p4kfd75brEGZ2Ta4d;https://drive.google.com/open?id=1TjtGCyF4-dWcPchSjuVa4NYU1JpaGVbw;https://drive.google.com/open?id=1pDm2juRF8YW4se3OLjRQSN2LrkrnZSu-;https://drive.google.com/open?id=1DpQoTvoc--d9LU2zYkH7yJZBEPphD2g_;https://drive.google.com/open?id=1shlPnTSqQY5Qdc-FFIGDakw81Zv3mPEv;https://drive.google.com/open?id=1g8sJxRbtnFUbnCobOugRpgx5fF0SaWEH",
+        "Article": "https://bcschoolcovidtracker.knack.com/bc-school-covid-tracker",
         "Province": "BC",
         "Last_Reported_Date": "2021-02-08"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -122.852492,
-          49.179063
+          -122.852192,
+          49.179363
         ]
       }
     },
@@ -2311,15 +2311,15 @@
         "School": "Garibaldi Secondary",
         "City": "Maple Ridge",
         "Date": "2021-01-21",
-        "Article": "https://drive.google.com/open?id=13ksp8vFAQnoptTNi3c_UMfIdnyw-iKtz;https://drive.google.com/open?id=1TigNtn3WTUTDaGEveMRatDim1F3wyTAh;https://drive.google.com/open?id=17JaJYiPuWEISQ1SJLDtbJajoOxW9-Ycg;NA;NA",
+        "Article": "https://bcschoolcovidtracker.knack.com/bc-school-covid-tracker",
         "Province": "BC",
         "Last_Reported_Date": "2021-01-21"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -122.536293,
-          49.222197
+          -122.535993,
+          49.222497
         ]
       }
     },
@@ -2329,15 +2329,15 @@
         "School": "Clayton Heights Secondary",
         "City": "Surrey",
         "Date": "2021-03-18;2021-03-16",
-        "Article": "https://drive.google.com/open?id=1RY8HhffcWbDdcpWiYIWAK32iqOsPyqcX;https://drive.google.com/open?id=1OnJ4Npc8npOvZcP33r-0NqZk9FXQoz1K;https://drive.google.com/open?id=1B8_Zhv1A5LTDVFsoAmsqGL96PIMOcKM-;https://drive.google.com/open?id=1Zped_l99mr3dx7CB1Zo3IG6bwSAE8TXC;https://drive.google.com/open?id=1D3Zu3VhlH4BZGHmBrdxP2QGuKX_VuGyr;https://drive.google.com/open?id=12p-7N2hANeIxjcjmEyw3r5mlhSywiAXt;https://drive.google.com/open?id=1YNtvgWkdYEXLM2T24OoPHcrgZNErTrN-;https://drive.google.com/open?id=1oDVR4Nli3U3m9po9xWwS2LiVOIYUUDHi;NA;NA;NA",
+        "Article": "https://bcschoolcovidtracker.knack.com/bc-school-covid-tracker",
         "Province": "BC",
         "Last_Reported_Date": "2021-03-18"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -122.700737,
-          49.129261
+          -122.700437,
+          49.129561
         ]
       }
     },
@@ -2347,15 +2347,15 @@
         "School": "James Ardiel Elementary",
         "City": "Surrey",
         "Date": "2021-02-18;2021-02-13",
-        "Article": "https://drive.google.com/open?id=1jmv3X5vO29OIkI63QHxOKJ3q1Gwi9vBW;https://drive.google.com/open?id=1jwG_5tMAQ4SmCTnIvH1y3-2A1HeZD6eC;https://drive.google.com/open?id=12LABifqTRF0ewrDP_6zTtA-g9atAItGr;https://drive.google.com/open?id=122Ofc7I_ifjlqAcbdYufs7WwxIC_xFK2;NA",
+        "Article": "https://bcschoolcovidtracker.knack.com/bc-school-covid-tracker",
         "Province": "BC",
         "Last_Reported_Date": "2021-02-18"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -122.8170001,
-          49.2059574
+          -122.8167001,
+          49.2062574
         ]
       }
     },
@@ -2365,15 +2365,15 @@
         "School": "Lord Tweedsmuir Secondary",
         "City": "Surrey",
         "Date": "2021-03-16;2021-03-16",
-        "Article": "https://drive.google.com/open?id=18HrsaKGx5kUgmi_Z8leUUcBwQ2uwd-Ze;https://drive.google.com/open?id=1I79o7N3WbwnhMCkT8MjcXGJeOzlbb7o9;https://drive.google.com/open?id=1OVOUOo6NGPf9hTUNBOmy3XiyxpjotOI7;https://drive.google.com/open?id=1urRlDCn44pXp94bP6jX8vtEM113wACpw;https://drive.google.com/open?id=14SzdxAD5f3QYRjTa8eJi_cUDS55_4_F7;https://drive.google.com/open?id=1uls5Mftocg2s2Fu2ybO7BREehnPet_Qz;https://drive.google.com/open?id=1iXVXZnU6YNzFTRhRUViHJpoR3mdQUUTc;https://drive.google.com/open?id=15MvITi26w0sD5BYcszTn9DL-6BbIYLk6;NA;https://drive.google.com/open?id=1bsQysnsWYe6uXf8HQb_PIRnUPMOSnxTU;https://drive.google.com/open?id=1bqFKVxR0qlQq_goa1ZUimfNcRHyLGVW7;https://drive.google.com/open?id=17Ho2mqtEJ7dOkwlXYVR20RXlnPmHlH9n;https://drive.google.com/open?id=1Hq81KpxD1lbS8VpPTell1g_Slfn6m4QJ;https://drive.google.com/open?id=1_pd_lr10t1D0QX9K6_nnoUKT19nZNPaU;https://drive.google.com/open?id=1u2ew-QSRalKsf0f47stTRvEbRTNUDXJW;https://drive.google.com/open?id=1TyLRQLTeZnVB92_99kl4A_5spge-Gc2_;https://drive.google.com/open?id=1ipw0dxY5bYTw8g2--51grnlO1BisTiA_;https://drive.google.com/open?id=1XlKcuoh6UyzxywARW6aAXDvoPXur1uED;https://drive.google.com/open?id=1i4yc3YDcfMM0Lc4mofmfazhNcHRHQ4n3;https://drive.google.com/open?id=1nuOnYkCMuSia6X0VBo1Gfny4M3SMnYHC;NA;NA;NA;NA;NA",
+        "Article": "https://bcschoolcovidtracker.knack.com/bc-school-covid-tracker",
         "Province": "BC",
         "Last_Reported_Date": "2021-03-16"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -122.72404,
-          49.114455
+          -122.72374,
+          49.114755
         ]
       }
     },
@@ -2383,15 +2383,15 @@
         "School": "North Delta Secondary",
         "City": "Delta",
         "Date": "2021-03-16;2021-03-11;2021-03-03",
-        "Article": "https://drive.google.com/open?id=1nTwK5h6sxxgZMqIFMhE79j8JO4EGkC4K;https://drive.google.com/open?id=1HNSetPPBwnLJSopys8o8mJdKn8NJ2KVR;https://drive.google.com/open?id=1iXmNgwSytgOhN8hYSjwYY4N1UY4irKDp;https://drive.google.com/open?id=1SwkHBuBkH9IqRIPbVPQRsOsm4DC2m7-B;https://drive.google.com/open?id=1VTfLsTScUhRJfnVGhvRIgqmUu_-J5NFF;https://drive.google.com/open?id=14uXEFufggWCC4DJSfJrEogobWXuWaABm;https://drive.google.com/open?id=1-r_4kONuQ7SD5tOCAzkwXEdm72UiGrWj;https://drive.google.com/open?id=1xhrPtrmQ15ENmSswsSP_yA1uMU7MXPIf;https://drive.google.com/open?id=1Tc2O18T6zx1-uYoT0wlDEXnp4NWpq_bL;https://drive.google.com/open?id=1atoHt9NW6db1fh6i1dbOplNhXtHIKbaU;https://drive.google.com/open?id=1tdEabxBYn_HOZLCgkUT8oAVXtCxeiTkg;https://drive.google.com/open?id=13LjjPtVF32t5kyx0majqLK90miv1WnVY;https://drive.google.com/open?id=1B3qRvINUnBXq9QkNVlZi7pOE6mbwHmit;https://drive.google.com/open?id=137-LTqbWd6MuLngGET6pYnRqIjlXJ8nZ;https://drive.google.com/open?id=1tv-rP06ebp-K4f6i3bg3tu_yNnlZ8Hc3;https://drive.google.com/open?id=1dWJksZOsOPtn4XYiEmRu4hK2qcGBWX4J;https://drive.google.com/open?id=16qUM0r8HZXEp_MJfVTuglL4hnsIJ4iIq;https://drive.google.com/open?id=1oENOMFst7Ogh1_wDbxSrXpe8qUkDyq0G;https://drive.google.com/open?id=1984U6FQpR8H7zUiOl8Euynf_Y7rmDIPg;https://drive.google.com/open?id=18WBAZykeFKZYTRm4lmEAUS8gNNWS4dQT;NA;NA;NA",
+        "Article": "https://bcschoolcovidtracker.knack.com/bc-school-covid-tracker",
         "Province": "BC",
         "Last_Reported_Date": "2021-03-16"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -122.904986,
-          49.153203
+          -122.904686,
+          49.153503
         ]
       }
     },
@@ -2401,15 +2401,15 @@
         "School": "Princess Margaret Secondary School (Surrey)",
         "City": "Surrey",
         "Date": "2021-03-15;2021-03-06;2021-03-01",
-        "Article": "https://drive.google.com/open?id=1ongB8s1vUZ3Xt_19Z2e7wTOvd96FAGT1;https://drive.google.com/open?id=1vAIQUuKoTtDgdLVOP9IS__U8N-QtZFtr;https://drive.google.com/open?id=1pxqqz8U7iq9cZGJFcySrLI4a9gx7HPV9;https://drive.google.com/open?id=1f1fmtG1q93YjGzECHGvbPKF4NiwQEZit;https://drive.google.com/open?id=1NhobjdpDSN1SUWHqhDWCgE2XfKA0DdIG;https://drive.google.com/open?id=1NPRFSjEAsHPUbeTY9WjasnqGG6fUrHsO;https://drive.google.com/open?id=1PReaM_BVZFi5gdZww58BuWclJK8CUEAq;https://drive.google.com/open?id=1i51rUicKpQXmVavWlKcUYtK0hDEADSpT;https://drive.google.com/open?id=1fjAAEAp0iSWmXWumzgm-vsG5jeffJx57;https://drive.google.com/open?id=1UMJ0wFbMUtVmFpKxQToqRLFmolTZq-Bn;https://drive.google.com/open?id=1qdwfKioYQX4RqMdvyPqr3o_gtded_ifs;https://drive.google.com/open?id=1Kh0hjfnQz6GROxHKYycq2lZOlofWzDqx;https://drive.google.com/open?id=1VR5dS91hDUCOU14CXUtS71d34UoTy_oQ;https://drive.google.com/open?id=1wSgmsullkf3tFU1SJsLaJVCzRNPPAwoT;https://drive.google.com/open?id=1ATnBSVDEGQ25wTaX-gIJxl0e3h7-V8NK;https://drive.google.com/open?id=1yzlRKTfJmjMH-gwoCDKlVzMJiQZ0FDOB;https://drive.google.com/open?id=106E-AKejZv8jmsF_MLORdOeLshmUlVbA;https://drive.google.com/open?id=1I9MnYECPXu6H6OZX1KUxwTJ-UlKllTyM;https://drive.google.com/open?id=1RohmMeCZbgh52lG58YQOkPkTbP5wWAr0;https://drive.google.com/open?id=1hEgGVOqjuytdBaNEJpjthXXA8uSx0UJI;https://drive.google.com/open?id=1-Lvl2Bl0KKYmpG_Tt4F2LRbJ5vHFppaS;https://drive.google.com/open?id=1A8W3Eevpwgn9M7y2IygBrB2qbBLoCoOG;https://drive.google.com/open?id=1C13ji1B23PObZhEUK7SUxZ-UFnAnKSPl;https://drive.google.com/open?id=155ECTFBijnIa2WclM81yP5bCdkS_5m0M;https://drive.google.com/open?id=1rIDB2FimcEA9p5HVfv5ljYHnLgGUDLwL;https://drive.google.com/open?id=1xlGel8A-zGsqEJI5KknEA-8HSHBz-c7y;https://drive.google.com/open?id=13S8Oh_1ocZ86-zuxcoYc3Jr-ZQKcofp-;NA;NA;NA;NA;NA;NA;NA;NA",
+        "Article": "https://bcschoolcovidtracker.knack.com/bc-school-covid-tracker",
         "Province": "BC",
         "Last_Reported_Date": "2021-03-15"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -122.866083,
-          49.13201
+          -122.865783,
+          49.13231
         ]
       }
     },
@@ -2419,15 +2419,15 @@
         "School": "Queen Elizabeth Secondary",
         "City": "Surrey",
         "Date": "2021-03-16;2021-02-17",
-        "Article": "https://drive.google.com/open?id=1bRtbo6cuXVmzcAnoOTsOYXPliOU9bcfA;https://drive.google.com/open?id=1RRdQNQeIYrpe0B13x-qO8g6aeuPceWaD;https://drive.google.com/open?id=1nEy58mbXdJ08B5ULuHd9cWbZbpviU7vA;https://drive.google.com/open?id=1549sS1xHtBFznow7yo3dD_4MQb92lT63;https://drive.google.com/open?id=1VpZloQrJ7atwPg6_w1ugX71nmqvlF_pA;https://drive.google.com/open?id=1uaP3w3-G5XuBDCiwb-jVTWlnkQO7Vbvr;https://drive.google.com/open?id=1C18lm1YoH70z3jypyhkNMWoC7n66IMvo;https://drive.google.com/open?id=1itnG4MhdoOgNi9BW-r3XxvnNGIm0n3AW;https://drive.google.com/open?id=1cT6dx9tWTSThVbs-_OmJtOfQupit6h0T;https://drive.google.com/open?id=1YwcQkBnt_ZvELJLKtUVLEHkYsgOr6jN9;https://drive.google.com/open?id=1NCy0feMyysmXM7xCklQSZ1IjTMBsbUN-;https://drive.google.com/open?id=1HNc6OxVcegT-b9dE4AorW8kiz1N_HS87;https://drive.google.com/open?id=12q9VVdYXjn6-iARuYhjdNsdrOQdNeYNh;https://drive.google.com/open?id=1M5KVDTmrOYQLC_rEY9AykmGstKFmjRhd;https://drive.google.com/open?id=1tg9ylSf8nbiCS6Z1ePaeE0Itp-Hvji5X;https://drive.google.com/open?id=1KDrZlWwLBFPZWKlZh7EaU4zLbozOo4gj;https://drive.google.com/open?id=1FWdr6g427GLWv6JHEF1FD4Max_53lUs_;https://drive.google.com/open?id=1m4douOHklkmOjTmnQibfLkRgDwUE8ML7;https://drive.google.com/open?id=1rdLDVdCOneZCXhfdbdMjqSkFpGUKRH3T;https://drive.google.com/open?id=1vxGr8AlrHYhpciXo5xDyQCl3kmx1VopG;https://drive.google.com/open?id=1iVNvANZNLYJ52XVvVT711It5eTh2x1Jv;https://drive.google.com/open?id=1Ak0jpJaWNUrKE13GVV6f-AiB4RtckJfX;https://drive.google.com/open?id=1egGaUCc40ZCGPIjwFhta2fH3BTLKSw2z;https://drive.google.com/open?id=1_2rz9bs6o50f-kI0NEcJcXQ34t5IvxEk;https://drive.google.com/open?id=1own69xBKMwwmiKSiRnYUPRKIx3AS08dp;https://drive.google.com/open?id=12vOXDF9h81_fyNG39AmIJPb1ceMBB_Wz;https://drive.google.com/open?id=1qy1JAQZNdTRiX06_N09M3BqsQjs6_Lw3;https://drive.google.com/open?id=1ctpgcteXomlfkraagpR37d_8P675v-YV;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA",
+        "Article": "https://bcschoolcovidtracker.knack.com/bc-school-covid-tracker",
         "Province": "BC",
         "Last_Reported_Date": "2021-03-16"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -122.84659,
-          49.174482
+          -122.84629,
+          49.174782
         ]
       }
     },
@@ -2437,15 +2437,15 @@
         "School": "Surrey Traditional",
         "City": "Surrey",
         "Date": "2021-02-28;2021-02-12;2021-02-11",
-        "Article": "https://drive.google.com/open?id=1862lL26Qe1Urgc6-Lug9LvPHyWiLTDjn;https://drive.google.com/open?id=1862lL26Qe1Urgc6-Lug9LvPHyWiLTDjn;https://drive.google.com/open?id=1862lL26Qe1Urgc6-Lug9LvPHyWiLTDjn;https://drive.google.com/open?id=1u6Hkau0E1f2D4H4u1ltfwaGBS_WQftZR;https://drive.google.com/open?id=1ZVvWsH05DszQys8GQXQAxKeoCHrtY6gM;https://drive.google.com/open?id=1phqvqFkCvZE7-dTxv98Z2Q-kAOD6GTnh;https://drive.google.com/open?id=1_W5vIlMT6zeNhEoLiaePlpVKk39_kGTt;https://drive.google.com/open?id=1eFSdo15cyPVmUdR1i7TN2dOJ5h4Fm5V9;https://drive.google.com/open?id=1L3HQtFG-m2sn1o_WXrltHt4OCpg0ijlw;NA",
+        "Article": "https://bcschoolcovidtracker.knack.com/bc-school-covid-tracker",
         "Province": "BC",
         "Last_Reported_Date": "2021-02-28"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -122.838262,
-          49.207828
+          -122.837962,
+          49.208128
         ]
       }
     },
@@ -2455,15 +2455,15 @@
         "School": "Woodward Hill Elementary",
         "City": "Surrey",
         "Date": "2021-02-28;2021-02-28;2021-02-22;2021-02-16;2021-02-12",
-        "Article": "https://drive.google.com/open?id=1931swCNSiadzGTqjAmxy-vyweP_rFbdM;https://drive.google.com/open?id=1ZLHT0XIBbbw6EeOsVVdnDVRYCfhzgR8U;https://drive.google.com/open?id=1-1OXj_YHfkXk2rlZWcF8l5IJQqKYlCHZ;https://drive.google.com/open?id=1_-ZjWJleAInG6IoBPHs92jt7SqPf2T5l;https://drive.google.com/open?id=1EcBhjpwD5t95D6mOXJdCDwZewwRQ1zg6;https://drive.google.com/open?id=1ShJULHhflMJzJrpi69kkgzGkxWivEPtF;https://drive.google.com/open?id=1MU81BnMKr2cnXPeso8o-q_LgaR0XapDp;https://drive.google.com/open?id=1LCISCog9tEX_sRWIMKnDnKOqfWgzeBKZ;https://drive.google.com/open?id=19UVxv_BwpUAH-ZWtCRfUq7dZt2jEvEve;https://drive.google.com/open?id=1CCRdH-tKDdp9PdGy3LsBeFUKs1t1-TzO;https://drive.google.com/open?id=1OMsfmpWqhBSzXYIpY_-AVOaOk6HoSEdP;https://drive.google.com/open?id=17lrO45p9r9wLydlmAq-x5XinmDmwAQ4K;https://drive.google.com/open?id=1DwoYvq7Xdn59wAcKKJGuoOkYmcGnKf6D;NA",
+        "Article": "https://bcschoolcovidtracker.knack.com/bc-school-covid-tracker",
         "Province": "BC",
         "Last_Reported_Date": "2021-02-28"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -122.828489,
-          49.113422
+          -122.828189,
+          49.113722
         ]
       }
     }
