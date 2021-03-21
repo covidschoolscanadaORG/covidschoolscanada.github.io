@@ -7,15 +7,15 @@
         "School": "Collège Stanislas",
         "City": "Outremont",
         "Date": "2021/02/22",
-        "Article": "NA",
+        "Article": "https://docs.google.com/spreadsheets/d/1cU9_JiWJ4NdvCWAleivb3pNweYgaqt4GBRIWPl3MyxM/edit?ts=60553d34#gid=0",
         "Province": "QC",
         "Last_Reported_Date": "2021-02-22"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -73.6151106,
-          45.51833412
+          -73.6150106,
+          45.51843412
         ]
       }
     },
@@ -25,15 +25,15 @@
         "School": "Académie Yechiva Yavne Côte St-Luc",
         "City": "Cote St-Luc",
         "Date": "2021/02/22",
-        "Article": "NA",
+        "Article": "https://docs.google.com/spreadsheets/d/1cU9_JiWJ4NdvCWAleivb3pNweYgaqt4GBRIWPl3MyxM/edit?ts=60553d34#gid=0",
         "Province": "QC",
         "Last_Reported_Date": "2021-02-22"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -73.66430487,
-          45.46133149
+          -73.66420487,
+          45.46143149
         ]
       }
     },
@@ -43,15 +43,15 @@
         "School": "Écoles des Grands-Etres",
         "City": "St-Laurent",
         "Date": "2021/02/22",
-        "Article": "NA",
+        "Article": "https://docs.google.com/spreadsheets/d/1cU9_JiWJ4NdvCWAleivb3pNweYgaqt4GBRIWPl3MyxM/edit?ts=60553d34#gid=0",
         "Province": "QC",
         "Last_Reported_Date": "2021-02-22"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -73.6866921,
-          45.52197787
+          -73.6865921,
+          45.52207787
         ]
       }
     },
@@ -61,15 +61,15 @@
         "School": "École Marguerite d'Youville",
         "City": "Cap-Rouge",
         "Date": "2021/02/22",
-        "Article": "NA",
+        "Article": "https://docs.google.com/spreadsheets/d/1cU9_JiWJ4NdvCWAleivb3pNweYgaqt4GBRIWPl3MyxM/edit?ts=60553d34#gid=0",
         "Province": "QC",
         "Last_Reported_Date": "2021-02-22"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -71.3421916,
-          46.75035405
+          -71.3420916,
+          46.75045405
         ]
       }
     },
@@ -79,15 +79,15 @@
         "School": "École de l'Équinoxe",
         "City": "Laval",
         "Date": "2021/02/22",
-        "Article": "NA",
+        "Article": "https://docs.google.com/spreadsheets/d/1cU9_JiWJ4NdvCWAleivb3pNweYgaqt4GBRIWPl3MyxM/edit?ts=60553d34#gid=0",
         "Province": "QC",
         "Last_Reported_Date": "2021-02-22"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -73.7761609,
-          45.60493627
+          -73.7760609,
+          45.60503627
         ]
       }
     },
@@ -97,15 +97,15 @@
         "School": "École St-Maxime",
         "City": "Laval",
         "Date": "2021/02/22",
-        "Article": "NA",
+        "Article": "https://docs.google.com/spreadsheets/d/1cU9_JiWJ4NdvCWAleivb3pNweYgaqt4GBRIWPl3MyxM/edit?ts=60553d34#gid=0",
         "Province": "QC",
         "Last_Reported_Date": "2021-02-22"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -73.73344992,
-          45.53467615
+          -73.73334992,
+          45.53477615
         ]
       }
     },
@@ -115,15 +115,15 @@
         "School": "Garderie Orsheli & Olamsheli",
         "City": "Côte-des-Neiges-Notre-Dame-de-Grâce",
         "Date": "2021/02/22",
-        "Article": "NA",
+        "Article": "https://docs.google.com/spreadsheets/d/1cU9_JiWJ4NdvCWAleivb3pNweYgaqt4GBRIWPl3MyxM/edit?ts=60553d34#gid=0",
         "Province": "QC",
         "Last_Reported_Date": "2021-02-22"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -73.63170801,
-          45.49004536
+          -73.63160801,
+          45.49014536
         ]
       }
     },
@@ -133,15 +133,15 @@
         "School": "École de Fontainebleau",
         "City": "Blainville",
         "Date": "2021/02/22",
-        "Article": "NA",
+        "Article": "https://docs.google.com/spreadsheets/d/1cU9_JiWJ4NdvCWAleivb3pNweYgaqt4GBRIWPl3MyxM/edit?ts=60553d34#gid=0",
         "Province": "QC",
         "Last_Reported_Date": "2021-02-22"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -73.80977366,
-          45.66770693
+          -73.80967366,
+          45.66780693
         ]
       }
     },
@@ -151,15 +151,15 @@
         "School": "École Monseigneur Mongeau",
         "City": "Épiphanie",
         "Date": "2021/02/22",
-        "Article": "NA",
+        "Article": "https://docs.google.com/spreadsheets/d/1cU9_JiWJ4NdvCWAleivb3pNweYgaqt4GBRIWPl3MyxM/edit?ts=60553d34#gid=0",
         "Province": "QC",
         "Last_Reported_Date": "2021-02-22"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -73.48670376,
-          45.8500819
+          -73.48660376,
+          45.8501819
         ]
       }
     },
@@ -169,15 +169,15 @@
         "School": "École Saint-Guillaume",
         "City": "Épiphanie",
         "Date": "2021/02/22",
-        "Article": "NA",
+        "Article": "https://docs.google.com/spreadsheets/d/1cU9_JiWJ4NdvCWAleivb3pNweYgaqt4GBRIWPl3MyxM/edit?ts=60553d34#gid=0",
         "Province": "QC",
         "Last_Reported_Date": "2021-02-22"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -73.48266717,
-          45.84918885
+          -73.48256717,
+          45.84928885
         ]
       }
     },
@@ -187,15 +187,15 @@
         "School": "École Euréka",
         "City": "Laval",
         "Date": "2021/02/22",
-        "Article": "NA",
+        "Article": "https://docs.google.com/spreadsheets/d/1cU9_JiWJ4NdvCWAleivb3pNweYgaqt4GBRIWPl3MyxM/edit?ts=60553d34#gid=0",
         "Province": "QC",
         "Last_Reported_Date": "2021-02-22"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -73.68423029,
-          45.57583005
+          -73.68413029,
+          45.57593005
         ]
       }
     },
@@ -205,15 +205,15 @@
         "School": "École Père-Vimont",
         "City": "Laval",
         "Date": "2021/02/22",
-        "Article": "NA",
+        "Article": "https://docs.google.com/spreadsheets/d/1cU9_JiWJ4NdvCWAleivb3pNweYgaqt4GBRIWPl3MyxM/edit?ts=60553d34#gid=0",
         "Province": "QC",
         "Last_Reported_Date": "2021-02-22"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -73.73463546,
-          45.61788408
+          -73.73453546,
+          45.61798408
         ]
       }
     },
@@ -223,15 +223,15 @@
         "School": "Notre-Dame-de-Fatima",
         "City": "Abitibi",
         "Date": "2021/02/22",
-        "Article": "NA",
+        "Article": "https://docs.google.com/spreadsheets/d/1cU9_JiWJ4NdvCWAleivb3pNweYgaqt4GBRIWPl3MyxM/edit?ts=60553d34#gid=0",
         "Province": "QC",
         "Last_Reported_Date": "2021-02-22"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -77.9473014,
-          48.56465332
+          -77.9472014,
+          48.56475332
         ]
       }
     },
@@ -241,15 +241,15 @@
         "School": "École Lévis-Sauvé",
         "City": "Verdun",
         "Date": "2021/02/22",
-        "Article": "NA",
+        "Article": "https://docs.google.com/spreadsheets/d/1cU9_JiWJ4NdvCWAleivb3pNweYgaqt4GBRIWPl3MyxM/edit?ts=60553d34#gid=0",
         "Province": "QC",
         "Last_Reported_Date": "2021-02-22"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -73.5720956,
-          45.45997231
+          -73.5719956,
+          45.46007231
         ]
       }
     },
@@ -259,15 +259,15 @@
         "School": "École internationale Lucille-Teasdale",
         "City": "Brossard",
         "Date": "2021/02/23",
-        "Article": "NA",
+        "Article": "https://docs.google.com/spreadsheets/d/1cU9_JiWJ4NdvCWAleivb3pNweYgaqt4GBRIWPl3MyxM/edit?ts=60553d34#gid=0",
         "Province": "QC",
         "Last_Reported_Date": "2021-02-23"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -73.47792637,
-          45.44888784
+          -73.47782637,
+          45.44898784
         ]
       }
     },
@@ -277,15 +277,15 @@
         "School": "École secondaire Antoine-de-Saint-Exupery",
         "City": "Saint-Léonard",
         "Date": "2021/02/24",
-        "Article": "NA",
+        "Article": "https://docs.google.com/spreadsheets/d/1cU9_JiWJ4NdvCWAleivb3pNweYgaqt4GBRIWPl3MyxM/edit?ts=60553d34#gid=0",
         "Province": "QC",
         "Last_Reported_Date": "2021-02-24"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -73.60156443,
-          45.58526294
+          -73.60146443,
+          45.58536294
         ]
       }
     },
@@ -295,15 +295,15 @@
         "School": "École Adélard-Desrosiers",
         "City": "Montréal-Nord",
         "Date": "2021/02/24",
-        "Article": "NA",
+        "Article": "https://docs.google.com/spreadsheets/d/1cU9_JiWJ4NdvCWAleivb3pNweYgaqt4GBRIWPl3MyxM/edit?ts=60553d34#gid=0",
         "Province": "QC",
         "Last_Reported_Date": "2021-02-24"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -73.62884753,
-          45.61939369
+          -73.62874753,
+          45.61949369
         ]
       }
     },
@@ -313,15 +313,15 @@
         "School": "École Beth Jacob de Rev Hirschprung",
         "City": "Outremont",
         "Date": "2021/02/24",
-        "Article": "NA",
+        "Article": "https://docs.google.com/spreadsheets/d/1cU9_JiWJ4NdvCWAleivb3pNweYgaqt4GBRIWPl3MyxM/edit?ts=60553d34#gid=0",
         "Province": "QC",
         "Last_Reported_Date": "2021-02-24"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -73.62374144,
-          45.51766187
+          -73.62364144,
+          45.51776187
         ]
       }
     },
@@ -331,15 +331,15 @@
         "School": "École Georges-Vanier",
         "City": "Laval",
         "Date": "2021/02/25",
-        "Article": "NA",
+        "Article": "https://docs.google.com/spreadsheets/d/1cU9_JiWJ4NdvCWAleivb3pNweYgaqt4GBRIWPl3MyxM/edit?ts=60553d34#gid=0",
         "Province": "QC",
         "Last_Reported_Date": "2021-02-25"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -73.65327516,
-          45.59874523
+          -73.65317516,
+          45.59884523
         ]
       }
     },
@@ -349,15 +349,15 @@
         "School": "Collège Rivier",
         "City": "Coaticook",
         "Date": "2021/02/25",
-        "Article": "NA",
+        "Article": "https://docs.google.com/spreadsheets/d/1cU9_JiWJ4NdvCWAleivb3pNweYgaqt4GBRIWPl3MyxM/edit?ts=60553d34#gid=0",
         "Province": "QC",
         "Last_Reported_Date": "2021-02-25"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -71.79653292,
-          45.13785526
+          -71.79643292,
+          45.13795526
         ]
       }
     },
@@ -367,15 +367,15 @@
         "School": "École secondaire Henri-Bourassa",
         "City": "Montréal-Nord",
         "Date": "2021/02/25",
-        "Article": "NA",
+        "Article": "https://docs.google.com/spreadsheets/d/1cU9_JiWJ4NdvCWAleivb3pNweYgaqt4GBRIWPl3MyxM/edit?ts=60553d34#gid=0",
         "Province": "QC",
         "Last_Reported_Date": "2021-02-25"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -73.62225231,
-          45.61467595
+          -73.62215231,
+          45.61477595
         ]
       }
     },
@@ -385,15 +385,15 @@
         "School": "Polyvalente Deux-Montagnes",
         "City": "Deux-Montagnes",
         "Date": "2021/02/25",
-        "Article": "NA",
+        "Article": "https://docs.google.com/spreadsheets/d/1cU9_JiWJ4NdvCWAleivb3pNweYgaqt4GBRIWPl3MyxM/edit?ts=60553d34#gid=0",
         "Province": "QC",
         "Last_Reported_Date": "2021-02-25"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -73.9061568,
-          45.5463642
+          -73.9060568,
+          45.5464642
         ]
       }
     },
@@ -403,15 +403,15 @@
         "School": "École Alexander-Wolf",
         "City": "Shannon",
         "Date": "2021/02/25",
-        "Article": "NA",
+        "Article": "https://docs.google.com/spreadsheets/d/1cU9_JiWJ4NdvCWAleivb3pNweYgaqt4GBRIWPl3MyxM/edit?ts=60553d34#gid=0",
         "Province": "QC",
         "Last_Reported_Date": "2021-02-25"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -71.509124,
-          46.88880128
+          -71.509024,
+          46.88890128
         ]
       }
     },
@@ -421,15 +421,15 @@
         "School": "Collège Charles-Lemoyne (campus Longueuil–Saint-Lambert)",
         "City": "Saint-Lambert",
         "Date": "2021/02/25",
-        "Article": "NA",
+        "Article": "https://docs.google.com/spreadsheets/d/1cU9_JiWJ4NdvCWAleivb3pNweYgaqt4GBRIWPl3MyxM/edit?ts=60553d34#gid=0",
         "Province": "QC",
         "Last_Reported_Date": "2021-02-25"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -73.50949596,
-          45.51510619
+          -73.50939596,
+          45.51520619
         ]
       }
     },
@@ -439,15 +439,15 @@
         "School": "École primaire Sacré-Cœur",
         "City": "Coaticook",
         "Date": "2021/02/26",
-        "Article": "NA",
+        "Article": "https://docs.google.com/spreadsheets/d/1cU9_JiWJ4NdvCWAleivb3pNweYgaqt4GBRIWPl3MyxM/edit?ts=60553d34#gid=0",
         "Province": "QC",
         "Last_Reported_Date": "2021-02-26"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -71.80220193,
-          45.13529595
+          -71.80210193,
+          45.13539595
         ]
       }
     },
@@ -457,15 +457,15 @@
         "School": "Merton Elementary School",
         "City": "Cote St-Luc",
         "Date": "2021/02/26",
-        "Article": "NA",
+        "Article": "https://docs.google.com/spreadsheets/d/1cU9_JiWJ4NdvCWAleivb3pNweYgaqt4GBRIWPl3MyxM/edit?ts=60553d34#gid=0",
         "Province": "QC",
         "Last_Reported_Date": "2021-02-26"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -73.65144536,
-          45.47227826
+          -73.65134536,
+          45.47237826
         ]
       }
     },
@@ -475,15 +475,15 @@
         "School": "West End and Little Sister Daycare",
         "City": "Centre-Sud",
         "Date": "2021/02/26",
-        "Article": "NA",
+        "Article": "https://docs.google.com/spreadsheets/d/1cU9_JiWJ4NdvCWAleivb3pNweYgaqt4GBRIWPl3MyxM/edit?ts=60553d34#gid=0",
         "Province": "QC",
         "Last_Reported_Date": "2021-02-26"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -73.62790123,
-          45.46746116
+          -73.62780123,
+          45.46756116
         ]
       }
     },
@@ -493,15 +493,15 @@
         "School": "École Louis-Philippe Paré",
         "City": "Châteauguay",
         "Date": "2021/02/26",
-        "Article": "NA",
+        "Article": "https://docs.google.com/spreadsheets/d/1cU9_JiWJ4NdvCWAleivb3pNweYgaqt4GBRIWPl3MyxM/edit?ts=60553d34#gid=0",
         "Province": "QC",
         "Last_Reported_Date": "2021-02-26"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -73.7675714,
-          45.34462005
+          -73.7674714,
+          45.34472005
         ]
       }
     },
@@ -511,15 +511,15 @@
         "School": "École St-Gabriel",
         "City": "Ste-Thérèse",
         "Date": "2021/02/26",
-        "Article": "NA",
+        "Article": "https://docs.google.com/spreadsheets/d/1cU9_JiWJ4NdvCWAleivb3pNweYgaqt4GBRIWPl3MyxM/edit?ts=60553d34#gid=0",
         "Province": "QC",
         "Last_Reported_Date": "2021-02-26"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -73.8401614,
-          45.63991831
+          -73.8400614,
+          45.64001831
         ]
       }
     },
@@ -529,15 +529,15 @@
         "School": "Summit School",
         "City": "St-Laurent",
         "Date": "2021/02/27",
-        "Article": "NA",
+        "Article": "https://docs.google.com/spreadsheets/d/1cU9_JiWJ4NdvCWAleivb3pNweYgaqt4GBRIWPl3MyxM/edit?ts=60553d34#gid=0",
         "Province": "QC",
         "Last_Reported_Date": "2021-02-27"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -73.69407275,
-          45.51640983
+          -73.69397275,
+          45.51650983
         ]
       }
     },
@@ -547,15 +547,15 @@
         "School": "Dante School",
         "City": "Saint-Léonard",
         "Date": "2021/02/28",
-        "Article": "NA",
+        "Article": "https://docs.google.com/spreadsheets/d/1cU9_JiWJ4NdvCWAleivb3pNweYgaqt4GBRIWPl3MyxM/edit?ts=60553d34#gid=0",
         "Province": "QC",
         "Last_Reported_Date": "2021-02-28"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -73.57572252,
-          45.58735513
+          -73.57562252,
+          45.58745513
         ]
       }
     },
@@ -565,15 +565,15 @@
         "School": "l'École St-Louis-de-France",
         "City": "Lévis",
         "Date": "2021/02/28",
-        "Article": "NA",
+        "Article": "https://docs.google.com/spreadsheets/d/1cU9_JiWJ4NdvCWAleivb3pNweYgaqt4GBRIWPl3MyxM/edit?ts=60553d34#gid=0",
         "Province": "QC",
         "Last_Reported_Date": "2021-02-28"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -71.27546668,
-          46.71716571
+          -71.27536668,
+          46.71726571
         ]
       }
     },
@@ -583,15 +583,15 @@
         "School": "École des Pionniers, Pavillon Marguerite-Bourgeois",
         "City": "Saint-Augustin-de-Desmaures",
         "Date": "2021/03/01",
-        "Article": "NA",
+        "Article": "https://docs.google.com/spreadsheets/d/1cU9_JiWJ4NdvCWAleivb3pNweYgaqt4GBRIWPl3MyxM/edit?ts=60553d34#gid=0",
         "Province": "QC",
         "Last_Reported_Date": "2021-03-01"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -71.45688995,
-          46.74327422
+          -71.45678995,
+          46.74337422
         ]
       }
     },
@@ -601,15 +601,15 @@
         "School": "Elizabeth Ballantyne School",
         "City": "Montreal-Ouest",
         "Date": "2021/03/02",
-        "Article": "NA",
+        "Article": "https://docs.google.com/spreadsheets/d/1cU9_JiWJ4NdvCWAleivb3pNweYgaqt4GBRIWPl3MyxM/edit?ts=60553d34#gid=0",
         "Province": "QC",
         "Last_Reported_Date": "2021-03-02"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -73.65439396,
-          45.45484453
+          -73.65429396,
+          45.45494453
         ]
       }
     },
@@ -619,15 +619,15 @@
         "School": "École de la Clairière",
         "City": "Boisbriand",
         "Date": "2021/03/02",
-        "Article": "NA",
+        "Article": "https://docs.google.com/spreadsheets/d/1cU9_JiWJ4NdvCWAleivb3pNweYgaqt4GBRIWPl3MyxM/edit?ts=60553d34#gid=0",
         "Province": "QC",
         "Last_Reported_Date": "2021-03-02"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -73.86972872,
-          45.62920574
+          -73.86962872,
+          45.62930574
         ]
       }
     },
@@ -637,15 +637,15 @@
         "School": "École Notre-Dame-des-Rapides",
         "City": "Lasalle",
         "Date": "2021/03/03",
-        "Article": "NA",
+        "Article": "https://docs.google.com/spreadsheets/d/1cU9_JiWJ4NdvCWAleivb3pNweYgaqt4GBRIWPl3MyxM/edit?ts=60553d34#gid=0",
         "Province": "QC",
         "Last_Reported_Date": "2021-03-03"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -73.61911779,
-          45.42072874
+          -73.61901779,
+          45.42082874
         ]
       }
     },
@@ -655,15 +655,15 @@
         "School": "École de la Grande-Vallée pavillon Marguerite-d'Youville",
         "City": "Saint-Raymond de Portneuf",
         "Date": "2021/03/04",
-        "Article": "NA",
+        "Article": "https://docs.google.com/spreadsheets/d/1cU9_JiWJ4NdvCWAleivb3pNweYgaqt4GBRIWPl3MyxM/edit?ts=60553d34#gid=0",
         "Province": "QC",
         "Last_Reported_Date": "2021-03-04"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -71.83319326,
-          46.89144891
+          -71.83309326,
+          46.89154891
         ]
       }
     },
@@ -673,15 +673,15 @@
         "School": "Collège Saint-Louis",
         "City": "Lachine",
         "Date": "2021/03/04",
-        "Article": "NA",
+        "Article": "https://docs.google.com/spreadsheets/d/1cU9_JiWJ4NdvCWAleivb3pNweYgaqt4GBRIWPl3MyxM/edit?ts=60553d34#gid=0",
         "Province": "QC",
         "Last_Reported_Date": "2021-03-04"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -73.69738597,
-          45.43651905
+          -73.69728597,
+          45.43661905
         ]
       }
     },
@@ -691,15 +691,15 @@
         "School": "École Paul-Gerin-Lajoie-d'Outremont",
         "City": "Outremont",
         "Date": "2021/03/06",
-        "Article": "NA",
+        "Article": "https://docs.google.com/spreadsheets/d/1cU9_JiWJ4NdvCWAleivb3pNweYgaqt4GBRIWPl3MyxM/edit?ts=60553d34#gid=0",
         "Province": "QC",
         "Last_Reported_Date": "2021-03-06"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -73.60598666,
-          45.51996691
+          -73.60588666,
+          45.52006691
         ]
       }
     },
@@ -709,15 +709,15 @@
         "School": "Garderie Le Lapin Bleu*",
         "City": "Dollard-des-Ormeaux",
         "Date": "2021/03/06",
-        "Article": "NA",
+        "Article": "https://docs.google.com/spreadsheets/d/1cU9_JiWJ4NdvCWAleivb3pNweYgaqt4GBRIWPl3MyxM/edit?ts=60553d34#gid=0",
         "Province": "QC",
         "Last_Reported_Date": "2021-03-06"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -73.78502723,
-          45.48686288
+          -73.78492723,
+          45.48696288
         ]
       }
     },
@@ -727,15 +727,15 @@
         "School": "Collège Boisbriand",
         "City": "Boisbriand",
         "Date": "2021/03/06",
-        "Article": "NA",
+        "Article": "https://docs.google.com/spreadsheets/d/1cU9_JiWJ4NdvCWAleivb3pNweYgaqt4GBRIWPl3MyxM/edit?ts=60553d34#gid=0",
         "Province": "QC",
         "Last_Reported_Date": "2021-03-06"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -73.86804828,
-          45.64106126
+          -73.86794828,
+          45.64116126
         ]
       }
     },
@@ -745,15 +745,15 @@
         "School": "École Demers",
         "City": "Laval",
         "Date": "2021/03/06",
-        "Article": "NA",
+        "Article": "https://docs.google.com/spreadsheets/d/1cU9_JiWJ4NdvCWAleivb3pNweYgaqt4GBRIWPl3MyxM/edit?ts=60553d34#gid=0",
         "Province": "QC",
         "Last_Reported_Date": "2021-03-06"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -73.7848756,
-          45.61237042
+          -73.7847756,
+          45.61247042
         ]
       }
     },
@@ -763,15 +763,15 @@
         "School": "École du Ruisselet",
         "City": "Lorraine",
         "Date": "2021/03/07",
-        "Article": "NA",
+        "Article": "https://docs.google.com/spreadsheets/d/1cU9_JiWJ4NdvCWAleivb3pNweYgaqt4GBRIWPl3MyxM/edit?ts=60553d34#gid=0",
         "Province": "QC",
         "Last_Reported_Date": "2021-03-07"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -73.77071262,
-          45.66356013
+          -73.77061262,
+          45.66366013
         ]
       }
     },
@@ -781,15 +781,15 @@
         "School": "École La clé des champs",
         "City": "Mirabel",
         "Date": "2021/03/07",
-        "Article": "NA",
+        "Article": "https://docs.google.com/spreadsheets/d/1cU9_JiWJ4NdvCWAleivb3pNweYgaqt4GBRIWPl3MyxM/edit?ts=60553d34#gid=0",
         "Province": "QC",
         "Last_Reported_Date": "2021-03-07"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -73.99120474,
-          45.62903075
+          -73.99110474,
+          45.62913075
         ]
       }
     },
@@ -799,15 +799,15 @@
         "School": "CEA du Nouvel-Horizon",
         "City": "Québec",
         "Date": "2021/03/08",
-        "Article": "NA",
+        "Article": "https://docs.google.com/spreadsheets/d/1cU9_JiWJ4NdvCWAleivb3pNweYgaqt4GBRIWPl3MyxM/edit?ts=60553d34#gid=0",
         "Province": "QC",
         "Last_Reported_Date": "2021-03-08"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -71.20909079,
-          46.8509406
+          -71.20899079,
+          46.8510406
         ]
       }
     },
@@ -817,15 +817,15 @@
         "School": "École Le Rucher",
         "City": "Bois-des-Filion",
         "Date": "2021/03/10",
-        "Article": "NA",
+        "Article": "https://docs.google.com/spreadsheets/d/1cU9_JiWJ4NdvCWAleivb3pNweYgaqt4GBRIWPl3MyxM/edit?ts=60553d34#gid=0",
         "Province": "QC",
         "Last_Reported_Date": "2021-03-10"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -73.75793358,
-          45.67018208
+          -73.75783358,
+          45.67028208
         ]
       }
     },
@@ -835,15 +835,15 @@
         "School": "École des Semailles",
         "City": "Blainville",
         "Date": "2021/03/11",
-        "Article": "NA",
+        "Article": "https://docs.google.com/spreadsheets/d/1cU9_JiWJ4NdvCWAleivb3pNweYgaqt4GBRIWPl3MyxM/edit?ts=60553d34#gid=0",
         "Province": "QC",
         "Last_Reported_Date": "2021-03-11"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -73.87854292,
-          45.68934996
+          -73.87844292,
+          45.68944996
         ]
       }
     },
@@ -853,15 +853,15 @@
         "School": "École Notre-Dame",
         "City": "St-Eustache",
         "Date": "2021/03/11",
-        "Article": "NA",
+        "Article": "https://docs.google.com/spreadsheets/d/1cU9_JiWJ4NdvCWAleivb3pNweYgaqt4GBRIWPl3MyxM/edit?ts=60553d34#gid=0",
         "Province": "QC",
         "Last_Reported_Date": "2021-03-11"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -73.88840347,
-          45.5583008
+          -73.88830347,
+          45.5584008
         ]
       }
     },
@@ -871,15 +871,15 @@
         "School": "École du Soleil-Levant",
         "City": "Mascouche",
         "Date": "2021/03/11",
-        "Article": "NA",
+        "Article": "https://docs.google.com/spreadsheets/d/1cU9_JiWJ4NdvCWAleivb3pNweYgaqt4GBRIWPl3MyxM/edit?ts=60553d34#gid=0",
         "Province": "QC",
         "Last_Reported_Date": "2021-03-11"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -73.58425149,
-          45.74824359
+          -73.58415149,
+          45.74834359
         ]
       }
     },
@@ -889,15 +889,15 @@
         "School": "École Poly-Jeunesse",
         "City": "Laval",
         "Date": "2021/03/11",
-        "Article": "NA",
+        "Article": "https://docs.google.com/spreadsheets/d/1cU9_JiWJ4NdvCWAleivb3pNweYgaqt4GBRIWPl3MyxM/edit?ts=60553d34#gid=0",
         "Province": "QC",
         "Last_Reported_Date": "2021-03-11"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -73.815173,
-          45.58682515
+          -73.815073,
+          45.58692515
         ]
       }
     },
@@ -907,15 +907,15 @@
         "School": "École secondaire Curé-Antoine-Labelle",
         "City": "Laval",
         "Date": "2021/03/12",
-        "Article": "NA",
+        "Article": "https://docs.google.com/spreadsheets/d/1cU9_JiWJ4NdvCWAleivb3pNweYgaqt4GBRIWPl3MyxM/edit?ts=60553d34#gid=0",
         "Province": "QC",
         "Last_Reported_Date": "2021-03-12"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -73.78387978,
-          45.60617379
+          -73.78377978,
+          45.60627379
         ]
       }
     },
@@ -925,15 +925,15 @@
         "School": "École des Prés Fleuris,",
         "City": "Mirabel",
         "Date": "2021/03/13",
-        "Article": "NA",
+        "Article": "https://docs.google.com/spreadsheets/d/1cU9_JiWJ4NdvCWAleivb3pNweYgaqt4GBRIWPl3MyxM/edit?ts=60553d34#gid=0",
         "Province": "QC",
         "Last_Reported_Date": "2021-03-13"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -73.98136239,
-          45.62392788
+          -73.98126239,
+          45.62402788
         ]
       }
     },
@@ -943,15 +943,15 @@
         "School": "École internationale primaire de Greenfield Park",
         "City": "Greenfield Park",
         "Date": "2021/03/13",
-        "Article": "NA",
+        "Article": "https://docs.google.com/spreadsheets/d/1cU9_JiWJ4NdvCWAleivb3pNweYgaqt4GBRIWPl3MyxM/edit?ts=60553d34#gid=0",
         "Province": "QC",
         "Last_Reported_Date": "2021-03-13"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -73.47143088,
-          45.48338538
+          -73.47133088,
+          45.48348538
         ]
       }
     },
@@ -961,15 +961,15 @@
         "School": "École de l'Avenir",
         "City": "Laval",
         "Date": "2021/03/13",
-        "Article": "NA",
+        "Article": "https://docs.google.com/spreadsheets/d/1cU9_JiWJ4NdvCWAleivb3pNweYgaqt4GBRIWPl3MyxM/edit?ts=60553d34#gid=0",
         "Province": "QC",
         "Last_Reported_Date": "2021-03-13"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -73.77672146,
-          45.53653174
+          -73.77662146,
+          45.53663174
         ]
       }
     },
@@ -979,15 +979,15 @@
         "School": "Garderie Educative Peekaboo 1",
         "City": "Verdun",
         "Date": "2021/03/13",
-        "Article": "NA",
+        "Article": "https://docs.google.com/spreadsheets/d/1cU9_JiWJ4NdvCWAleivb3pNweYgaqt4GBRIWPl3MyxM/edit?ts=60553d34#gid=0",
         "Province": "QC",
         "Last_Reported_Date": "2021-03-13"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -73.54114703,
-          45.46727514
+          -73.54104703,
+          45.46737514
         ]
       }
     },
@@ -997,15 +997,15 @@
         "School": "École Léon Guilbault",
         "City": "Laval",
         "Date": "2021/03/13",
-        "Article": "NA",
+        "Article": "https://docs.google.com/spreadsheets/d/1cU9_JiWJ4NdvCWAleivb3pNweYgaqt4GBRIWPl3MyxM/edit?ts=60553d34#gid=0",
         "Province": "QC",
         "Last_Reported_Date": "2021-03-13"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -73.69248059,
-          45.55861765
+          -73.69238059,
+          45.55871765
         ]
       }
     },
@@ -1015,15 +1015,15 @@
         "School": "École Lucille-Teasdale",
         "City": "Côte-des-Neiges-Notre-Dame-de-Grâce",
         "Date": "2021/03/14",
-        "Article": "NA",
+        "Article": "https://docs.google.com/spreadsheets/d/1cU9_JiWJ4NdvCWAleivb3pNweYgaqt4GBRIWPl3MyxM/edit?ts=60553d34#gid=0",
         "Province": "QC",
         "Last_Reported_Date": "2021-03-14"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -73.6397535,
-          45.50012258
+          -73.6396535,
+          45.50022258
         ]
       }
     },
@@ -1033,15 +1033,15 @@
         "School": "Collège Villa-Maria",
         "City": "Côte-des-Neiges-Notre-Dame-de-Grâce",
         "Date": "2021/03/14",
-        "Article": "NA",
+        "Article": "https://docs.google.com/spreadsheets/d/1cU9_JiWJ4NdvCWAleivb3pNweYgaqt4GBRIWPl3MyxM/edit?ts=60553d34#gid=0",
         "Province": "QC",
         "Last_Reported_Date": "2021-03-14"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -73.61689828,
-          45.48197435
+          -73.61679828,
+          45.48207435
         ]
       }
     },
@@ -1051,15 +1051,15 @@
         "School": "École Les Explorateurs",
         "City": "Laval",
         "Date": "2021/03/14",
-        "Article": "NA",
+        "Article": "https://docs.google.com/spreadsheets/d/1cU9_JiWJ4NdvCWAleivb3pNweYgaqt4GBRIWPl3MyxM/edit?ts=60553d34#gid=0",
         "Province": "QC",
         "Last_Reported_Date": "2021-03-14"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -73.72640092,
-          45.60390617
+          -73.72630092,
+          45.60400617
         ]
       }
     },
@@ -1069,15 +1069,15 @@
         "School": "Collège Reine-Marie",
         "City": "Ahuntsic",
         "Date": "2021/03/14",
-        "Article": "NA",
+        "Article": "https://docs.google.com/spreadsheets/d/1cU9_JiWJ4NdvCWAleivb3pNweYgaqt4GBRIWPl3MyxM/edit?ts=60553d34#gid=0",
         "Province": "QC",
         "Last_Reported_Date": "2021-03-14"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -73.63223564,
-          45.57322393
+          -73.63213564,
+          45.57332393
         ]
       }
     },
@@ -1087,15 +1087,15 @@
         "School": "École des Marguerite",
         "City": "Verdun",
         "Date": "2021/03/14",
-        "Article": "NA",
+        "Article": "https://docs.google.com/spreadsheets/d/1cU9_JiWJ4NdvCWAleivb3pNweYgaqt4GBRIWPl3MyxM/edit?ts=60553d34#gid=0",
         "Province": "QC",
         "Last_Reported_Date": "2021-03-14"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -73.54444432,
-          45.46563989
+          -73.54434432,
+          45.46573989
         ]
       }
     },
@@ -1105,15 +1105,15 @@
         "School": "Hebrew Aademy",
         "City": "Cote St-Luc",
         "Date": "2021/03/14",
-        "Article": "NA",
+        "Article": "https://docs.google.com/spreadsheets/d/1cU9_JiWJ4NdvCWAleivb3pNweYgaqt4GBRIWPl3MyxM/edit?ts=60553d34#gid=0",
         "Province": "QC",
         "Last_Reported_Date": "2021-03-14"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -73.66145927,
-          45.47287703
+          -73.66135927,
+          45.47297703
         ]
       }
     },
@@ -1123,15 +1123,15 @@
         "School": "École secondaire Veilleux",
         "City": "Beauce",
         "Date": "2021/03/15",
-        "Article": "NA",
+        "Article": "https://docs.google.com/spreadsheets/d/1cU9_JiWJ4NdvCWAleivb3pNweYgaqt4GBRIWPl3MyxM/edit?ts=60553d34#gid=0",
         "Province": "QC",
         "Last_Reported_Date": "2021-03-15"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -70.87967367,
-          46.31493376
+          -70.87957367,
+          46.31503376
         ]
       }
     },
@@ -1141,15 +1141,15 @@
         "School": "École Saint-Isaac-Jogues",
         "City": "Ahutsic",
         "Date": "2021/03/15",
-        "Article": "NA",
+        "Article": "https://docs.google.com/spreadsheets/d/1cU9_JiWJ4NdvCWAleivb3pNweYgaqt4GBRIWPl3MyxM/edit?ts=60553d34#gid=0",
         "Province": "QC",
         "Last_Reported_Date": "2021-03-15"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -73.64295329,
-          45.55960296
+          -73.64285329,
+          45.55970296
         ]
       }
     },
@@ -1159,15 +1159,15 @@
         "School": "École primaire Marc-Aurèle Fortin",
         "City": "Laval",
         "Date": "2021/03/15",
-        "Article": "NA",
+        "Article": "https://docs.google.com/spreadsheets/d/1cU9_JiWJ4NdvCWAleivb3pNweYgaqt4GBRIWPl3MyxM/edit?ts=60553d34#gid=0",
         "Province": "QC",
         "Last_Reported_Date": "2021-03-15"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -73.80073953,
-          45.58410975
+          -73.80063953,
+          45.58420975
         ]
       }
     },
@@ -1177,15 +1177,15 @@
         "School": "École des Cèdres",
         "City": "Laval",
         "Date": "2021/03/16",
-        "Article": "NA",
+        "Article": "https://docs.google.com/spreadsheets/d/1cU9_JiWJ4NdvCWAleivb3pNweYgaqt4GBRIWPl3MyxM/edit?ts=60553d34#gid=0",
         "Province": "QC",
         "Last_Reported_Date": "2021-03-16"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -73.8233939,
-          45.58079154
+          -73.8232939,
+          45.58089154
         ]
       }
     },
@@ -1195,15 +1195,15 @@
         "School": "École primaire internationale Michelangelo",
         "City": "Rivière-des-Prairies",
         "Date": "2021/03/16",
-        "Article": "NA",
+        "Article": "https://docs.google.com/spreadsheets/d/1cU9_JiWJ4NdvCWAleivb3pNweYgaqt4GBRIWPl3MyxM/edit?ts=60553d34#gid=0",
         "Province": "QC",
         "Last_Reported_Date": "2021-03-16"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -73.56845416,
-          45.65078877
+          -73.56835416,
+          45.65088877
         ]
       }
     },
@@ -1213,15 +1213,15 @@
         "School": "École Le Petit Prince",
         "City": "Laval",
         "Date": "2021/03/16",
-        "Article": "NA",
+        "Article": "https://docs.google.com/spreadsheets/d/1cU9_JiWJ4NdvCWAleivb3pNweYgaqt4GBRIWPl3MyxM/edit?ts=60553d34#gid=0",
         "Province": "QC",
         "Last_Reported_Date": "2021-03-16"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -73.8026172,
-          45.58414833
+          -73.8025172,
+          45.58424833
         ]
       }
     },
@@ -1231,15 +1231,15 @@
         "School": "Talmud Torah Elementary School",
         "City": "Côte-des-Neiges-Notre-Dame-de-Grâce",
         "Date": "2021/03/16",
-        "Article": "NA",
+        "Article": "https://docs.google.com/spreadsheets/d/1cU9_JiWJ4NdvCWAleivb3pNweYgaqt4GBRIWPl3MyxM/edit?ts=60553d34#gid=0",
         "Province": "QC",
         "Last_Reported_Date": "2021-03-16"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -73.63157782,
-          45.4904018
+          -73.63147782,
+          45.4905018
         ]
       }
     },
@@ -1249,15 +1249,15 @@
         "School": "École Vanguard",
         "City": "St-Laurent",
         "Date": "2021/03/16",
-        "Article": "NA",
+        "Article": "https://docs.google.com/spreadsheets/d/1cU9_JiWJ4NdvCWAleivb3pNweYgaqt4GBRIWPl3MyxM/edit?ts=60553d34#gid=0",
         "Province": "QC",
         "Last_Reported_Date": "2021-03-16"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -73.6838443,
-          45.49216474
+          -73.6837443,
+          45.49226474
         ]
       }
     },
@@ -1267,15 +1267,15 @@
         "School": "École secondaire Lucien-Pagé",
         "City": "Parc-Extension - Villeray",
         "Date": "2021/03/16",
-        "Article": "NA",
+        "Article": "https://docs.google.com/spreadsheets/d/1cU9_JiWJ4NdvCWAleivb3pNweYgaqt4GBRIWPl3MyxM/edit?ts=60553d34#gid=0",
         "Province": "QC",
         "Last_Reported_Date": "2021-03-16"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -73.63300487,
-          45.53927806
+          -73.63290487,
+          45.53937806
         ]
       }
     },
@@ -1285,15 +1285,15 @@
         "School": "École Odyssée-des-Jeunes de Laval",
         "City": "Laval",
         "Date": "2021/03/16",
-        "Article": "NA",
+        "Article": "https://docs.google.com/spreadsheets/d/1cU9_JiWJ4NdvCWAleivb3pNweYgaqt4GBRIWPl3MyxM/edit?ts=60553d34#gid=0",
         "Province": "QC",
         "Last_Reported_Date": "2021-03-16"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -73.71707327,
-          45.56694788
+          -73.71697327,
+          45.56704788
         ]
       }
     },
@@ -1303,15 +1303,15 @@
         "School": "Polyvalente Benoit Vachon",
         "City": "Beauce",
         "Date": "2021/03/16",
-        "Article": "NA",
+        "Article": "https://docs.google.com/spreadsheets/d/1cU9_JiWJ4NdvCWAleivb3pNweYgaqt4GBRIWPl3MyxM/edit?ts=60553d34#gid=0",
         "Province": "QC",
         "Last_Reported_Date": "2021-03-16"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -71.02969579,
-          46.45461337
+          -71.02959579,
+          46.45471337
         ]
       }
     },
@@ -1321,15 +1321,15 @@
         "School": "École secondaire M.I.N.D",
         "City": "Plateau Mont-Royal",
         "Date": "2021/03/16",
-        "Article": "NA",
+        "Article": "https://docs.google.com/spreadsheets/d/1cU9_JiWJ4NdvCWAleivb3pNweYgaqt4GBRIWPl3MyxM/edit?ts=60553d34#gid=0",
         "Province": "QC",
         "Last_Reported_Date": "2021-03-16"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -73.58875046,
-          45.51982596
+          -73.58865046,
+          45.51992596
         ]
       }
     },
@@ -1339,15 +1339,15 @@
         "School": "École secondaire Saint-Luc",
         "City": "Côte-des-Neiges-Notre-Dame-de-Grâce",
         "Date": "2021/03/17",
-        "Article": "NA",
+        "Article": "https://docs.google.com/spreadsheets/d/1cU9_JiWJ4NdvCWAleivb3pNweYgaqt4GBRIWPl3MyxM/edit?ts=60553d34#gid=0",
         "Province": "QC",
         "Last_Reported_Date": "2021-03-17"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -73.64303477,
-          45.47507019
+          -73.64293477,
+          45.47517019
         ]
       }
     },
@@ -1357,15 +1357,15 @@
         "School": "École primaire Du Tournesol",
         "City": "Longueuil",
         "Date": "2021/03/17",
-        "Article": "NA",
+        "Article": "https://docs.google.com/spreadsheets/d/1cU9_JiWJ4NdvCWAleivb3pNweYgaqt4GBRIWPl3MyxM/edit?ts=60553d34#gid=0",
         "Province": "QC",
         "Last_Reported_Date": "2021-03-17"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -73.47184244,
-          45.52079366
+          -73.47174244,
+          45.52089366
         ]
       }
     },
@@ -1375,15 +1375,15 @@
         "School": "Collège de l'Ouest de l'Île",
         "City": "Dollard-des-Ormeaux,",
         "Date": "2021/03/17",
-        "Article": "NA",
+        "Article": "https://docs.google.com/spreadsheets/d/1cU9_JiWJ4NdvCWAleivb3pNweYgaqt4GBRIWPl3MyxM/edit?ts=60553d34#gid=0",
         "Province": "QC",
         "Last_Reported_Date": "2021-03-17"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -73.81524742,
-          45.47857854
+          -73.81514742,
+          45.47867854
         ]
       }
     },
@@ -1393,15 +1393,15 @@
         "School": "Lester B Pearson High School",
         "City": "Montréal-Nord",
         "Date": "2021/03/17",
-        "Article": "NA",
+        "Article": "https://docs.google.com/spreadsheets/d/1cU9_JiWJ4NdvCWAleivb3pNweYgaqt4GBRIWPl3MyxM/edit?ts=60553d34#gid=0",
         "Province": "QC",
         "Last_Reported_Date": "2021-03-17"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -73.61716079,
-          45.6120706
+          -73.61706079,
+          45.6121706
         ]
       }
     },
@@ -1411,15 +1411,15 @@
         "School": "Collège Sainte-Anne",
         "City": "Lachine",
         "Date": "2021/03/17",
-        "Article": "NA",
+        "Article": "https://docs.google.com/spreadsheets/d/1cU9_JiWJ4NdvCWAleivb3pNweYgaqt4GBRIWPl3MyxM/edit?ts=60553d34#gid=0",
         "Province": "QC",
         "Last_Reported_Date": "2021-03-17"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -73.67543893,
-          45.43241745
+          -73.67533893,
+          45.43251745
         ]
       }
     },
@@ -1429,15 +1429,15 @@
         "School": "École Jacques Rousseau",
         "City": "Anjou",
         "Date": "2021/03/18",
-        "Article": "NA",
+        "Article": "https://docs.google.com/spreadsheets/d/1cU9_JiWJ4NdvCWAleivb3pNweYgaqt4GBRIWPl3MyxM/edit?ts=60553d34#gid=0",
         "Province": "QC",
         "Last_Reported_Date": "2021-03-18"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -73.57327912,
-          45.60570882
+          -73.57317912,
+          45.60580882
         ]
       }
     },
@@ -1447,15 +1447,15 @@
         "School": "École Montpetit",
         "City": "Salaberry-de-Valleyfield",
         "Date": "2021/03/18",
-        "Article": "NA",
+        "Article": "https://docs.google.com/spreadsheets/d/1cU9_JiWJ4NdvCWAleivb3pNweYgaqt4GBRIWPl3MyxM/edit?ts=60553d34#gid=0",
         "Province": "QC",
         "Last_Reported_Date": "2021-03-18"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -74.13057087,
-          45.27305713
+          -74.13047087,
+          45.27315713
         ]
       }
     },
@@ -1465,15 +1465,15 @@
         "School": "École Montessori de l'Outaouais",
         "City": "Outaouais",
         "Date": "2021/03/18",
-        "Article": "NA",
+        "Article": "https://docs.google.com/spreadsheets/d/1cU9_JiWJ4NdvCWAleivb3pNweYgaqt4GBRIWPl3MyxM/edit?ts=60553d34#gid=0",
         "Province": "QC",
         "Last_Reported_Date": "2021-03-18"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -75.83988426,
-          45.39613116
+          -75.83978426,
+          45.39623116
         ]
       }
     },
@@ -1483,15 +1483,15 @@
         "School": "École Saint-Clément Ouest",
         "City": "Mont-Royal",
         "Date": "2021/03/18",
-        "Article": "NA",
+        "Article": "https://docs.google.com/spreadsheets/d/1cU9_JiWJ4NdvCWAleivb3pNweYgaqt4GBRIWPl3MyxM/edit?ts=60553d34#gid=0",
         "Province": "QC",
         "Last_Reported_Date": "2021-03-18"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -73.6557288,
-          45.50848982
+          -73.6556288,
+          45.50858982
         ]
       }
     },
@@ -1501,15 +1501,15 @@
         "School": "Polyvalente Ste-Thérèse",
         "City": "Ste-Therese",
         "Date": "2021/03/18",
-        "Article": "NA",
+        "Article": "https://docs.google.com/spreadsheets/d/1cU9_JiWJ4NdvCWAleivb3pNweYgaqt4GBRIWPl3MyxM/edit?ts=60553d34#gid=0",
         "Province": "QC",
         "Last_Reported_Date": "2021-03-18"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -73.82705866,
-          45.64976028
+          -73.82695866,
+          45.64986028
         ]
       }
     },
@@ -1519,15 +1519,15 @@
         "School": "St-Lambert Elementary School",
         "City": "Saint-Lambert",
         "Date": "2021/03/19",
-        "Article": "NA",
+        "Article": "https://docs.google.com/spreadsheets/d/1cU9_JiWJ4NdvCWAleivb3pNweYgaqt4GBRIWPl3MyxM/edit?ts=60553d34#gid=0",
         "Province": "QC",
         "Last_Reported_Date": "2021-03-19"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -73.51027099,
-          45.50247935
+          -73.51017099,
+          45.50257935
         ]
       }
     },
@@ -1537,15 +1537,15 @@
         "School": "École Notre-Dame-des-Neiges",
         "City": "Côte-des-Neiges-Notre-Dame-de-Grâce",
         "Date": "2021/03/19",
-        "Article": "NA",
+        "Article": "https://docs.google.com/spreadsheets/d/1cU9_JiWJ4NdvCWAleivb3pNweYgaqt4GBRIWPl3MyxM/edit?ts=60553d34#gid=0",
         "Province": "QC",
         "Last_Reported_Date": "2021-03-19"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -73.6222925,
-          45.49704802
+          -73.6221925,
+          45.49714802
         ]
       }
     },
@@ -1555,15 +1555,15 @@
         "School": "École Saint-Paul",
         "City": "Gatineau",
         "Date": "2021/03/19",
-        "Article": "NA",
+        "Article": "https://docs.google.com/spreadsheets/d/1cU9_JiWJ4NdvCWAleivb3pNweYgaqt4GBRIWPl3MyxM/edit?ts=60553d34#gid=0",
         "Province": "QC",
         "Last_Reported_Date": "2021-03-19"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -75.74653796,
-          45.45987011
+          -75.74643796,
+          45.45997011
         ]
       }
     },
@@ -1573,15 +1573,15 @@
         "School": "Collège Jésus-Marie de Sillery",
         "City": "Québec",
         "Date": "2021/03/19",
-        "Article": "NA",
+        "Article": "https://docs.google.com/spreadsheets/d/1cU9_JiWJ4NdvCWAleivb3pNweYgaqt4GBRIWPl3MyxM/edit?ts=60553d34#gid=0",
         "Province": "QC",
         "Last_Reported_Date": "2021-03-19"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -71.250007,
-          46.77719162
+          -71.249907,
+          46.77729162
         ]
       }
     },
@@ -1591,15 +1591,15 @@
         "School": "École du Beau-Séjour",
         "City": "Québec",
         "Date": "2021/03/19",
-        "Article": "NA",
+        "Article": "https://docs.google.com/spreadsheets/d/1cU9_JiWJ4NdvCWAleivb3pNweYgaqt4GBRIWPl3MyxM/edit?ts=60553d34#gid=0",
         "Province": "QC",
         "Last_Reported_Date": "2021-03-19"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -71.33743006,
-          46.87023325
+          -71.33733006,
+          46.87033325
         ]
       }
     },
@@ -1609,15 +1609,15 @@
         "School": "École secondaire de la Courvilloise",
         "City": "Québec",
         "Date": "2021/03/19",
-        "Article": "NA",
+        "Article": "https://docs.google.com/spreadsheets/d/1cU9_JiWJ4NdvCWAleivb3pNweYgaqt4GBRIWPl3MyxM/edit?ts=60553d34#gid=0",
         "Province": "QC",
         "Last_Reported_Date": "2021-03-19"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -71.16286333,
-          46.89006201
+          -71.16276333,
+          46.89016201
         ]
       }
     },
@@ -1627,15 +1627,15 @@
         "School": "CFP Samuel-de-Champlain",
         "City": "Québec",
         "Date": "2021/03/19",
-        "Article": "NA",
+        "Article": "https://docs.google.com/spreadsheets/d/1cU9_JiWJ4NdvCWAleivb3pNweYgaqt4GBRIWPl3MyxM/edit?ts=60553d34#gid=0",
         "Province": "QC",
         "Last_Reported_Date": "2021-03-19"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -71.18215428,
-          46.88787898
+          -71.18205428,
+          46.88797898
         ]
       }
     },
@@ -1645,15 +1645,15 @@
         "School": "École secondaire de la Baie-Saint-Francois",
         "City": "Salaberry-de-Valleyfield",
         "Date": "2021/03/19",
-        "Article": "NA",
+        "Article": "https://docs.google.com/spreadsheets/d/1cU9_JiWJ4NdvCWAleivb3pNweYgaqt4GBRIWPl3MyxM/edit?ts=60553d34#gid=0",
         "Province": "QC",
         "Last_Reported_Date": "2021-03-19"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -74.11473013,
-          45.23952715
+          -74.11463013,
+          45.23962715
         ]
       }
     },
@@ -1663,15 +1663,15 @@
         "School": "École secondaire de l'Ile",
         "City": "Gatineau",
         "Date": "2021/03/19",
-        "Article": "NA",
+        "Article": "https://docs.google.com/spreadsheets/d/1cU9_JiWJ4NdvCWAleivb3pNweYgaqt4GBRIWPl3MyxM/edit?ts=60553d34#gid=0",
         "Province": "QC",
         "Last_Reported_Date": "2021-03-19"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -75.72293032,
-          45.43620862
+          -75.72283032,
+          45.43630862
         ]
       }
     },
@@ -1681,15 +1681,15 @@
         "School": "École L'Envolée",
         "City": "Laval",
         "Date": "2021/03/19",
-        "Article": "NA",
+        "Article": "https://docs.google.com/spreadsheets/d/1cU9_JiWJ4NdvCWAleivb3pNweYgaqt4GBRIWPl3MyxM/edit?ts=60553d34#gid=0",
         "Province": "QC",
         "Last_Reported_Date": "2021-03-19"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -73.77770682,
-          45.58731914
+          -73.77760682,
+          45.58741914
         ]
       }
     },
@@ -1699,15 +1699,69 @@
         "School": "John F. Kennedy High School",
         "City": "Villeray",
         "Date": "2021/03/19",
-        "Article": "NA",
+        "Article": "https://docs.google.com/spreadsheets/d/1cU9_JiWJ4NdvCWAleivb3pNweYgaqt4GBRIWPl3MyxM/edit?ts=60553d34#gid=0",
         "Province": "QC",
         "Last_Reported_Date": "2021-03-19"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -73.60441132,
-          45.56026962
+          -73.60431132,
+          45.56036962
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "School": "École primaire Sacré-Cœur",
+        "City": "La Pocatière",
+        "Date": "2021/03/21",
+        "Article": "https://docs.google.com/spreadsheets/d/1cU9_JiWJ4NdvCWAleivb3pNweYgaqt4GBRIWPl3MyxM/edit?ts=60553d34#gid=0",
+        "Province": "QC",
+        "Last_Reported_Date": "2021-03-21"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.03,
+          47.37024
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "School": "École Le Sommet",
+        "City": "Québec",
+        "Date": "2021/03/21",
+        "Article": "https://docs.google.com/spreadsheets/d/1cU9_JiWJ4NdvCWAleivb3pNweYgaqt4GBRIWPl3MyxM/edit?ts=60553d34#gid=0",
+        "Province": "QC",
+        "Last_Reported_Date": "2021-03-21"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.32727,
+          46.91428
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "School": "École de l'Apprenti-Sage",
+        "City": "Québec",
+        "Date": "2021/03/21",
+        "Article": "https://docs.google.com/spreadsheets/d/1cU9_JiWJ4NdvCWAleivb3pNweYgaqt4GBRIWPl3MyxM/edit?ts=60553d34#gid=0",
+        "Province": "QC",
+        "Last_Reported_Date": "2021-03-21"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.32704,
+          46.84726
         ]
       }
     },
