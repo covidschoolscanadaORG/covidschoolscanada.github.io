@@ -147,6 +147,76 @@ $(() => {
             }
 
         );
+
+        d3.json(
+            'VOC.geojson',
+            function (err, data) {
+                if (err) throw (err);
+                map.loadImage(
+                    'https://covidschoolscanada.org/maps/warning.png',
+                    function (error, image) {
+                        if (error) throw error;
+                        map.addImage('warning', image);
+
+                        map.addLayer({
+                            'id': 'voc',
+                            'type': 'symbol',
+                            'source': {
+                                'type': 'geojson',
+                                'data': data
+                            },
+                            'layout': {
+                                'icon-image': 'warning',
+                                'icon-size': 1
+                            }
+                        });
+                    });
+
+                map.on('click', 'voc', function (e) {
+                    var coordinates = e.features[0].geometry.coordinates.slice();
+
+                    //set popup text 
+                    //You can adjust the values of the popup to match the headers of your CSV. 
+                    // For example: e.features[0].properties.Name is retrieving information from the field Name in the original CSV. 
+                    var description = `<h4>VOC:` + e.features[0].properties.School + `</h4>`
+
+                    description = description + `<b>` + `Last Reported Date: ` + `</b>`
+                    description = description + e.features[0].properties.Last_Reported_Date + `<br>`;
+
+                    description = description + `<b>` + `City: ` + `</b>`
+                    description = description + e.features[0].properties.City + `<br>`;
+
+                    description = description + `<b>` + `Province: ` + `</b>`
+                    description = description + e.features[0].properties.Province + `<br>`;
+
+                    description = description + `<b>` + `Source(s): ` + `</b>`
+                    e.features[0].properties.Article.split(';').forEach((link, idx) => {
+                        var articleNumber = idx + 1
+                        description = description + `<a href='` + link + `' target="_blank">Article ` + articleNumber + `</a> `;
+                    })
+
+
+                    while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
+                        coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
+                    }
+                    //add Popup to map
+                    new mapboxgl.Popup()
+                        .setLngLat(coordinates)
+                        .setHTML(description)
+                        .addTo(map);
+                });
+
+                // Change the cursor to a pointer when the mouse is over the places layer.
+                map.on('mouseenter', 'voc', function () {
+                    map.getCanvas().style.cursor = 'pointer';
+                });
+
+                // Change it back to a pointer when it leaves.
+                map.on('mouseleave', 'places', function () {
+                    map.getCanvas().style.cursor = '';
+                });
+            }
+        );
     });
 })
 
@@ -178,19 +248,19 @@ $(document).ready(function () {
         dataType: "text",
         success: function (purifiers) { makeGeoJSON(purifiers); }
     });
-
-
+ 
+ 
     function makeGeoJSON(purifiers) {
-        csv2geojson.csv2geojson(purifiers, {
+        csv2geojson.csv2geojson(voc, f{
             latfield: 'Latitude',
             lonfield: 'Longitude',
             delimiter: ','
         }, function (err, data) {
             map.on('load', function () {
-
+ 
                 //Add the the layer to the map 
                 map.addLayer({
-                    'id': 'purifiers',
+                    'id': 'voc',
                     'type': 'circle',
                     'source': {
                         'type': 'geojson',
@@ -211,51 +281,51 @@ $(document).ready(function () {
                     }
                 });
                 
-
-
-
+ 
+ 
+ 
                 // When a click event occurs on a feature in the affectedSchools layer, open a popup at the
                 // location of the feature, with description HTML from its properties.
                 map.on('click', 'purifiers', function (e) {
                     var coordinates = e.features[0].geometry.coordinates.slice();
-
+ 
                     //set popup text 
                     //You can adjust the values of the popup to match the headers of your CSV. 
                     // For example: e.features[0].properties.Name is retrieving information from the field Name in the original CSV. 
                     var description = `<h3>` + e.features[0].properties.institute_name + `</h3>`;
-
+ 
                     console.log(e.features)
-
+ 
                     // Ensure that if the map is zoomed out such that multiple
                     // copies of the feature are visible, the popup appears
                     // over the copy being pointed to.
                     while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
                         coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
                     }
-
+ 
                     //add Popup to map
-
+ 
                     new mapboxgl.Popup()
                         .setLngLat(coordinates)
                         .setHTML(description)
                         .addTo(map);
                 });
-
+ 
                 // Change the cursor to a pointer when the mouse is over the places layer.
                 map.on('mouseenter', 'purifiers', function () {
                     map.getCanvas().style.cursor = 'pointer';
                 });
-
+ 
                 // Change it back to a pointer when it leaves.
                 map.on('mouseleave', 'places', function () {
                     map.getCanvas().style.cursor = '';
                 });
-
+ 
                 var bbox = turf.bbox(data);
                 map.fitBounds(bbox, { padding: 50 });
-
+ 
             });
-
+ 
         });
     };
 });
@@ -264,23 +334,23 @@ $(document).ready(function () {
 /*
 // enumerate ids of the layers
 var toggleableLayerIds = ['purifiers', 'affectedSchools'];
-
+ 
 // set up the corresponding toggle button for each layer
 for (var i = 0; i < toggleableLayerIds.length; i++) {
     var id = toggleableLayerIds[i];
-
+ 
     var link = document.createElement('a');
     link.href = '#';
     link.className = 'active';
     link.textContent = id;
-
+ 
     link.onclick = function (e) {
         var clickedLayer = this.textContent;
         e.preventDefault();
         e.stopPropagation();
-
+ 
         var visibility = map.getLayoutProperty(clickedLayer, 'visibility');
-
+ 
         // toggle layer visibility by changing the layout object's visibility property
         if (visibility === 'visible') {
             map.setLayoutProperty(clickedLayer, 'visibility', 'none');
@@ -290,7 +360,7 @@ for (var i = 0; i < toggleableLayerIds.length; i++) {
             map.setLayoutProperty(clickedLayer, 'visibility', 'visible');
         }
     };
-
+ 
     var layers = document.getElementById('menu');
     layers.appendChild(link);
 }
