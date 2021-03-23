@@ -1408,7 +1408,7 @@
     {
       "type": "Feature",
       "properties": {
-        "School": "Collège Sainte-Anne",
+        "School": "Collège Sainte-Anne + Académie Sainte-Anne",
         "City": "Lachine",
         "Date": "2021/03/17",
         "Article": "https://docs.google.com/spreadsheets/d/1cU9_JiWJ4NdvCWAleivb3pNweYgaqt4GBRIWPl3MyxM/edit?ts=60553d34#gid=0",
@@ -1786,6 +1786,204 @@
     {
       "type": "Feature",
       "properties": {
+        "School": "École secondaire la Camaradière",
+        "City": "Québec",
+        "Date": "2021/03/21",
+        "Article": "https://docs.google.com/spreadsheets/d/1cU9_JiWJ4NdvCWAleivb3pNweYgaqt4GBRIWPl3MyxM/edit?ts=60553d34#gid=0",
+        "Province": "QC",
+        "Last_Reported_Date": "2021-03-21"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.3111,
+          46.816
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "School": "Villa Sainte-Marcelline",
+        "City": "Westmount",
+        "Date": "2021/03/21",
+        "Article": "https://docs.google.com/spreadsheets/d/1cU9_JiWJ4NdvCWAleivb3pNweYgaqt4GBRIWPl3MyxM/edit?ts=60553d34#gid=0",
+        "Province": "QC",
+        "Last_Reported_Date": "2021-03-21"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.6144,
+          45.4899
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "School": "École Lanouette",
+        "City": "Saint-Antonin",
+        "Date": "2021/03/22",
+        "Article": "https://docs.google.com/spreadsheets/d/1cU9_JiWJ4NdvCWAleivb3pNweYgaqt4GBRIWPl3MyxM/edit?ts=60553d34#gid=0",
+        "Province": "QC",
+        "Last_Reported_Date": "2021-03-22"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -69.47489,
+          47.76116
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "School": "École Sainte-Colette",
+        "City": "Montréal-Nord",
+        "Date": "2021/03/22",
+        "Article": "https://docs.google.com/spreadsheets/d/1cU9_JiWJ4NdvCWAleivb3pNweYgaqt4GBRIWPl3MyxM/edit?ts=60553d34#gid=0",
+        "Province": "QC",
+        "Last_Reported_Date": "2021-03-22"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.62578,
+          45.60958
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "School": "Vincent Massey Collegiate",
+        "City": "Rosemont",
+        "Date": "2021/03/22",
+        "Article": "https://docs.google.com/spreadsheets/d/1cU9_JiWJ4NdvCWAleivb3pNweYgaqt4GBRIWPl3MyxM/edit?ts=60553d34#gid=0",
+        "Province": "QC",
+        "Last_Reported_Date": "2021-03-22"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.56839,
+          45.56427
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "School": "École secondaire Pointe-aux-Trembles",
+        "City": "Pointe-aux-Trembles",
+        "Date": "2021/03/22",
+        "Article": "https://docs.google.com/spreadsheets/d/1cU9_JiWJ4NdvCWAleivb3pNweYgaqt4GBRIWPl3MyxM/edit?ts=60553d34#gid=0",
+        "Province": "QC",
+        "Last_Reported_Date": "2021-03-22"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.49409,
+          45.68555
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "School": "Collège Laval",
+        "City": "Laval",
+        "Date": "2021/03/22",
+        "Article": "https://docs.google.com/spreadsheets/d/1cU9_JiWJ4NdvCWAleivb3pNweYgaqt4GBRIWPl3MyxM/edit?ts=60553d34#gid=0",
+        "Province": "QC",
+        "Last_Reported_Date": "2021-03-22"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.64672,
+          45.61576
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "School": "École d'Éducation Internationale (McMasterville)",
+        "City": "McMasterville",
+        "Date": "2021/03/22",
+        "Article": "https://docs.google.com/spreadsheets/d/1cU9_JiWJ4NdvCWAleivb3pNweYgaqt4GBRIWPl3MyxM/edit?ts=60553d34#gid=0",
+        "Province": "QC",
+        "Last_Reported_Date": "2021-03-22"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.22241,
+          45.54935
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "School": "École Saint-Albert-le-Grand",
+        "City": "Quebec",
+        "Date": "2021/03/23",
+        "Article": "https://docs.google.com/spreadsheets/d/1cU9_JiWJ4NdvCWAleivb3pNweYgaqt4GBRIWPl3MyxM/edit?ts=60553d34#gid=0",
+        "Province": "QC",
+        "Last_Reported_Date": "2021-03-23"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.23896,
+          46.83999
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "School": "École Saint-Louis",
+        "City": "Pointe-Claire",
+        "Date": "2021/03/23",
+        "Article": "https://docs.google.com/spreadsheets/d/1cU9_JiWJ4NdvCWAleivb3pNweYgaqt4GBRIWPl3MyxM/edit?ts=60553d34#gid=0",
+        "Province": "QC",
+        "Last_Reported_Date": "2021-03-23"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.80531,
+          45.46469
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "School": "École Saint-Garbriel-Lalemant",
+        "City": "Villeray",
+        "Date": "2021/03/23",
+        "Article": "https://docs.google.com/spreadsheets/d/1cU9_JiWJ4NdvCWAleivb3pNweYgaqt4GBRIWPl3MyxM/edit?ts=60553d34#gid=0",
+        "Province": "QC",
+        "Last_Reported_Date": "2021-03-23"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.60882,
+          45.54751
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "School": "Panorama Ridge Secondary",
         "City": "Surrey",
         "Date": "2021-03-18",
@@ -1888,6 +2086,24 @@
         "coordinates": [
           -122.7897581,
           49.1086509
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "School": "Martha Jane Norris Elementary",
+        "City": "Surrey",
+        "Date": "2021-03-10",
+        "Article": "https://bcschoolcovidtracker.knack.com/bc-school-covid-tracker",
+        "Province": "BC",
+        "Last_Reported_Date": "2021-03-10"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.866359,
+          49.120766
         ]
       }
     },
