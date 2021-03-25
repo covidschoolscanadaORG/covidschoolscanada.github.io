@@ -1984,6 +1984,78 @@
     {
       "type": "Feature",
       "properties": {
+        "School": "École secondaire Louis-Riel",
+        "City": "Carignan",
+        "Date": "2021/03/23",
+        "Article": "https://docs.google.com/spreadsheets/d/1cU9_JiWJ4NdvCWAleivb3pNweYgaqt4GBRIWPl3MyxM/edit?ts=60553d34#gid=0",
+        "Province": "QC",
+        "Last_Reported_Date": "2021-03-23"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.55285,
+          45.58292
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "School": "École secodnaire Ozias-Leduc",
+        "City": "Mont Saint-Hilaire",
+        "Date": "2021/03/23",
+        "Article": "https://docs.google.com/spreadsheets/d/1cU9_JiWJ4NdvCWAleivb3pNweYgaqt4GBRIWPl3MyxM/edit?ts=60553d34#gid=0",
+        "Province": "QC",
+        "Last_Reported_Date": "2021-03-23"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.18157,
+          45.56896
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "School": "École Albert-Schweitzer",
+        "City": "Saint-Bruno-de-Montarville,",
+        "Date": "2021/03/23",
+        "Article": "https://docs.google.com/spreadsheets/d/1cU9_JiWJ4NdvCWAleivb3pNweYgaqt4GBRIWPl3MyxM/edit?ts=60553d34#gid=0",
+        "Province": "QC",
+        "Last_Reported_Date": "2021-03-23"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.35527,
+          45.52792
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "School": "Pierre-de-Coubertin Elementary School",
+        "City": "Saint-Léonard",
+        "Date": "2021/03/23",
+        "Article": "https://docs.google.com/spreadsheets/d/1cU9_JiWJ4NdvCWAleivb3pNweYgaqt4GBRIWPl3MyxM/edit?ts=60553d34#gid=0",
+        "Province": "QC",
+        "Last_Reported_Date": "2021-03-23"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.60846,
+          45.58376
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "School": "Panorama Ridge Secondary",
         "City": "Surrey",
         "Date": "2021-03-18",
