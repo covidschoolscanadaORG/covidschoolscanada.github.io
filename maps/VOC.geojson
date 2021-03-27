@@ -2056,6 +2056,402 @@
     {
       "type": "Feature",
       "properties": {
+        "School": "École internationale du village",
+        "City": "Gatineau",
+        "Date": "2021/03/24",
+        "Article": "https://docs.google.com/spreadsheets/d/1cU9_JiWJ4NdvCWAleivb3pNweYgaqt4GBRIWPl3MyxM/edit?ts=60553d34#gid=0",
+        "Province": "QC",
+        "Last_Reported_Date": "2021-03-24"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.84825,
+          45.3958
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "School": "Collège de Montréal",
+        "City": "Ville-Marie",
+        "Date": "2021/03/24",
+        "Article": "https://docs.google.com/spreadsheets/d/1cU9_JiWJ4NdvCWAleivb3pNweYgaqt4GBRIWPl3MyxM/edit?ts=60553d34#gid=0",
+        "Province": "QC",
+        "Last_Reported_Date": "2021-03-24"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.5822,
+          45.49472
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "School": "École de l'Accueuil",
+        "City": "Quebec",
+        "Date": "2021/03/24",
+        "Article": "https://docs.google.com/spreadsheets/d/1cU9_JiWJ4NdvCWAleivb3pNweYgaqt4GBRIWPl3MyxM/edit?ts=60553d34#gid=0",
+        "Province": "QC",
+        "Last_Reported_Date": "2021-03-24"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.33107,
+          46.8703
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "School": "St-Gabriel School",
+        "City": "Sud-Ouest",
+        "Date": "2021/03/24",
+        "Article": "https://docs.google.com/spreadsheets/d/1cU9_JiWJ4NdvCWAleivb3pNweYgaqt4GBRIWPl3MyxM/edit?ts=60553d34#gid=0",
+        "Province": "QC",
+        "Last_Reported_Date": "2021-03-24"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.55618,
+          45.4773
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "School": "École Leonard-de-Vinci",
+        "City": "St-Michel",
+        "Date": "2021/03/24",
+        "Article": "https://docs.google.com/spreadsheets/d/1cU9_JiWJ4NdvCWAleivb3pNweYgaqt4GBRIWPl3MyxM/edit?ts=60553d34#gid=0",
+        "Province": "QC",
+        "Last_Reported_Date": "2021-03-24"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.59567,
+          45.56893
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "School": "École de la Cité",
+        "City": "Québec",
+        "Date": "2021/03/25",
+        "Article": "https://docs.google.com/spreadsheets/d/1cU9_JiWJ4NdvCWAleivb3pNweYgaqt4GBRIWPl3MyxM/edit?ts=60553d34#gid=0",
+        "Province": "QC",
+        "Last_Reported_Date": "2021-03-25"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.23165,
+          46.83038
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "School": "École Léopold-Carrière",
+        "City": "St-Zotique",
+        "Date": "2021/03/25",
+        "Article": "https://docs.google.com/spreadsheets/d/1cU9_JiWJ4NdvCWAleivb3pNweYgaqt4GBRIWPl3MyxM/edit?ts=60553d34#gid=0",
+        "Province": "QC",
+        "Last_Reported_Date": "2021-03-25"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.2135,
+          45.25837
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "School": "École secondaire Le Carrefour de Varennes",
+        "City": "Varennes",
+        "Date": "2021/03/26",
+        "Article": "https://docs.google.com/spreadsheets/d/1cU9_JiWJ4NdvCWAleivb3pNweYgaqt4GBRIWPl3MyxM/edit?ts=60553d34#gid=0",
+        "Province": "QC",
+        "Last_Reported_Date": "2021-03-26"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.42676,
+          45.67034
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "School": "Souvenir Elementary School",
+        "City": "Laval",
+        "Date": "2021/03/26",
+        "Article": "https://docs.google.com/spreadsheets/d/1cU9_JiWJ4NdvCWAleivb3pNweYgaqt4GBRIWPl3MyxM/edit?ts=60553d34#gid=0",
+        "Province": "QC",
+        "Last_Reported_Date": "2021-03-26"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.77136,
+          45.5384
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "School": "École primaire de la Petite-Gare",
+        "City": "La Prairie",
+        "Date": "2021/03/27",
+        "Article": "https://docs.google.com/spreadsheets/d/1cU9_JiWJ4NdvCWAleivb3pNweYgaqt4GBRIWPl3MyxM/edit?ts=60553d34#gid=0",
+        "Province": "QC",
+        "Last_Reported_Date": "2021-03-27"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.47175,
+          45.40207
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "School": "École des métiers et\r\noccupations de l'industrie de la\r\nconstruction de Québec\r\n(EMOICQ)",
+        "City": "Québec",
+        "Date": "2021/03/27",
+        "Article": "https://docs.google.com/spreadsheets/d/1cU9_JiWJ4NdvCWAleivb3pNweYgaqt4GBRIWPl3MyxM/edit?ts=60553d34#gid=0",
+        "Province": "QC",
+        "Last_Reported_Date": "2021-03-27"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.24899,
+          46.80526
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "School": "Groupe familial Ile-des-Soeurs",
+        "City": "Verdun",
+        "Date": "2021/03/27",
+        "Article": "https://docs.google.com/spreadsheets/d/1cU9_JiWJ4NdvCWAleivb3pNweYgaqt4GBRIWPl3MyxM/edit?ts=60553d34#gid=0",
+        "Province": "QC",
+        "Last_Reported_Date": "2021-03-27"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.54443,
+          45.45737
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "School": "Académie Sainte-Marie",
+        "City": "Québec",
+        "Date": "2021/03/27",
+        "Article": "https://docs.google.com/spreadsheets/d/1cU9_JiWJ4NdvCWAleivb3pNweYgaqt4GBRIWPl3MyxM/edit?ts=60553d34#gid=0",
+        "Province": "QC",
+        "Last_Reported_Date": "2021-03-27"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.18895,
+          46.85861
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "School": "Académie Saint-Louis (Secondaire)",
+        "City": "Québec",
+        "Date": "2021/03/27",
+        "Article": "https://docs.google.com/spreadsheets/d/1cU9_JiWJ4NdvCWAleivb3pNweYgaqt4GBRIWPl3MyxM/edit?ts=60553d34#gid=0",
+        "Province": "QC",
+        "Last_Reported_Date": "2021-03-27"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.31285,
+          46.83003
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "School": "Coopérative scolaire du campus Notre-Dame de Foy",
+        "City": "Québec",
+        "Date": "2021/03/27",
+        "Article": "https://docs.google.com/spreadsheets/d/1cU9_JiWJ4NdvCWAleivb3pNweYgaqt4GBRIWPl3MyxM/edit?ts=60553d34#gid=0",
+        "Province": "QC",
+        "Last_Reported_Date": "2021-03-27"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.39685,
+          46.73719
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "School": "École secondaire de Saint-Marc",
+        "City": "Québec",
+        "Date": "2021/03/27",
+        "Article": "https://docs.google.com/spreadsheets/d/1cU9_JiWJ4NdvCWAleivb3pNweYgaqt4GBRIWPl3MyxM/edit?ts=60553d34#gid=0",
+        "Province": "QC",
+        "Last_Reported_Date": "2021-03-27"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.05749,
+          46.68851
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "School": "Académie Saint-Louis  Pavillon St-Louis-de-Gonzague (Primaire)",
+        "City": "Québec",
+        "Date": "2021/03/27",
+        "Article": "https://docs.google.com/spreadsheets/d/1cU9_JiWJ4NdvCWAleivb3pNweYgaqt4GBRIWPl3MyxM/edit?ts=60553d34#gid=0",
+        "Province": "QC",
+        "Last_Reported_Date": "2021-03-27"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.3151,
+          46.83713
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "School": "Externat St-Jean-Eudes",
+        "City": "Québec",
+        "Date": "2021/03/27",
+        "Article": "https://docs.google.com/spreadsheets/d/1cU9_JiWJ4NdvCWAleivb3pNweYgaqt4GBRIWPl3MyxM/edit?ts=60553d34#gid=0",
+        "Province": "QC",
+        "Last_Reported_Date": "2021-03-27"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.23933,
+          46.87816
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "School": "Centre de formation en transport de\nCharlesbourg",
+        "City": "Québec",
+        "Date": "2021/03/27",
+        "Article": "https://docs.google.com/spreadsheets/d/1cU9_JiWJ4NdvCWAleivb3pNweYgaqt4GBRIWPl3MyxM/edit?ts=60553d34#gid=0",
+        "Province": "QC",
+        "Last_Reported_Date": "2021-03-27"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.32224,
+          46.88843
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "School": "Centre du Phénix - Centre services scolaire\nDécouvreurs",
+        "City": "Québec",
+        "Date": "2021/03/27",
+        "Article": "https://docs.google.com/spreadsheets/d/1cU9_JiWJ4NdvCWAleivb3pNweYgaqt4GBRIWPl3MyxM/edit?ts=60553d34#gid=0",
+        "Province": "QC",
+        "Last_Reported_Date": "2021-03-27"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.29216,
+          46.77102
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "School": "École hôtelière de la Capitale",
+        "City": "Québec",
+        "Date": "2021/03/27",
+        "Article": "https://docs.google.com/spreadsheets/d/1cU9_JiWJ4NdvCWAleivb3pNweYgaqt4GBRIWPl3MyxM/edit?ts=60553d34#gid=0",
+        "Province": "QC",
+        "Last_Reported_Date": "2021-03-27"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.23312,
+          46.81739
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "School": "Pavillon Mère-Saint-Eugène (1, avenue du\nSacré-Coeur)",
+        "City": "Québec",
+        "Date": "2021/03/27",
+        "Article": "https://docs.google.com/spreadsheets/d/1cU9_JiWJ4NdvCWAleivb3pNweYgaqt4GBRIWPl3MyxM/edit?ts=60553d34#gid=0",
+        "Province": "QC",
+        "Last_Reported_Date": "2021-03-27"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.24284,
+          46.81288
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "School": "Panorama Ridge Secondary",
         "City": "Surrey",
         "Date": "2021-03-18",
@@ -2086,6 +2482,24 @@
         "coordinates": [
           -122.809231,
           49.157827
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "School": "White Rock Elementary",
+        "City": "White Rock",
+        "Date": "2021-03-18",
+        "Article": "https://bcschoolcovidtracker.knack.com/bc-school-covid-tracker",
+        "Province": "BC",
+        "Last_Reported_Date": "2021-03-18"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.798653,
+          49.025299
         ]
       }
     },
