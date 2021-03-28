@@ -2452,6 +2452,114 @@
     {
       "type": "Feature",
       "properties": {
+        "School": "École Marc-André Fortier",
+        "City": "Châteauguay",
+        "Date": "2021/03/28",
+        "Article": "https://docs.google.com/spreadsheets/d/1cU9_JiWJ4NdvCWAleivb3pNweYgaqt4GBRIWPl3MyxM/edit?ts=60553d34#gid=0",
+        "Province": "QC",
+        "Last_Reported_Date": "2021-03-28"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.72931,
+          45.35615
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "School": "École Catherine-Soumillard",
+        "City": "Lachine",
+        "Date": "2021/03/28",
+        "Article": "https://docs.google.com/spreadsheets/d/1cU9_JiWJ4NdvCWAleivb3pNweYgaqt4GBRIWPl3MyxM/edit?ts=60553d34#gid=0",
+        "Province": "QC",
+        "Last_Reported_Date": "2021-03-28"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.70636,
+          45.44055
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "School": "École alternative des Trois-Sources",
+        "City": "Châteauguay",
+        "Date": "2021/03/28",
+        "Article": "https://docs.google.com/spreadsheets/d/1cU9_JiWJ4NdvCWAleivb3pNweYgaqt4GBRIWPl3MyxM/edit?ts=60553d34#gid=0",
+        "Province": "QC",
+        "Last_Reported_Date": "2021-03-28"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.72758,
+          45.35624
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "School": "École du Val-Joli",
+        "City": "Québec",
+        "Date": "2021/03/28",
+        "Article": "https://docs.google.com/spreadsheets/d/1cU9_JiWJ4NdvCWAleivb3pNweYgaqt4GBRIWPl3MyxM/edit?ts=60553d34#gid=0",
+        "Province": "QC",
+        "Last_Reported_Date": "2021-03-28"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.44205,
+          46.8717
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "School": "École Saint-Jean-Baptiste",
+        "City": "Québec",
+        "Date": "2021/03/28",
+        "Article": "https://docs.google.com/spreadsheets/d/1cU9_JiWJ4NdvCWAleivb3pNweYgaqt4GBRIWPl3MyxM/edit?ts=60553d34#gid=0",
+        "Province": "QC",
+        "Last_Reported_Date": "2021-03-28"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.21985,
+          46.80927
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "School": "Collège Mont-Saint-Louis",
+        "City": "Ahuntsic",
+        "Date": "2021/03/28",
+        "Article": "https://docs.google.com/spreadsheets/d/1cU9_JiWJ4NdvCWAleivb3pNweYgaqt4GBRIWPl3MyxM/edit?ts=60553d34#gid=0",
+        "Province": "QC",
+        "Last_Reported_Date": "2021-03-28"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.65522,
+          45.5695
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "School": "Panorama Ridge Secondary",
         "City": "Surrey",
         "Date": "2021-03-18",
